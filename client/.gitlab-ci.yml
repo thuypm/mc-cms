@@ -1,0 +1,41 @@
+stages:
+  - build-image
+
+
+.build-image:
+  stage: build-image
+  script:
+    - export TAG=$CI_COMMIT_REF_NAME-$CI_COMMIT_SHORT_SHA-$(date +%s)
+    - docker login -u gitlab-ci-token -p $CI_JOB_TOKEN $CI_REGISTRY
+    - docker build --pull -t $CI_REGISTRY_IMAGE:$TAG .
+    - docker push $CI_REGISTRY_IMAGE:$TAG
+  tags:
+    - shell-runner
+
+
+build-test:
+  extends: .build-image
+  before_script:
+    - envsubst < .env.test > .env || echo ""
+  only:
+    refs:
+      - test
+
+
+build-stag:
+  extends: .build-image
+  before_script:
+    - envsubst < .env.stag > .env || echo ""
+  only:
+    refs:
+      - stag
+
+build-prod:
+  extends: .build-image
+  before_script:
+    - envsubst < .env.prod > .env || echo ""
+  only:
+    refs:
+      - /^prod-[0-9]+\.[0-9]+\.[0-9]+$/
+
+
