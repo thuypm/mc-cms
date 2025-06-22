@@ -1,0 +1,6 @@
+node_modules/*
+client/node_modules/*
+python/__pycache__
+python/handle
+python/SplitPdf
+images/*
