@@ -119,7 +119,7 @@ const Login = () => {
             loading={loading}
             label="Đăng nhập"
             icon={'isax-login'}
-            className="justify-content-center flex mt-2"
+            className=" mt-2 "
           ></Button>
           {errorBackend ? (
             <div className="p-error my-1">{errorBackend}</div>
