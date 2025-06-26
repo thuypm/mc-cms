@@ -1,7 +1,5 @@
 import { useLayoutEffect, useState } from 'react'
 import { Router } from 'react-router-dom'
-import { branchRouterId } from 'utils/constants/user'
-import { isBranchPage } from './routes'
 
 const CustomRouter = ({ history, ...props }) => {
   const [state, setState] = useState({
@@ -17,7 +15,6 @@ const CustomRouter = ({ history, ...props }) => {
       location={state.location}
       navigationType={state.action}
       navigator={history}
-      basename={isBranchPage ? branchRouterId : ''}
     />
   )
 }

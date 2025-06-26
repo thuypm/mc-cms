@@ -4,7 +4,6 @@ import { observer } from 'mobx-react'
 import { ConfirmDialog } from 'primereact/confirmdialog'
 import { Route, Routes } from 'react-router-dom'
 import { publicRoutes } from 'routers/routes'
-import { ToastFC } from 'utils/toast'
 
 function App() {
   return (

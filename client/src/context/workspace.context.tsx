@@ -9,12 +9,12 @@ import { setCustomHeaders } from 'api/baseRequest'
 import { Button } from 'primereact/button'
 import { ProgressSpinner } from 'primereact/progressspinner'
 import { createContext, useCallback, useEffect, useMemo, useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import { Link, useNavigate } from 'react-router-dom'
-import { IMenuItem, getAppRouteByRole, isBranchPage } from 'routers/routes'
+import { IMenuItem, isBranchPage } from 'routers/routes'
 import { UserRoleEnum } from 'utils/constants/user'
 import SelectBranchWorkSpace from './SelectBranchWorkSpace'
 import { useStore } from './store'
-import { useTranslation } from 'react-i18next'
 
 interface IWorkspaceContext {
   loadingPermission?: boolean
@@ -71,19 +71,7 @@ export function WorkspaceContextProvider(
         })
       const data = await getUser()
       setUser(data)
-
-      if (isBranchPage) {
-        if (
-          (!branchId && data.branch?._id) ||
-          (data.branch?._id && branchId !== data.branch?._id)
-        )
-          window.location.replace(`/${data.branch?._id}`)
-        if (branchId && !data.branch?._id) setNotFoundBranch(true)
-      }
-
-      setAppRouters(getAppRouteByRole())
     } catch (error) {
-      console.log(error)
       if (isBranchPage) setNotFoundBranch(true)
       // throw error
     } finally {

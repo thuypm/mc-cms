@@ -10,11 +10,10 @@ import { Password } from 'primereact/password'
 import { useState } from 'react'
 import { useForm } from 'react-hook-form'
 import { useTranslation } from 'react-i18next'
-import { Link } from 'react-router-dom'
-import { isBranchPage } from 'routers/routes'
 import { REACT_APP_SERVER_API } from 'utils/constants/environment'
 import { EMAIL_REGEX } from 'utils/constants/regex'
 import { COOKIE_OPTIONS } from 'utils/helper/cookie'
+import MicrosoftLoginButton from './MicroSoftLoginBtn'
 // import { CountryService } from '../service/CountryService';
 // import './FormDemo.css';
 
@@ -59,14 +58,8 @@ const Login = () => {
   return (
     <AuthLayout showLogo>
       <div>
-        <div className="text-5xl font-bold">{t('Welcome')}</div>
-        <div
-          className={clsx(
-            ' text-5xl font-bold',
-            isBranchPage ? 'text-yellow-500' : 'text-primary-500'
-          )}
-        >
-          {isBranchPage ? t('to Branch') : t('to Headquarter')}
+        <div className="flex justify-content-center">
+          <img src="logo.png" alt="logo" width={60} />
         </div>
       </div>
       <div className="card">
@@ -124,20 +117,15 @@ const Login = () => {
           <Button
             type="submit"
             loading={loading}
-            label={t('Login')}
+            label="Đăng nhập"
             icon={'isax-login'}
-            className="justify-content-center flex mt-6"
+            className="justify-content-center flex mt-2"
           ></Button>
           {errorBackend ? (
             <div className="p-error my-1">{errorBackend}</div>
           ) : null}
-          <div className="mt-2 flex justify-content-end">
-            <Link
-              to={'/forgot-password'}
-              className="text-blue-500 font-medium underline"
-            >
-              {t('Forgot password')}
-            </Link>
+          <div className="mt-2 flex justify-content-center pt-2">
+            <MicrosoftLoginButton />
           </div>
         </form>
       </div>
