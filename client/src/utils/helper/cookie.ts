@@ -1,5 +1,4 @@
 import Cookies, { CookieAttributes } from 'js-cookie'
-import { REACT_APP_PARENT_APP_DOMAIN } from 'utils/constants/environment'
 
 export const getCookie = (key: string, option?: any) => {
   try {
@@ -10,10 +9,7 @@ export const getCookie = (key: string, option?: any) => {
     return null
   }
 }
-export const COOKIE_OPTIONS = {
-  domain: `.${REACT_APP_PARENT_APP_DOMAIN}`,
-  path: '/',
-}
+
 export const setCookie = (
   name: string,
   token?: any,

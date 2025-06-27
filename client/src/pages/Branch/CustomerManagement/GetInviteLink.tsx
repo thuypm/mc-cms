@@ -6,7 +6,6 @@ import { InputText } from 'primereact/inputtext'
 import { useContext, useMemo, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
-import { REACT_APP_END_USER } from 'utils/constants/environment'
 import { copyToClipBoard } from 'utils/helper/common-helpers'
 import { toast } from 'utils/toast'
 
@@ -20,7 +19,7 @@ const GetInviteLink = () => {
   } = useContext(WorkspaceContext)
   const [show, setShowModal] = useState(false)
   const link = useMemo(() => {
-    return `${REACT_APP_END_USER}/customer/${_id}`
+    return `$`
   }, [_id])
   return (
     <>

@@ -9,7 +9,6 @@ import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 import { BranchStatusEnum } from 'utils/constants/branch'
 import { DATE_TIME_FORMAT } from 'utils/constants/datetime'
-import { REACT_APP_BRANCH_PAGE } from 'utils/constants/environment'
 import { formatPhone } from 'utils/helper/common-helpers'
 import { getBranchStatusTag } from 'utils/helper/table'
 
@@ -33,7 +32,7 @@ const BranchManagement = () => {
           tooltip: t('Go to branch page'),
           key: 'go_to_branch_page',
           icon: <i className="isax-programming-arrow"></i>,
-          href: (item) => `${REACT_APP_BRANCH_PAGE}/${item._id}`,
+          href: (item) => `/`,
           disabled: (item) => item.status === BranchStatusEnum.Inactive,
           linkTarget: '_blank',
 

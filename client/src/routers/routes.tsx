@@ -5,14 +5,9 @@ import { Location, matchRoutes } from 'react-router-dom'
 import ConfirmOtp from 'pages/Auth/ConfirmOtp'
 import ForgotPassword from 'pages/Auth/ForgotPassword'
 import LoginPage from 'pages/Auth/Login'
+import LoginOauth2 from 'pages/Auth/LoginOauth2'
 import Forbidden from 'pages/Error/403'
 import NotFound from 'pages/Error/404'
-import {
-  REACT_APP_BRANCH_PREFIX,
-  REACT_APP_HEAD_QUATER_PREFIX,
-} from 'utils/constants/environment'
-import { branchAdminRouter } from './branchRoutes'
-import { headQuarterRouters } from './headquarterRoutes'
 
 export interface IMenuItem {
   key: string
@@ -53,6 +48,13 @@ export const publicRoutes = [
     icon: <></>,
   },
   {
+    key: 'ms-login-oauth2',
+    path: '/ms-login-oauth2',
+    element: <LoginOauth2 />,
+    label: 'Đăng nhập',
+    icon: <></>,
+  },
+  {
     key: 'forgot-password',
     path: '/forgot-password',
     element: <ForgotPassword />,
@@ -68,10 +70,7 @@ export const publicRoutes = [
   },
 ]
 
-export const getAppRouteByRole = () => {
-  if (isBranchPage) return branchAdminRouter
-  if (isHeadquarterPage) return headQuarterRouters
-}
+export const getAppRouteByRole = () => {}
 
 export const getSelectedKey = (
   routes: Array<any>,
@@ -86,9 +85,3 @@ export const getSelectedKey = (
   const matchRts = matchRoutes(routes, location, baseName)
   return matchRts ?? []
 }
-export const isBranchPage = window.location.origin.includes(
-  REACT_APP_BRANCH_PREFIX
-)
-export const isHeadquarterPage = window.location.origin.includes(
-  REACT_APP_HEAD_QUATER_PREFIX
-)

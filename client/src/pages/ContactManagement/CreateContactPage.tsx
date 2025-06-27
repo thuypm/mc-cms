@@ -1,19 +1,15 @@
 import clsx from 'clsx'
-import AllInOneSelectMultiple from 'components/AllInOneSelectMultiple'
 import FormField from 'components/FormField'
 import ReactQuillEditor from 'components/QuillEditor'
 import { useStore } from 'context/store'
 import { observer } from 'mobx-react'
 import { Button } from 'primereact/button'
 import { Divider } from 'primereact/divider'
-import { Dropdown } from 'primereact/dropdown'
 import { InputText } from 'primereact/inputtext'
 import { useEffect } from 'react'
 import { Controller, useForm } from 'react-hook-form'
 import { useTranslation } from 'react-i18next'
 import { useNavigate, useParams } from 'react-router-dom'
-import { isHeadquarterPage } from 'routers/routes'
-import { BranchStatusEnum } from 'utils/constants/branch'
 import { countCharactersEditor } from 'utils/constants/regex'
 import { FileUploadStatus } from './Upload/enum'
 import UploadImage from './Upload/UploadImage'
@@ -83,52 +79,6 @@ const CreateContactPage = () => {
         onSubmit={handleSubmit(onSubmit)}
         className="p-fluid"
       >
-        {isHeadquarterPage ? (
-          <FormField
-            name="branchIds"
-            control={control}
-            rules={{
-              required: t('required', {
-                field: t('To'),
-              }),
-            }}
-            render={({ field, fieldState }) => {
-              return (
-                <AllInOneSelectMultiple
-                  {...field}
-                  placeholder={t('Select')}
-                  url={`api/v1/branches?status=${BranchStatusEnum.Active}`}
-                  className={clsx({
-                    'p-invalid': fieldState.invalid,
-                  })}
-                />
-              )
-            }}
-            label={t('To')}
-          />
-        ) : (
-          <FormField
-            name="any"
-            control={control}
-            render={() => {
-              return (
-                <Dropdown
-                  readOnly
-                  disabled
-                  options={[
-                    {
-                      label: t('Headquarter'),
-                      value: 'null',
-                    },
-                  ]}
-                  value={'null'}
-                />
-              )
-            }}
-            label={t('To')}
-          />
-        )}
-
         <FormField
           name="title"
           control={control}

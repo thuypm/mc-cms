@@ -1,16 +1,19 @@
-import { REACT_APP_MICROSOFT_CLIENT_ID } from 'utils/constants/environment'
+import {
+  REACT_APP_MS_CLIENT_ID,
+  REACT_APP_TENANT_ID,
+} from 'utils/constants/environment'
 import msLogo from './mslogo.png'
 export default function MicrosoftLoginButton() {
   const loginWithMicrosoft = () => {
     const params = new URLSearchParams({
-      client_id: REACT_APP_MICROSOFT_CLIENT_ID,
+      client_id: REACT_APP_MS_CLIENT_ID,
       response_type: 'code',
-      redirect_uri: 'http://localhost:3000',
+      redirect_uri: 'http://localhost/ms-login-oauth2',
       response_mode: 'query',
       scope: 'openid profile email',
       state: 'abc123',
     })
-    window.location.href = `https://login.microsoftonline.com/927baee0-3a5b-4b51-a0bb-1b3d48cc21fd/oauth2/v2.0/authorize?${params}`
+    window.location.href = `https://login.microsoftonline.com/${REACT_APP_TENANT_ID}/oauth2/v2.0/authorize?${params}`
   }
 
   return (

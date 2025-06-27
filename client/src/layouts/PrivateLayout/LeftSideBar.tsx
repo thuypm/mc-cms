@@ -3,16 +3,11 @@ import { useStore } from 'context/store'
 import { WorkspaceContext } from 'context/workspace.context'
 import { observer } from 'mobx-react'
 import { Badge } from 'primereact/badge'
-import { InputSwitch } from 'primereact/inputswitch'
 import { Menu } from 'primereact/menu'
 import { useContext, useEffect, useMemo } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Link, useLocation } from 'react-router-dom'
 import { getSelectedKey } from 'routers/routes'
-import {
-  REACT_APP_BRANCH_PREFIX,
-  REACT_APP_PARENT_APP_DOMAIN,
-} from 'utils/constants/environment'
 
 function LeftSideBar({ collapse }) {
   const { t } = useTranslation()
@@ -21,9 +16,7 @@ function LeftSideBar({ collapse }) {
   const location = useLocation()
   const activeRoutes = getSelectedKey(appRouters, location)
   const logoSrc = useMemo(() => {
-    if (window.location.origin.includes(REACT_APP_BRANCH_PREFIX))
-      return '/images/logo-branch.svg'
-    else return '/images/logo-app.svg'
+    return ``
   }, [])
   const { i18n } = useTranslation()
   const {
@@ -123,20 +116,7 @@ function LeftSideBar({ collapse }) {
         model={items}
         className="w-full min-w-min border-0 border-noround flex-1"
       />
-      <div className="flex gap-2 align-items-center p-4 bg-white">
-        {REACT_APP_PARENT_APP_DOMAIN.includes('dev') ? (
-          <>
-            English
-            <InputSwitch
-              checked={i18n.language !== 'jp'}
-              onChange={() => {
-                const lang = i18n.language !== 'jp' ? 'jp' : 'en'
-                i18n.changeLanguage(lang)
-              }}
-            />
-          </>
-        ) : null}
-      </div>
+      <div className="flex gap-2 align-items-center p-4 bg-white"></div>
     </div>
   )
 }

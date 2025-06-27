@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 const connectDB = async (): Promise<void> => {
   try {
     await mongoose.connect(
-      process.env.MONGO_URI || "mongodb://localhost:27017/exam",
+      process.env.MONGO_URI || "mongodb://localhost:27017/mccms",
       {
         useNewUrlParser: true,
         useUnifiedTopology: true,

@@ -1,13 +1,14 @@
 import axios from "axios";
 import { Request, Response, Router } from "express";
 import jwt from "jsonwebtoken";
-import User from "models/User"; // 👈 chỉnh đường dẫn tùy dự án của bạn
+// Update the path below to the correct relative path for your project, e.g.:
+import User from "../models/User"; // 👈 chỉnh đường dẫn tùy dự án của bạn
 import {
   MICROSOFT_CLIENT_ID,
   MICROSOFT_CLIENT_SECRET,
   MICROSOFT_OAUTH2_URL,
   MICROSOFT_REDIRECT_URI,
-} from "utils/environment";
+} from "../utils/environment";
 
 const router = Router();
 
@@ -18,10 +19,10 @@ interface MicrosoftUser {
   oid: string;
 }
 
-router.get(
+router.post(
   "/microsoft/callback",
   async (req: Request, res: Response): Promise<void> => {
-    const code = req.query.code as string | undefined;
+    const { code } = req.body;
 
     if (!code) {
       res.status(400).send({
@@ -47,8 +48,7 @@ router.get(
         }
       );
 
-      const { id_token, access_token } = tokenRes.data;
-
+      const { id_token } = tokenRes.data;
       // Decode id_token để lấy thông tin người dùng
       const payload = id_token.split(".")[1];
       const decodedStr = Buffer.from(payload, "base64").toString();
@@ -67,10 +67,12 @@ router.get(
 
       // Tạo token nội bộ
       const yourToken = jwt.sign({ id: user._id }, process.env.JWT_SECRET!, {
-        expiresIn: "7d",
+        expiresIn: "365d",
       });
 
-      res.json({ token: yourToken, user });
+      res.json({
+        accessToken: yourToken,
+      });
     } catch (err: any) {
       console.error(err?.response?.data || err);
       res.status(500).send("OAuth2 login failed");

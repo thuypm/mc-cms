@@ -9,8 +9,7 @@ import { OverlayPanel } from 'primereact/overlaypanel'
 import { Fragment, useContext, useMemo, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Link, useLocation } from 'react-router-dom'
-import { getSelectedKey, isBranchPage, isHeadquarterPage } from 'routers/routes'
-import { isHeaquarter } from 'utils/constants/user'
+import { getSelectedKey } from 'routers/routes'
 
 const BreadCrumb = () => {
   const { appRouters } = useContext(WorkspaceContext)
@@ -81,9 +80,7 @@ export default function Header({ setCollapse }: any) {
             style={{
               maxWidth: '15rem',
             }}
-          >
-            {t(isHeadquarterPage ? 'Headquarter' : user.branch?.name)}
-          </p>
+          ></p>
           <p className="m-0 text-sm">{user.email}</p>
         </div>
         <i className="isax-arrow-down-small-bold"></i>
@@ -102,19 +99,7 @@ export default function Header({ setCollapse }: any) {
               <span className="mx-2">{t('Profile')}</span>
             </div>
           </Link>
-          {isBranchPage && isHeaquarter(user) ? (
-            <div
-              className="p-menuitem-content hover:surface-50 px-3 py-2 cursor-pointer"
-              onClick={() => {
-                setShow(true)
-              }}
-            >
-              <div className="flex align-items-center p-menuitem-link">
-                <i className="isax-programming-arrow"></i>
-                <span className="mx-2">{t('Go to branch page')}</span>
-              </div>
-            </div>
-          ) : null}
+
           <div
             className="p-menuitem-content hover:surface-50 px-3 py-2 cursor-pointer"
             onClick={logout}

@@ -5,12 +5,11 @@ import FieldDetail from 'components/FieldDetail'
 import { WorkspaceContext } from 'context/workspace.context'
 import { t } from 'i18next'
 import { Avatar } from 'primereact/avatar'
+import { Divider } from 'primereact/divider'
 import { useContext } from 'react'
-import { isHeadquarterPage } from 'routers/routes'
 import { formatPhone } from 'utils/helper/common-helpers'
 import EditProfile from './EditProfile'
 import ModalChangePassword from './ModalChangePassword'
-import { Divider } from 'primereact/divider'
 
 const Profile = () => {
   const { user } = useContext(WorkspaceContext)
@@ -25,9 +24,7 @@ const Profile = () => {
           shape="circle"
         />
         <div>
-          <p className="m-0 font-bold overflow-hidden text-overflow-ellipsis white-space-nowrap">
-            {t(isHeadquarterPage ? 'Headquarter' : user.branch?.name)}
-          </p>
+          <p className="m-0 font-bold overflow-hidden text-overflow-ellipsis white-space-nowrap"></p>
           <p className="m-0 text-sm">{user.email}</p>
         </div>
       </div>

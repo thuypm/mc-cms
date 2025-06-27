@@ -5,7 +5,6 @@ import { observer } from 'mobx-react'
 import { Divider } from 'primereact/divider'
 import { useTranslation } from 'react-i18next'
 import { DATE_TIME_FORMAT } from 'utils/constants/datetime'
-import { REACT_APP_MEDIA_DOMAIN } from 'utils/constants/environment'
 import { checkNullDeleteItem } from 'utils/helper/common-helpers'
 
 const MessageItem = ({ data }: { data?: MessageData }) => {
@@ -36,9 +35,7 @@ const MessageItem = ({ data }: { data?: MessageData }) => {
       {data.attachments?.length ? (
         <div className="flex gap-2 flex-wrap pt-4">
           {data.attachments?.map((item, index) => {
-            const fileFolder = decodeURIComponent(
-              item.replace(`${REACT_APP_MEDIA_DOMAIN}/`, '')
-            )
+            const fileFolder = decodeURIComponent(item.replace(`/`, ''))
             const fileName = fileFolder.replace(/^(.*?)_/, '')
             const fileStringArray = fileName.split('.')
             const originalName = fileStringArray

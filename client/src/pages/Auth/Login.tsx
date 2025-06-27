@@ -2,7 +2,6 @@ import axios from 'axios'
 import { clsx } from 'clsx'
 import FormField from 'components/FormField'
 import i18n from 'i18n'
-import Cookies from 'js-cookie'
 import AuthLayout from 'layouts/AuthLayout'
 import { Button } from 'primereact/button'
 import { InputText } from 'primereact/inputtext'
@@ -12,7 +11,6 @@ import { useForm } from 'react-hook-form'
 import { useTranslation } from 'react-i18next'
 import { REACT_APP_SERVER_API } from 'utils/constants/environment'
 import { EMAIL_REGEX } from 'utils/constants/regex'
-import { COOKIE_OPTIONS } from 'utils/helper/cookie'
 import MicrosoftLoginButton from './MicroSoftLoginBtn'
 // import { CountryService } from '../service/CountryService';
 // import './FormDemo.css';
@@ -41,8 +39,7 @@ const Login = () => {
         },
         data: body,
       })
-      Cookies.set('accessToken', data.accessToken, COOKIE_OPTIONS)
-      Cookies.set('refreshToken', data.refreshToken, COOKIE_OPTIONS)
+
       reset()
 
       if (window.location.pathname.includes('/login'))

@@ -13,6 +13,7 @@
 // @import './time-range-select';
 // @import './notification.scss';
 // @import './font.scss';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
 html {
   background-color: var(--gray-100);
@@ -33,6 +34,7 @@ html {
 body {
   margin: 0;
   // font-family: 'Poppins';
+  font-family: 'Montserrat', sans-serif;
 }
 @media (max-width: 768px) {
   body {

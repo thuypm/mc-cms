@@ -1,11 +1,9 @@
 import cors from "cors";
-import dotenv from "dotenv";
 import express, { Application } from "express";
 import path from "path";
-import authRouter from "routers/authRouter";
-import connectDB from "services/db";
-import { APP_PORT } from "utils/environment";
-dotenv.config();
+import authRouter from "./routers/authRouter";
+import connectDB from "./services/db";
+import { APP_PORT } from "./utils/environment";
 
 // Kết nối DB
 connectDB();
@@ -29,7 +27,7 @@ app.use("/api/auth", authRouter);
 // Static images folder
 const imagesPath = path.join(process.cwd(), "images");
 app.use("/images", express.static(imagesPath));
-
+console.log(process.env.APP_PORT);
 app.listen(APP_PORT, () => {
   console.log("Server chạy tại http://localhost:5000");
 });

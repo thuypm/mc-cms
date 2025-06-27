@@ -4,12 +4,7 @@ import i18n from 'i18n'
 import Cookies from 'js-cookie'
 import { action, makeObservable, observable, runInAction } from 'mobx'
 import { UserSyncData } from 'Models'
-import {
-  INTERVAL_refreshToken,
-  REACT_APP_PARENT_APP_DOMAIN,
-  REACT_APP_SERVER_API,
-} from 'utils/constants/environment'
-import { COOKIE_OPTIONS } from 'utils/helper/cookie'
+import { REACT_APP_SERVER_API } from 'utils/constants/environment'
 import RootStore from './RootStore'
 
 class AuthStore {
@@ -57,30 +52,13 @@ class AuthStore {
 
   logout = async () => {
     try {
-      clearInterval(this.intervalSync)
-      Cookies.remove('refreshToken', {
-        domain: `.${REACT_APP_PARENT_APP_DOMAIN}`,
-        path: '/',
-      })
-      Cookies.remove('accessToken', {
-        domain: `.${REACT_APP_PARENT_APP_DOMAIN}`,
-        path: '/',
-      })
       window.location.reload()
     } catch (error) {
       throw error
     } finally {
     }
   }
-  startSync = () => {
-    try {
-      this.intervalSync = setInterval(async () => {
-        try {
-          await this.refreshToken()
-        } catch (error) {}
-      }, INTERVAL_refreshToken)
-    } catch (error) {}
-  }
+  startSync = () => {}
   refreshToken = async () => {
     try {
       const { data } = await axios.request<any>({
@@ -92,8 +70,6 @@ class AuthStore {
           'Accept-Language': i18n.language === 'jp' ? 'ja' : 'en',
         },
       })
-      Cookies.set('accessToken', data.accessToken, COOKIE_OPTIONS)
-      Cookies.set('refreshToken', data.refreshToken, COOKIE_OPTIONS)
     } catch (error) {
       throw error
     } finally {
