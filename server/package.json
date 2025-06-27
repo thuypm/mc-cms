@@ -1,0 +1,42 @@
+{
+  "name": "cham-trac-nghiem",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon app.js",
+    "server-dev": "nodemon",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server-dev\" \"npm run client\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "jimp": "^1.6.0",
+    "mongodb": "^6.16.0",
+    "mongoose": "^8.15.0",
+    "multer": "^1.4.5-lts.2",
+    "nodemon": "^3.1.9",
+    "path": "^0.12.7",
+    "primeicons": "^7.0.0",
+    "xlsx": "^0.18.5"
+  },
+  "opencv4nodejs": {
+    "disableAutoBuild": 1,
+    "opencvIncludeDir": "C:\\opencv\\build\\include",
+    "opencvLibDir": "C:\\opencv\\build\\x64\\vc16\\lib",
+    "opencvBinDir": "C:\\opencv\\build\\x64\\vc16\\bin"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.3",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/node": "^24.0.4",
+    "concurrently": "^9.1.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}

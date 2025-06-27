@@ -1,6 +1,29 @@
-node_modules/*
-client/node_modules/*
-python/__pycache__
-python/handle
-python/SplitPdf
-images/*
+# Node.js
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Build outputs
+dist/
+client/dist/
+build/
+client/build/
+
+# Logs
+*.log
+npm-debug.log*
+
+
+# Images (bỏ toàn bộ trong images/)
+images/
+
+# Env files
+.env
+.env.local
+.env.*.local
+
+# OS & Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

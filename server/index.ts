@@ -1,0 +1,35 @@
+import cors from "cors";
+import dotenv from "dotenv";
+import express, { Application } from "express";
+import path from "path";
+import authRouter from "routers/authRouter";
+import connectDB from "services/db";
+import { APP_PORT } from "utils/environment";
+dotenv.config();
+
+// Kết nối DB
+connectDB();
+
+const app: Application = express();
+
+// CORS config
+app.use(
+  cors({
+    origin: "*",
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+  })
+);
+
+app.use(express.json());
+
+// Mount routers
+app.use("/api/auth", authRouter);
+
+// Static images folder
+const imagesPath = path.join(process.cwd(), "images");
+app.use("/images", express.static(imagesPath));
+
+app.listen(APP_PORT, () => {
+  console.log("Server chạy tại http://localhost:5000");
+});
