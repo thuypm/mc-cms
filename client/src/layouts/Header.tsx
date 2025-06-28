@@ -70,7 +70,7 @@ export default function Header({ setCollapse }: any) {
       >
         <Avatar
           className="bg-light-primary text-white opacity-1"
-          label={user.fullName.slice(0, 1)}
+          label={user.name.slice(0, 1)}
           size="large"
           shape="circle"
         />

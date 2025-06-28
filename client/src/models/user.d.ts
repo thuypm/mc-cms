@@ -1,22 +1,19 @@
 import { BranchStatusEnum } from 'utils/constants/branch'
 import { CustomerStatusEnum } from 'utils/constants/customer'
 import { EventStatusEnum } from 'utils/constants/event'
-import { UserRoleEnum, UserStatusEnum } from 'utils/constants/user'
 
 declare module 'Models' {
   export interface UserSyncData {
-    _id: string
+    _id: string // ObjectId dạng string
+    name: string
+    positionText: string
+    homeroom: string
+    branch: string
+    phone: string
     email: string
-    fullName: string
-    gender: string
-    status: UserStatusEnum
-    phoneNumber: string
-    role: UserRoleEnum
-    createdBy: any
-    createdAt: string
-    note?: string
-    address?: any
-    branch?: Branch
+    subject: string
+    roles: string[] // hoặc cụ thể: ('SUPER_ADMIN' | 'TEACHER')[]
+    position: string
   }
   export interface HeadquarterInfoData extends UserSyncData {
     branchInformation: {

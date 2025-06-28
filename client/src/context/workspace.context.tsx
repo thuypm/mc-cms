@@ -5,12 +5,12 @@ import {
 } from 'Base'
 import { UserSyncData } from 'Models'
 
+import axios from 'axios'
 import { ProgressSpinner } from 'primereact/progressspinner'
-import { createContext, useCallback, useEffect, useMemo, useState } from 'react'
-import { useTranslation } from 'react-i18next'
-import { useNavigate } from 'react-router-dom'
+import { createContext, useCallback, useEffect, useState } from 'react'
+import { branchRouters } from 'routers/defaultRouter'
 import { IMenuItem } from 'routers/routes'
-import { useStore } from './store'
+import { REACT_APP_SERVER_API } from 'utils/constants/environment'
 
 interface IWorkspaceContext {
   loadingPermission?: boolean
@@ -39,28 +39,28 @@ export function WorkspaceContextProvider(
 ): JSX.Element {
   const [user, setUser] = useState<UserSyncData>(null)
   const [appRouters, setAppRouters] = useState<IMenuItem[]>(null)
-  const {
-    authStore: { refreshToken, startSync, fetchUser: getUser },
-  } = useStore()
 
-  const [notFoundBranch, setNotFoundBranch] = useState(false)
-  const navigate = useNavigate()
-
-  const branchId = useMemo(() => {
-    const matches = window.location.pathname.split('/')
-    return matches?.[1]
-  }, [])
-
-  const { t } = useTranslation()
   const [loadingPermission, setLoadingPermission] = useState(false)
 
   const fetchUser = useCallback(async () => {
-    // setLoadingPermission(true)
-    setNotFoundBranch(false)
-
-    // }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [branchId, getUser, navigate, refreshToken, startSync])
+    setLoadingPermission(true)
+    const token = localStorage.getItem('accessToken')
+    try {
+      const { data } = await axios.request({
+        baseURL: REACT_APP_SERVER_API,
+        method: 'GET',
+        url: '/api/auth/me',
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      })
+      setUser(data)
+      setAppRouters(branchRouters)
+    } catch (error) {
+    } finally {
+      setLoadingPermission(false)
+    }
+  }, [])
 
   useEffect(() => {
     fetchUser()

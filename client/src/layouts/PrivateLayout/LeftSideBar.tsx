@@ -37,8 +37,8 @@ function LeftSideBar({ collapse }) {
           <i
             className={clsx(
               item.icon,
-              ' transition-duration-300 text-xl',
-              isActive ? 'text-yellow-500 font-bold' : ''
+              'transition-duration-300 text-xl',
+              isActive ? 'text-primary font-bold' : ''
             )}
           />
 

@@ -3,8 +3,8 @@ import { FilterSelectLazy } from 'components/InfiniteSelect/FilterSelect'
 import { Button } from 'primereact/button'
 import { useContext, useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import { WorkspaceContext } from './workspace.context'
 import { BranchStatusEnum } from 'utils/constants/branch'
+import { WorkspaceContext } from './workspace.context'
 
 const SelectBranchWorkSpace = ({ showLogo = true, className = '' }) => {
   const { t } = useTranslation()
@@ -36,15 +36,15 @@ const SelectBranchWorkSpace = ({ showLogo = true, className = '' }) => {
 
       <FilterSelectLazy
         className="w-30rem"
-        value={selectedBranch?._id ? [selectedBranch?._id] : []}
+        // value={selectedBranch?._id ? [selectedBranch?._id] : []}
         // onChange={(e, selected) => {
         //   // setSelectedBrach(selected)
         // }}
         onSelectItem={(_, _val, selected) => {
-          setSelectedBrach({
-            _id: selected?.[0]?.value,
-            name: selected?.[0]?.label,
-          })
+          // setSelectedBrach({
+          //   _id: selected?.[0]?.value,
+          //   name: selected?.[0]?.label,
+          // })
         }}
         customRender={(item, active, onChange) => {
           return (
@@ -83,14 +83,7 @@ const SelectBranchWorkSpace = ({ showLogo = true, className = '' }) => {
       />
 
       <div className="w-full flex justify-content-center">
-        <Button
-          onClick={() => {
-            window.location.replace(`/${selectedBranch?._id}`)
-          }}
-          className="mt-4 mx-auto"
-        >
-          {t('Continue')}
-        </Button>
+        <Button className="mt-4 mx-auto">{t('Continue')}</Button>
       </div>
     </div>
   )

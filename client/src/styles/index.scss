@@ -13,6 +13,8 @@
 // @import './time-range-select';
 // @import './notification.scss';
 // @import './font.scss';
+
+@import 'primeicons/primeicons.css';
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
 html {
@@ -34,7 +36,6 @@ html {
 body {
   margin: 0;
   // font-family: 'Poppins';
-  font-family: 'Montserrat', sans-serif;
 }
 @media (max-width: 768px) {
   body {
@@ -56,9 +57,7 @@ body {
   height: 78px;
   justify-content: flex-end;
 }
-:root {
-  font-family: var(--font-family);
-}
+
 .mdi-domain {
   font-size: 16px;
 }
@@ -71,6 +70,7 @@ body {
 body,
 * {
   text-overflow: ellipsis;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .field {

@@ -1,0 +1,5 @@
+export const USER_POSITION = {
+  STUDENT: "STUDENT",
+  TEACHER: "TEACHER",
+  SUPER_ADMIN: "SUPER_ADMIN",
+};

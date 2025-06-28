@@ -5,15 +5,14 @@ import { observer } from 'mobx-react'
 import { Button } from 'primereact/button'
 import { confirmDialog } from 'primereact/confirmdialog'
 import { Dialog } from 'primereact/dialog'
+import { Divider } from 'primereact/divider'
 import { ProgressSpinner } from 'primereact/progressspinner'
 import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Link, useParams } from 'react-router-dom'
 import { CustomerStatusEnum } from 'utils/constants/customer'
-import { getCustomerStatusTag } from 'utils/helper/table'
-import UserRegistrationHistory from '../EventManagement/RegistrationList/UserRegistrationHistory'
-import { Divider } from 'primereact/divider'
 import { formatPhone } from 'utils/helper/common-helpers'
+import { getCustomerStatusTag } from 'utils/helper/table'
 
 const CustomerDetailPage = () => {
   const { t } = useTranslation()
@@ -54,9 +53,7 @@ const CustomerDetailPage = () => {
             header={t('Registed History')}
             visible={showModalHistory}
             style={{ width: '80vw', height: '70vh' }}
-          >
-            <UserRegistrationHistory userId={selectedItem._id} />
-          </Dialog>
+          ></Dialog>
 
           <div className="flex align-items-center gap-4 flex-1">
             <h1 className="text-3xl text-2xl font-bold m-0 ">

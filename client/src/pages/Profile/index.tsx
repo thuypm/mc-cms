@@ -1,22 +1,15 @@
 // import { CountryService } from '../service/CountryService';
 // import './FormDemo.css';
 
-import FieldDetail from 'components/FieldDetail'
 import { WorkspaceContext } from 'context/workspace.context'
-import { t } from 'i18next'
-import { Avatar } from 'primereact/avatar'
-import { Divider } from 'primereact/divider'
 import { useContext } from 'react'
-import { formatPhone } from 'utils/helper/common-helpers'
-import EditProfile from './EditProfile'
-import ModalChangePassword from './ModalChangePassword'
 
 const Profile = () => {
   const { user } = useContext(WorkspaceContext)
 
   return (
     <div className="card bg-white border-round-xl px-3 py-5 ">
-      <div className="flex gap-2 align-items-center cursor-pointer">
+      {/* <div className="flex gap-2 align-items-center cursor-pointer">
         <Avatar
           className="bg-light-primary text-white opacity-1"
           label={user.fullName.slice(0, 1)}
@@ -48,7 +41,7 @@ const Profile = () => {
       <div className="mt-4 flex gap-2">
         <EditProfile />
         <ModalChangePassword />
-      </div>
+      </div> */}
     </div>
   )
 }

@@ -5,14 +5,9 @@ import EditAdmin from 'pages/HeadQuarter/AdminManagement/EditAdmin'
 import BranchManagement from 'pages/HeadQuarter/BranchManagement'
 import BranchDetailPage from 'pages/HeadQuarter/BranchManagement/BranchDetailPage'
 import CreateBranchPage from 'pages/HeadQuarter/BranchManagement/CreateBranchPage'
-import HeadQuarterInformation from 'pages/HeadQuarter/HeadQuarterInformation'
-import HeadQuarterInfoEdit from 'pages/HeadQuarter/HeadQuarterInformation/HeadQuarterInfoEdit'
+import Profile from 'pages/Profile'
 import { Navigate } from 'react-router-dom'
 import { IMenuItem } from './routes'
-import Profile from 'pages/Profile'
-import CreateContactPage from 'pages/ContactManagement/CreateContactPage'
-import DetailContactPage from 'pages/ContactManagement/DetailContactPage'
-import ContactManagement from 'pages/ContactManagement'
 
 export const headQuarterRouters: Array<IMenuItem> = [
   {
@@ -117,62 +112,6 @@ export const headQuarterRouters: Array<IMenuItem> = [
             icon: '',
           },
         ],
-      },
-    ],
-  },
-
-  {
-    key: 'contact-management',
-    path: '/contact-management',
-    element: <ContactManagement />,
-    label: 'Contact management',
-    hiddenFromMenu: false,
-    icon: 'isax isax-messages',
-    children: [
-      {
-        key: 'create-contact',
-        path: 'create',
-        element: <CreateContactPage />,
-        label: 'Create Thread',
-        hiddenFromMenu: true,
-        icon: '',
-      },
-      {
-        key: 'detail-edit',
-        path: ':id',
-        element: <DetailContactPage />,
-        label: 'Detail Thread',
-        hiddenFromMenu: true,
-        icon: '',
-        children: [
-          {
-            key: 'edit-admin',
-            path: 'edit',
-            element: <CreateContactPage />,
-            label: 'Edit Thread',
-            hiddenFromMenu: true,
-            icon: '',
-          },
-        ],
-      },
-    ],
-  },
-  {
-    key: 'headquarter-info',
-    path: '/headquarter-information',
-    element: <HeadQuarterInformation />,
-    label: 'Information',
-    hiddenFromMenu: false,
-    icon: 'isax isax-information',
-
-    children: [
-      {
-        key: 'edit-headquarter',
-        path: 'edit',
-        element: <HeadQuarterInfoEdit />,
-        label: 'Update Headquater Details',
-        hiddenFromMenu: true,
-        icon: '',
       },
     ],
   },

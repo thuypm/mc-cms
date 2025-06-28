@@ -12,8 +12,6 @@ import {
 } from 'utils/constants/customer'
 import { formatPhone } from 'utils/helper/common-helpers'
 import { getCustomerStatusTag } from 'utils/helper/table'
-import ExportCustomerList from './ExportCustomerList'
-import GetInviteLink from './GetInviteLink'
 import ModalImportData from './ModalImportData'
 
 const CustomerManagement = () => {
@@ -146,13 +144,12 @@ const CustomerManagement = () => {
             <InputSearchKeyword
               placeholder={t('Search for Name, Furigana, Email, Phone')}
             />
-            <ExportCustomerList />
+
             <ModalImportData />
 
             <Link to={'create'}>
               <Button icon="isax isax-add" label={t('顧客登録')}></Button>
             </Link>
-            <GetInviteLink />
           </div>
         </div>
       }

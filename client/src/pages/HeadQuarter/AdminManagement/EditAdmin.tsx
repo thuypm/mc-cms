@@ -1,5 +1,4 @@
 import clsx from 'clsx'
-import AllInOneSelect from 'components/AllInOneSelect'
 import FormField from 'components/FormField'
 import { useStore } from 'context/store'
 import { observer } from 'mobx-react'
@@ -13,7 +12,6 @@ import { useForm } from 'react-hook-form'
 import { useTranslation } from 'react-i18next'
 import { useNavigate, useParams } from 'react-router-dom'
 import { EMAIL_REGEX } from 'utils/constants/regex'
-import { UserRoleEnum } from 'utils/constants/user'
 
 const defaultValues = {
   fullName: '',
@@ -51,8 +49,6 @@ const EditAdmin = () => {
     if (selectedItem)
       reset({
         ...selectedItem,
-        branch:
-          (selectedItem.branch as any) === -1 ? -1 : selectedItem.branch?._id,
       })
     else reset(defaultValues)
   }, [reset, selectedItem])
@@ -86,69 +82,6 @@ const EditAdmin = () => {
           onSubmit={handleSubmit(onSubmit)}
           className="p-fluid"
         >
-          {selectedItem?.role === UserRoleEnum.Headquarter ? (
-            <FormField
-              name="branch"
-              control={control}
-              render={({ field, fieldState }) => {
-                return (
-                  <InputText
-                    {...field}
-                    value={t('Headquarter')}
-                    readOnly
-                    disabled
-                    className={clsx({
-                      'p-invalid': fieldState.invalid,
-                    })}
-                  />
-                )
-              }}
-              label={t('Branch')}
-            />
-          ) : (
-            <FormField
-              name="branch"
-              control={control}
-              render={({ field, fieldState }) => {
-                return (
-                  <AllInOneSelect
-                    placeholder={t('Select branch')}
-                    url={`api/v1/branches`}
-                    disabled
-                    tranformData={(items) => {
-                      if (
-                        !field.value ||
-                        items.find((e) => e?._id === field.value)
-                      )
-                        return items.map((e) => ({
-                          label: e.name,
-                          value: e?._id,
-                        }))
-                      else
-                        return [
-                          {
-                            value: field.value,
-                            label: t('Item is deleted', { item: t('Branch') }),
-                          },
-                          ...items.map((e) => ({
-                            label: e.name,
-                            value: e._id,
-                          })),
-                        ]
-                    }}
-                    className={clsx({
-                      'p-invalid': fieldState.invalid,
-                    })}
-                    {...field}
-                    // optionValue="_id"
-                    // optionLabel="name"
-                  />
-                )
-              }}
-              label={t('Branch')}
-            />
-          )}
-
           <FormField
             control={control}
             name="email"

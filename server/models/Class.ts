@@ -1,5 +1,5 @@
 import mongoose, { Schema } from "mongoose";
-export interface IStudent extends Document {
+export interface Class extends Document {
   name: string;
   positionText: string;
   homeroom: string;
@@ -11,7 +11,7 @@ export interface IStudent extends Document {
   position: string;
 }
 
-const studentSchema: Schema = new Schema(
+const teacherSchema: Schema = new Schema(
   {
     name: { type: String, required: true },
     positionText: { type: String, required: true },
@@ -30,4 +30,4 @@ const studentSchema: Schema = new Schema(
   { timestamps: true }
 );
 
-export const Student = mongoose.model("Student", studentSchema);
+export const Teacher = mongoose.model("Teacher", teacherSchema);

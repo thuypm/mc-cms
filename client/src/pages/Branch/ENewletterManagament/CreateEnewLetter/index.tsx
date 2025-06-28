@@ -15,10 +15,8 @@ import { useNavigate, useParams } from 'react-router-dom'
 import { ScopeEnewLetter } from 'utils/constants/enewletter'
 import { countCharactersEditor } from 'utils/constants/regex'
 import { getEnewLetterStatusTag } from 'utils/helper/table'
-import QuillUploadEditor from './QuillUploadEditor'
-import ScopeSending from './ScopeSending'
 import { useObjectSearchParams } from 'utils/hooks/useObjectSearchParams'
-import { update } from 'lodash'
+import ScopeSending from './ScopeSending'
 
 const defaultValues = {
   title: '',
@@ -65,33 +63,7 @@ const CreateEnewLetter = () => {
   const { control, handleSubmit, reset } = form
 
   const { user } = useContext(WorkspaceContext)
-  useEffect(() => {
-    if (selectedItem) {
-      if (cloneId)
-        reset({
-          ...selectedItem,
-          scheduledTime: null,
-          sendingBranchIds: selectedItem.sendingBranches
-            ?.filter((e) => (e as any) !== -1)
-            ?.map((item) => item._id),
-          sendingEventIds: selectedItem.sendingEvents
-            ?.filter((e) => (e as any) !== -1)
-            ?.map((item) => item._id),
-        })
-      else if (selectedItem.createdBy?.role === user.role)
-        reset({
-          ...selectedItem,
-          scheduledTime: new Date(selectedItem.scheduledTime),
-          sendingBranchIds: selectedItem.sendingBranches
-            ?.filter((e) => (e as any) !== -1)
-            ?.map((item) => item._id),
-          sendingEventIds: selectedItem.sendingEvents
-            ?.filter((e) => (e as any) !== -1)
-            ?.map((item) => item._id),
-        })
-      else navigate(`/enewletter-management/${id}`)
-    } else reset(defaultValues)
-  }, [id, navigate, reset, selectedItem, user.role])
+  useEffect(() => {}, [id, navigate, reset, selectedItem])
 
   useEffect(() => {
     if (id) fetchDetail(id)
@@ -213,15 +185,7 @@ const CreateEnewLetter = () => {
                 },
               }}
               render={({ field, fieldState }) => {
-                return (
-                  <QuillUploadEditor
-                    {...field}
-                    placeholder={t('Content')}
-                    className={clsx({
-                      'p-invalid': fieldState.invalid,
-                    })}
-                  />
-                )
+                return <></>
               }}
               label={t('Content')}
             />

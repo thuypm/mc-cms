@@ -30,8 +30,8 @@ const EditProfile = () => {
   useEffect(() => {
     reset({
       email: user.email,
-      fullName: user.fullName,
-      phoneNumber: user.phoneNumber,
+      // fullName: user.fullName,
+      // phoneNumber: user.phoneNumber,
     })
   }, [reset, user])
   const onSubmit = async (body) => {

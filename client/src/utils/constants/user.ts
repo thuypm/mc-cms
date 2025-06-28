@@ -1,6 +1,12 @@
 import { UserSyncData } from 'Models'
 import i18n from 'i18n'
 
+export enum USER_POSITION {
+  STUDENT = 'STUDENT',
+  TEACHER = 'TEACHER',
+  SUPER_ADMIN = 'SUPER_ADMIN',
+}
+
 export enum UserRoleEnum {
   Headquarter = 'Headquarter Admin',
   BranchAdmin = 'Branch Admin',
@@ -51,7 +57,7 @@ export const USER_STATUSES = [
   },
 ]
 export const isHeaquarter = (user: UserSyncData) => {
-  return user.role === UserRoleEnum.Headquarter
+  return user.position === UserRoleEnum.Headquarter
 }
 const matches = window.location.pathname.split('/')
 export const branchRouterId = matches?.[1]

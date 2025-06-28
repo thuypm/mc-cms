@@ -12,12 +12,9 @@ import { Divider } from 'primereact/divider'
 import { ProgressSpinner } from 'primereact/progressspinner'
 import { useContext, useEffect, useMemo } from 'react'
 import { useTranslation } from 'react-i18next'
-import { Link, useNavigate, useParams } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 import { DATE_TIME_FORMAT } from 'utils/constants/datetime'
-import {
-  EnewLetterStatusEnum,
-  ScopeEnewLetter,
-} from 'utils/constants/enewletter'
+import { ScopeEnewLetter } from 'utils/constants/enewletter'
 import { checkNullDeleteItem } from 'utils/helper/common-helpers'
 import { getEnewLetterStatusTag } from 'utils/helper/table'
 
@@ -151,15 +148,6 @@ const EnewLetterDetailPage = () => {
           <Divider />
 
           <div className="flex justify-content-between w-full">
-            {selectedItem.status === EnewLetterStatusEnum.Delevered ||
-            selectedItem.createdBy?.role !== user.role ? (
-              <div></div>
-            ) : (
-              <Link to={`edit`}>
-                <Button label={t('Edit')}></Button>
-              </Link>
-            )}
-
             <Button
               severity="secondary"
               label={t('Delete')}
