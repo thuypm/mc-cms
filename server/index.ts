@@ -1,7 +1,10 @@
 import cors from "cors";
 import express, { Application } from "express";
 import path from "path";
+import { authenticateToken } from "./middleware/authMiddleware";
 import authRouter from "./routers/authRouter";
+import { dayBoardingRouter } from "./routers/dayBoardingRouter";
+import { studentRouter } from "./routers/student.router";
 import connectDB from "./services/db";
 import { APP_PORT } from "./utils/environment";
 
@@ -23,6 +26,8 @@ app.use(express.json());
 
 // Mount routers
 app.use("/api/auth", authRouter);
+app.use("/api/day-boarding", authenticateToken, dayBoardingRouter);
+app.use("/api/student", authenticateToken, studentRouter);
 
 // Static images folder
 const imagesPath = path.join(process.cwd(), "images");

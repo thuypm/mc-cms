@@ -1,10 +1,8 @@
 import axios from 'axios'
 import { history } from 'context/store'
 import i18n from 'i18n'
-import Cookies from 'js-cookie'
 import { REACT_APP_SERVER_API } from 'utils/constants/environment'
 import { HTTP_STATUS_CODE } from 'utils/constants/http'
-import { skipNullParams } from 'utils/helper/common-helpers'
 import { toast } from 'utils/toast'
 
 const axiosInstant = axios.create({})
@@ -59,17 +57,15 @@ axiosInstant.interceptors.request.use(
   function (config) {
     // Do something before request is sent
     config.baseURL = REACT_APP_SERVER_API
-    config.headers.set('Authorization', `Bearer ${Cookies.get('accessToken')}`)
-    config.headers.set('Accept-Language', i18n.language === 'jp' ? 'ja' : 'en')
-    config.params = skipNullParams(config.params)
-
-    Object.keys(customHeader).forEach((key) => {
-      config.headers.set(key, customHeader[key])
-    })
+    config.headers.set(
+      'Authorization',
+      `Bearer ${localStorage.getItem('accessToken')}`
+    )
 
     return config
   },
   function (error) {
+    console.log(error)
     // Do something with request error
     return Promise.reject(error)
   }

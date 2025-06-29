@@ -54,7 +54,7 @@ export default function Header({ setCollapse }: any) {
   const [show, setShow] = useState(false)
 
   return (
-    <div className=" flex justify-content-between align-items-center py-3 sticky top-0 z-5 bg-gray-100 mb-4">
+    <div className=" flex justify-content-between align-items-center py-2 top-0 z-5 bg-gray-100 my-2 bg-white">
       <div className="flex  align-items-center gap-2 flex-1 overflow-hidden">
         <div
           className="cursor-pointer p-2 flex  align-items-center"
@@ -71,7 +71,7 @@ export default function Header({ setCollapse }: any) {
         <Avatar
           className="bg-light-primary text-white opacity-1"
           label={user.name.slice(0, 1)}
-          size="large"
+          // size="large"
           shape="circle"
         />
         <div>

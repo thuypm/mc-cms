@@ -1,14 +1,14 @@
-import { BaseItem } from 'Base'
-import { BaseDataList } from 'Base'
 import axiosInstant from 'api/baseRequest'
-import { default as qs, default as queryString } from 'query-string'
+import { BaseDataList, BaseItem } from 'Base'
+import { default as qs } from 'query-string'
 import { Fetcher } from 'swr'
 import useSWRInfinite from 'swr/infinite'
+import { REACT_APP_SERVER_API } from 'utils/constants/environment'
 
 interface SWRInfiniteOption {
   method?: string
-  apiUrl?: string
   path?: string
+  baseUrl?: string
   customResponseItem?: (value?: any) => any
   isActive?: boolean
   headers?: any
@@ -23,6 +23,7 @@ export const useDataInfinite = <T extends BaseItem>(
 ) => {
   const fetcher: Fetcher<T[]> = async () => {
     const { data } = await axiosInstant.request<BaseDataList<BaseItem>>({
+      baseURL: options.baseUrl ?? REACT_APP_SERVER_API,
       method: options.method,
       url: options.path,
       params: payload,

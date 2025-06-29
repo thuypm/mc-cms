@@ -12,8 +12,10 @@ const axiosInstance = axios.create({
 // Gắn token trước mỗi request
 axiosInstance.interceptors.request.use((config) => {
   const token = localStorage.getItem('accessToken')
+  const branch = localStorage.getItem('branchId')
   if (token) {
     config.headers.Authorization = `Bearer ${token}`
+    config.headers['x-branch-id'] = branch
   }
   return config
 })

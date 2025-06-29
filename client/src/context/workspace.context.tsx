@@ -11,6 +11,7 @@ import { createContext, useCallback, useEffect, useState } from 'react'
 import { branchRouters } from 'routers/defaultRouter'
 import { IMenuItem } from 'routers/routes'
 import { REACT_APP_SERVER_API } from 'utils/constants/environment'
+import SelectBranchWorkSpace from './SelectBranchWorkSpace'
 
 interface IWorkspaceContext {
   loadingPermission?: boolean
@@ -80,8 +81,10 @@ export function WorkspaceContextProvider(
         <div className="w-full h-screen overflow-hidden flex align-items-center justify-content-center ">
           <ProgressSpinner strokeWidth="4" animationDuration=".5s" />
         </div>
-      ) : (
+      ) : localStorage.getItem('branchId') ? (
         props.children
+      ) : (
+        <SelectBranchWorkSpace />
       )}
     </WorkspaceContext.Provider>
   )

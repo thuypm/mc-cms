@@ -3,10 +3,9 @@ import CreateCustomer from 'pages/Branch/CustomerManagement/CreateCustomer'
 import CustomerDetailPage from 'pages/Branch/CustomerManagement/CustomerDetailPage'
 import EmailTemplate from 'pages/Branch/EmailTemplate'
 import EditEmaiTemplate from 'pages/Branch/EmailTemplate/EditEmaiTemplate'
-import ENewletterManagament from 'pages/Branch/ENewletterManagament'
-import CreateEnewLetter from 'pages/Branch/ENewletterManagament/CreateEnewLetter'
-import EnewLetterDetailPage from 'pages/Branch/ENewletterManagament/EnewLetterDetailPage'
 
+import DayBoarding from 'pages/Branch/DayBoarding'
+import CreateDayBoarding from 'pages/Branch/DayBoarding/CreateDayBoarding'
 import Profile from 'pages/Profile'
 import { Navigate } from 'react-router-dom'
 import { IMenuItem } from './routes'
@@ -32,7 +31,7 @@ export const branchRouters: Array<IMenuItem> = [
   {
     key: 'day-boarding',
     path: '/day-boarding',
-    element: <ENewletterManagament />,
+    element: <DayBoarding />,
     label: 'Quản lý bán trú',
     hiddenFromMenu: false,
     icon: 'pi-warehouse pi',
@@ -40,29 +39,10 @@ export const branchRouters: Array<IMenuItem> = [
       {
         key: 'create-enewletter',
         path: 'create',
-        element: <CreateEnewLetter />,
+        element: <CreateDayBoarding />,
         label: 'Create E-Newsletter',
         hiddenFromMenu: true,
         icon: '',
-      },
-      {
-        key: 'detail-view',
-        path: ':id',
-        element: <EnewLetterDetailPage />,
-        label: 'Detail E-Newsletter',
-        hiddenFromMenu: true,
-        hiddenFromBreadCrumb: false,
-        icon: '',
-        children: [
-          {
-            key: 'enews-edit',
-            path: 'edit',
-            element: <CreateEnewLetter />,
-            label: 'Edit E-Newsletter',
-            hiddenFromMenu: false,
-            icon: 'pi-users pi',
-          },
-        ],
       },
     ],
   },

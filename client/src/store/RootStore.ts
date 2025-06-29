@@ -1,14 +1,14 @@
 import { BrowserHistory } from 'history'
 import AuthStore from './AuthStore'
-import BranchManagementStore from './HeadQuarterGroup/BranchManagementStore'
-import AdminManagementStore from './HeadQuarterGroup/AdminManagementStore'
-import HeadQuaterInfoStore from './HeadQuarterGroup/HeadQuaterInfoStore'
+import CustomerManagementStore from './BranchGroup/CustomerManagementStore'
+import DayBoardingStore from './BranchGroup/DayBoardingStore'
+import EmailTemplateStore from './BranchGroup/EmailTemplateStore'
 import EventManagementStore from './BranchGroup/EventManagementStore'
 import EventRegistrationStore from './BranchGroup/EventRegistrationStore'
-import EmailTemplateStore from './BranchGroup/EmailTemplateStore'
-import CustomerManagementStore from './BranchGroup/CustomerManagementStore'
-import EnewLetterStore from './BranchGroup/EnewLetterStore'
+import AdminManagementStore from './HeadQuarterGroup/AdminManagementStore'
+import BranchManagementStore from './HeadQuarterGroup/BranchManagementStore'
 import ContactManagementStore from './HeadQuarterGroup/ContactManagementStore'
+import HeadQuaterInfoStore from './HeadQuarterGroup/HeadQuaterInfoStore'
 import MessageStore from './HeadQuarterGroup/MessageStore'
 
 class RootStore {
@@ -23,7 +23,7 @@ class RootStore {
   eventRegistrationStore: EventRegistrationStore
   emailTemplateStore: EmailTemplateStore
   custormerManagementStore: CustomerManagementStore
-  enewLetterStore: EnewLetterStore
+  dayBoardingStore: DayBoardingStore
   messageStore: MessageStore
 
   constructor(history) {
@@ -40,7 +40,7 @@ class RootStore {
     this.eventRegistrationStore = new EventRegistrationStore(this)
     this.emailTemplateStore = new EmailTemplateStore(this)
     this.custormerManagementStore = new CustomerManagementStore(this)
-    this.enewLetterStore = new EnewLetterStore(this)
+    this.dayBoardingStore = new DayBoardingStore(this)
 
     //common
     this.messageStore = new MessageStore(this)

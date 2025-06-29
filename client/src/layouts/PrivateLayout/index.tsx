@@ -82,7 +82,7 @@ const PrivateLayoutContent = () => {
   return (
     <div className="w-full h-full flex bg-gray-100 gap-3">
       <LeftSideBar collapse={collapse} />
-      <div className="flex-1 pr-3 overflow-hidden">
+      <div className="flex-1 pr-3 ">
         <Routes>
           {appRouters.map((route) =>
             getRouteComponent(route, null, setCollapse)

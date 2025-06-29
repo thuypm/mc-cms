@@ -1,4 +1,5 @@
 import clsx from 'clsx'
+import LoadingDot from 'components/LoadingDot'
 import { InputText } from 'primereact/inputtext'
 import {
   ReactNode,
@@ -15,7 +16,6 @@ import { TIMEOUT_SEARCH } from 'utils/constants/commons-constant'
 import { ObjectId } from 'utils/helper/object'
 import { useAnimateState } from './useAnimateState'
 import { useDataInfinite } from './useDataInfinite'
-import LoadingDot from 'components/LoadingDot'
 
 interface ISelectProps {
   value?: any
@@ -39,7 +39,7 @@ interface ISelectProps {
   method?: string
   error?: any
   path?: string
-  apiUrl?: string
+  baseUrl?: string
   customResponseItem?: (value) => any
   customRenderItem?: (item, active) => ReactNode
   customLabelPlaceHolder?: (value) => any
@@ -70,7 +70,7 @@ const OptionItem = (props: any) => {
     </div>
   )
 }
-const InfiniteSelect = forwardRef(
+const InfiniteSelectMulti = forwardRef(
   (
     {
       opened,
@@ -87,7 +87,7 @@ const InfiniteSelect = forwardRef(
       headers,
       disabled,
       path,
-      apiUrl,
+      baseUrl,
       onChange,
       customRenderItem,
       error,
@@ -119,7 +119,7 @@ const InfiniteSelect = forwardRef(
       {
         method,
         path,
-        apiUrl,
+        baseUrl,
         isActive: isOpen,
         customResponseItem,
         headers,
@@ -256,4 +256,4 @@ const InfiniteSelect = forwardRef(
   }
 )
 
-export default InfiniteSelect
+export default InfiniteSelectMulti

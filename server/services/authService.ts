@@ -1,8 +1,8 @@
 import axios from "axios";
 import jwt from "jsonwebtoken";
 import { ObjectId } from "mongodb";
-import { Student } from "../models/Student";
-import { Teacher } from "../models/Teacher";
+import { Student } from "../models/student.repository";
+import { Teacher } from "../models/teacher.repository";
 
 import { USER_POSITION } from "../utils/enum";
 import {
@@ -51,7 +51,7 @@ export const handleMicrosoftLogin = async (code: string): Promise<string> => {
 
   // 4. Tạo JWT nội bộ
   const yourToken = jwt.sign(
-    { _id: user._id, position: user.position },
+    { _id: user._id, position: user.position, class: user.class },
     JWT_SECRET!,
     {
       expiresIn: "365d",

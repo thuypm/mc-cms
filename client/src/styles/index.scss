@@ -2,7 +2,7 @@
 @layer primeflex;
 @import 'variable';
 @import 'primereact/resources/primereact.min.css';
-@import 'primereact/resources/themes/mdc-light-indigo/theme.css';
+@import 'primereact/resources/themes/tailwind-light/theme.css';
 // @import 'primeicons/primeicons.css';
 @import 'primeflex/primeflex.css';
 // @import 'react-quill/dist/quill.snow.css';
@@ -52,15 +52,13 @@ body {
     padding: 0.3rem 0.5rem;
   }
 }
+
 .p-multiselect-header {
   display: flex;
   height: 78px;
   justify-content: flex-end;
 }
 
-.mdi-domain {
-  font-size: 16px;
-}
 .p-button-label {
   flex: 0 1 fit-content;
 }
@@ -71,6 +69,7 @@ body,
 * {
   text-overflow: ellipsis;
   font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
 }
 
 .field {

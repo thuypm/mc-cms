@@ -8,14 +8,12 @@ import { Button } from 'primereact/button'
 import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 import { DATE_TIME_FORMAT } from 'utils/constants/datetime'
-import { EnewLetterStatusEnum } from 'utils/constants/enewletter'
 import { checkNullDeleteItem } from 'utils/helper/common-helpers'
-import { getEnewLetterStatusTag } from 'utils/helper/table'
 
-const ENewletterManagament = () => {
+const DayBoarding = () => {
   const { t } = useTranslation()
   const {
-    enewLetterStore: {
+    dayBoardingStore: {
       loadingListing,
       handleFilterDataChange,
       deleteItem,
@@ -76,16 +74,16 @@ const ENewletterManagament = () => {
           key: 'status',
           dataIndex: 'status',
           header: t('Status'),
-          body: (item) => getEnewLetterStatusTag(item.status),
+
           filter: true,
           width: '100px',
           filterElement: (options) => {
             return (
               <FilterSelect
-                options={Object.values(EnewLetterStatusEnum).map((key) => ({
-                  label: t(key),
-                  value: key,
-                }))}
+                // options={Object.values(EnewLetterStatusEnum).map((key) => ({
+                //   label: t(key),
+                //   value: key,
+                // }))}
                 className="w-20rem"
                 multiple={false}
                 value={options.value}
@@ -125,4 +123,4 @@ const ENewletterManagament = () => {
     />
   )
 }
-export default observer(ENewletterManagament)
+export default observer(DayBoarding)

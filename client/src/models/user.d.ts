@@ -7,7 +7,7 @@ declare module 'Models' {
     _id: string // ObjectId dạng string
     name: string
     positionText: string
-    homeroom: string
+    class: string
     branch: string
     phone: string
     email: string

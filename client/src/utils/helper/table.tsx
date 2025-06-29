@@ -2,7 +2,6 @@ import i18n from 'i18n'
 import { Tag } from 'primereact/tag'
 import { BRANCH_STATUS_LABEL, BranchStatusEnum } from 'utils/constants/branch'
 import { CustomerStatusEnum } from 'utils/constants/customer'
-import { EnewLetterStatusEnum } from 'utils/constants/enewletter'
 import {
   EVENT_STATUS_LABEL,
   EventStatusEnum,
@@ -126,24 +125,6 @@ export const getCustomerStatusTag = (status: any) => {
       return (
         <Tag severity="danger" className="uppercase">
           {i18n.t(CustomerStatusEnum.Blocked)}
-        </Tag>
-      )
-  }
-}
-
-export const getEnewLetterStatusTag = (status: any) => {
-  switch (status) {
-    case EnewLetterStatusEnum.Scheduled:
-      return (
-        <Tag severity="success" className="uppercase">
-          {i18n.t(EnewLetterStatusEnum.Scheduled)}
-        </Tag>
-      )
-
-    case EnewLetterStatusEnum.Delevered:
-      return (
-        <Tag className="uppercase" severity="warning">
-          {i18n.t(EnewLetterStatusEnum.Delevered)}
         </Tag>
       )
   }

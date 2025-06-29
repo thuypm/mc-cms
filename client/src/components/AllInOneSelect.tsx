@@ -14,6 +14,7 @@ interface AllInOneSelectProps extends DropdownProps {
   firstItems?: any[]
   onChange: (value: any, selectedItem?: any) => void
   tranformData?: (data: any) => any[]
+  selectFirstItem?: Boolean
 }
 const AllInOneSelect = forwardRef((props: AllInOneSelectProps, ref: any) => {
   const {
@@ -24,6 +25,7 @@ const AllInOneSelect = forwardRef((props: AllInOneSelectProps, ref: any) => {
     firstItems = [],
     tranformData,
     onChange,
+    selectFirstItem,
     ...restProps
   } = props
 
@@ -40,7 +42,9 @@ const AllInOneSelect = forwardRef((props: AllInOneSelectProps, ref: any) => {
         // data: params ?? { perPage: LIMIT_NOT_LAZY_SELECT },
       })
       setData(data.data)
+      // if (selectFirstItem && data.data.length) onChange(null, data.data[0])
     } catch (error) {
+      console.log(error)
     } finally {
       setLoading(false)
     }
@@ -52,6 +56,12 @@ const AllInOneSelect = forwardRef((props: AllInOneSelectProps, ref: any) => {
   const dataRendered = useMemo(() => {
     return [...firstItems, ...(tranformData ? tranformData(data) : data)]
   }, [data, firstItems, tranformData])
+
+  useEffect(() => {
+    if (selectFirstItem && dataRendered?.[0])
+      onChange(dataRendered?.[0]?.[props.optionValue], dataRendered?.[0])
+  }, [dataRendered, props.optionValue, selectFirstItem])
+
   const { t } = useTranslation()
   return (
     <Dropdown
@@ -66,11 +76,7 @@ const AllInOneSelect = forwardRef((props: AllInOneSelectProps, ref: any) => {
       emptyFilterMessage={t('No results founds')}
       emptyMessage={t('No available options')}
       onChange={(event) => {
-        onChange &&
-          onChange(
-            event,
-            dataRendered.find((e) => e._id === event?.target?.value)
-          )
+        onChange && onChange(event, event.value)
       }}
       {...restProps}
     />

@@ -1,0 +1,8138 @@
+[
+  {
+    "vneduId": "2403760556",
+    "name": "Nguyễn Châu Anh",
+    "dateOfBirth": "21/10/2009",
+    "gender": "Nữ",
+    "class": "10A8",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760599",
+    "name": "Lê Đức Anh",
+    "dateOfBirth": "02/04/2009",
+    "gender": "Nam",
+    "class": "10A9",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760600",
+    "name": "Nguyễn Đức Anh",
+    "dateOfBirth": "24/08/2009",
+    "gender": "Nam",
+    "class": "10A9",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760484",
+    "name": "Nguyễn Phúc Đức Anh",
+    "dateOfBirth": "08/09/2009",
+    "gender": "Nam",
+    "class": "10A3",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760557",
+    "name": "Nguyễn Ngọc Duy Anh",
+    "dateOfBirth": "03/05/2009",
+    "gender": "Nam",
+    "class": "10A8",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760601",
+    "name": "Trần Duy Anh",
+    "dateOfBirth": "12/08/2009",
+    "gender": "Nam",
+    "class": "10A9",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403761008",
+    "name": "Trần Thắng Hoàng Anh",
+    "dateOfBirth": "12/10/2009",
+    "gender": "Nam",
+    "class": "10D2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760447",
+    "name": "Nguyễn Đức Kiên Anh",
+    "dateOfBirth": "29/09/2009",
+    "gender": "Nam",
+    "class": "10A2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760448",
+    "name": "Phạm Sỹ Kỳ Anh",
+    "dateOfBirth": "08/05/2009",
+    "gender": "Nam",
+    "class": "10A2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403761010",
+    "name": "Phạm Thị Ngọc Anh",
+    "dateOfBirth": "24/12/2009",
+    "gender": "Nữ",
+    "class": "10D2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760558",
+    "name": "Đào Thị Ngọc Anh",
+    "dateOfBirth": "01/08/2009",
+    "gender": "Nữ",
+    "class": "10A8",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760486",
+    "name": "Nguyễn Thế Quốc Anh",
+    "dateOfBirth": "04/08/2009",
+    "gender": "Nam",
+    "class": "10A3",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760449",
+    "name": "Lê Quỳnh Anh",
+    "dateOfBirth": "29/10/2009",
+    "gender": "Nữ",
+    "class": "10A2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760602",
+    "name": "Nguyễn Quỳnh Anh",
+    "dateOfBirth": "14/09/2009",
+    "gender": "Nữ",
+    "class": "10A9",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760603",
+    "name": "Đỗ Thế Anh",
+    "dateOfBirth": "23/11/2009",
+    "gender": "Nam",
+    "class": "10A9",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760413",
+    "name": "Nguyễn Thúy Anh",
+    "dateOfBirth": "03/02/2009",
+    "gender": "Nữ",
+    "class": "10A1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760559",
+    "name": "Nguyễn Tiến Anh",
+    "dateOfBirth": "01/12/2009",
+    "gender": "Nam",
+    "class": "10A8",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760604",
+    "name": "Nguyễn Hoàng Trang Anh",
+    "dateOfBirth": "05/03/2009",
+    "gender": "Nữ",
+    "class": "10A9",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760524",
+    "name": "Phạm Đỗ Tuấn Anh",
+    "dateOfBirth": "07/08/2009",
+    "gender": "Nam",
+    "class": "10A4",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760560",
+    "name": "Lê Nguyễn Tuấn Anh",
+    "dateOfBirth": "10/10/2009",
+    "gender": "Nam",
+    "class": "10A8",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760605",
+    "name": "Hoàng Việt Anh",
+    "dateOfBirth": "01/05/2009",
+    "gender": "Nam",
+    "class": "10A9",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760450",
+    "name": "Hồ Ngọc Ánh",
+    "dateOfBirth": "17/01/2009",
+    "gender": "Nữ",
+    "class": "10A2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760414",
+    "name": "Hoàng Duy Bách",
+    "dateOfBirth": "05/05/2009",
+    "gender": "Nam",
+    "class": "10A1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760562",
+    "name": "Đỗ Hoàng Bách",
+    "dateOfBirth": "23/09/2009",
+    "gender": "Nam",
+    "class": "10A8",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760563",
+    "name": "Vũ Hoàng Bách",
+    "dateOfBirth": "15/11/2009",
+    "gender": "Nam",
+    "class": "10A8",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760488",
+    "name": "Lương Hữu Bách",
+    "dateOfBirth": "05/03/2009",
+    "gender": "Nam",
+    "class": "10A3",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760564",
+    "name": "Nguyễn Xuân Bách",
+    "dateOfBirth": "28/01/2009",
+    "gender": "Nam",
+    "class": "10A8",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403761011",
+    "name": "Đặng Gia Bảo",
+    "dateOfBirth": "12/04/2009",
+    "gender": "Nam",
+    "class": "10D2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403761012",
+    "name": "Trần Đinh Gia Bảo",
+    "dateOfBirth": "10/04/2009",
+    "gender": "Nam",
+    "class": "10D2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760451",
+    "name": "Nguyễn Quốc Bảo",
+    "dateOfBirth": "18/10/2009",
+    "gender": "Nam",
+    "class": "10A2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760489",
+    "name": "Nguyễn Phú Bình",
+    "dateOfBirth": "13/11/2009",
+    "gender": "Nam",
+    "class": "10A3",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760606",
+    "name": "Nguyễn Văn Minh Châu",
+    "dateOfBirth": "21/12/2009",
+    "gender": "Nam",
+    "class": "10A9",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760452",
+    "name": "Bùi Diệp Chi",
+    "dateOfBirth": "11/06/2009",
+    "gender": "Nữ",
+    "class": "10A2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760607",
+    "name": "Hà Phương Chi",
+    "dateOfBirth": "22/02/2009",
+    "gender": "Nữ",
+    "class": "10A9",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760453",
+    "name": "Nguyễn Phương Chi",
+    "dateOfBirth": "03/12/2009",
+    "gender": "Nữ",
+    "class": "10A2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760608",
+    "name": "Đinh Vũ Trọng Chiến",
+    "dateOfBirth": "02/06/2009",
+    "gender": "Nam",
+    "class": "10A9",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760415",
+    "name": "Hà Đức Cường",
+    "dateOfBirth": "11/04/2009",
+    "gender": "Nam",
+    "class": "10A2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760490",
+    "name": "Phạm Thế Lê Cường",
+    "dateOfBirth": "01/01/2009",
+    "gender": "Nam",
+    "class": "10A3",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760491",
+    "name": "Vũ Ngọc Cường",
+    "dateOfBirth": "09/12/2009",
+    "gender": "Nam",
+    "class": "10A3",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403761017",
+    "name": "Nguyễn Trí Cường",
+    "dateOfBirth": "18/02/2009",
+    "gender": "Nam",
+    "class": "10D2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760529",
+    "name": "Vũ Việt Cường",
+    "dateOfBirth": "19/05/2009",
+    "gender": "Nam",
+    "class": "10A4",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760416",
+    "name": "Đặng Xuân Cường",
+    "dateOfBirth": "15/08/2009",
+    "gender": "Nam",
+    "class": "10A1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760609",
+    "name": "Hoàng Hải Đăng",
+    "dateOfBirth": "17/11/2009",
+    "gender": "Nam",
+    "class": "10A9",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760492",
+    "name": "Nguyễn Hải Đăng",
+    "dateOfBirth": "08/02/2009",
+    "gender": "Nam",
+    "class": "10A3",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760417",
+    "name": "Vũ Huy Đạt",
+    "dateOfBirth": "12/11/2009",
+    "gender": "Nam",
+    "class": "10A1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760493",
+    "name": "Đào Quốc Đạt",
+    "dateOfBirth": "09/09/2009",
+    "gender": "Nam",
+    "class": "10A3",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760610",
+    "name": "Hoàng Kim Thành Đạt",
+    "dateOfBirth": "26/03/2009",
+    "gender": "Nam",
+    "class": "10A9",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760494",
+    "name": "Ngô Thành Đạt",
+    "dateOfBirth": "08/03/2009",
+    "gender": "Nam",
+    "class": "10A3",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760418",
+    "name": "Trương Thành Đạt",
+    "dateOfBirth": "01/11/2009",
+    "gender": "Nam",
+    "class": "10A1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760940",
+    "name": "Cao Tiến Đạt",
+    "dateOfBirth": "30/07/2009",
+    "gender": "Nam",
+    "class": "10A9",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760454",
+    "name": "Nguyễn Tiến Đạt",
+    "dateOfBirth": "30/04/2009",
+    "gender": "Nam",
+    "class": "10A2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760566",
+    "name": "Nguyễn Tiến Đạt",
+    "dateOfBirth": "24/06/2009",
+    "gender": "Nam",
+    "class": "10A8",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760455",
+    "name": "Trần Trọng Đạt",
+    "dateOfBirth": "17/07/2009",
+    "gender": "Nam",
+    "class": "10A2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403761019",
+    "name": "Phạm Thành Đồng",
+    "dateOfBirth": "25/01/2009",
+    "gender": "Nam",
+    "class": "10A1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760568",
+    "name": "Nguyễn Hoàng Anh Đức",
+    "dateOfBirth": "03/11/2009",
+    "gender": "Nam",
+    "class": "10A8",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760456",
+    "name": "Phạm Anh Đức",
+    "dateOfBirth": "11/07/2009",
+    "gender": "Nam",
+    "class": "10A2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760419",
+    "name": "Bùi Mạnh Đức",
+    "dateOfBirth": "13/02/2009",
+    "gender": "Nam",
+    "class": "10A1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760457",
+    "name": "Nguyễn Văn Minh Đức",
+    "dateOfBirth": "16/07/2009",
+    "gender": "Nam",
+    "class": "10A2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760495",
+    "name": "Vũ Việt Đức",
+    "dateOfBirth": "30/11/2009",
+    "gender": "Nam",
+    "class": "10A3",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760458",
+    "name": "Vũ Chí Dũng",
+    "dateOfBirth": "16/09/2009",
+    "gender": "Nam",
+    "class": "10A2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760420",
+    "name": "Nguyễn Lâm Dũng",
+    "dateOfBirth": "06/08/2009",
+    "gender": "Nam",
+    "class": "10A1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760459",
+    "name": "Hoàng Tiến Dũng",
+    "dateOfBirth": "26/08/2009",
+    "gender": "Nam",
+    "class": "10A2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760460",
+    "name": "Nguyễn Tiến Dũng",
+    "dateOfBirth": "06/09/2009",
+    "gender": "Nam",
+    "class": "10A2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760461",
+    "name": "Nguyễn Trí Dũng",
+    "dateOfBirth": "19/11/2009",
+    "gender": "Nam",
+    "class": "10A1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760462",
+    "name": "Vũ Trí Dũng",
+    "dateOfBirth": "14/02/2009",
+    "gender": "Nam",
+    "class": "10A2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760421",
+    "name": "Quang An Dương",
+    "dateOfBirth": "08/07/2009",
+    "gender": "Nam",
+    "class": "10A1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760530",
+    "name": "Ngô Sỹ An Dương",
+    "dateOfBirth": "12/01/2009",
+    "gender": "Nam",
+    "class": "10A4",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760497",
+    "name": "Văn Bạch Dương",
+    "dateOfBirth": "24/09/2009",
+    "gender": "Nữ",
+    "class": "10A3",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760531",
+    "name": "Phạm Bình Dương",
+    "dateOfBirth": "12/12/2009",
+    "gender": "Nam",
+    "class": "10A4",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760611",
+    "name": "Đồng Đức Dương",
+    "dateOfBirth": "09/04/2009",
+    "gender": "Nam",
+    "class": "10A9",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760570",
+    "name": "Đinh Nhất Dương",
+    "dateOfBirth": "09/08/2009",
+    "gender": "Nam",
+    "class": "10A8",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403761022",
+    "name": "Lê Thái Dương",
+    "dateOfBirth": "20/12/2009",
+    "gender": "Nam",
+    "class": "10D2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760612",
+    "name": "Nguyễn Thành Dương",
+    "dateOfBirth": "06/08/2009",
+    "gender": "Nam",
+    "class": "10A9",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760498",
+    "name": "Nguyễn Thùy Dương",
+    "dateOfBirth": "13/01/2009",
+    "gender": "Nữ",
+    "class": "10A3",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403761023",
+    "name": "Vũ Thùy Dương",
+    "dateOfBirth": "14/02/2009",
+    "gender": "Nữ",
+    "class": "10D2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760464",
+    "name": "Nguyễn Tùng Dương",
+    "dateOfBirth": "14/04/2009",
+    "gender": "Nam",
+    "class": "10A2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760422",
+    "name": "Đào Kỳ Duyên",
+    "dateOfBirth": "30/01/2009",
+    "gender": "Nữ",
+    "class": "10A1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403761024",
+    "name": "Vũ Hương Giang",
+    "dateOfBirth": "28/12/2009",
+    "gender": "Nữ",
+    "class": "10D2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760613",
+    "name": "Nguyễn Vũ Nam Giang",
+    "dateOfBirth": "03/12/2009",
+    "gender": "Nam",
+    "class": "10A9",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760614",
+    "name": "Đinh Trường Giang",
+    "dateOfBirth": "23/07/2009",
+    "gender": "Nam",
+    "class": "10A9",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760615",
+    "name": "Nguyễn Hải Hà",
+    "dateOfBirth": "12/06/2009",
+    "gender": "Nữ",
+    "class": "10A9",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760616",
+    "name": "Nguyễn Hứa Vân Hà",
+    "dateOfBirth": "23/07/2009",
+    "gender": "Nữ",
+    "class": "10A9",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760423",
+    "name": "Lê Đức Hải",
+    "dateOfBirth": "21/07/2009",
+    "gender": "Nam",
+    "class": "10A1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760571",
+    "name": "Nguyễn Đức Hải",
+    "dateOfBirth": "17/04/2009",
+    "gender": "Nam",
+    "class": "10A8",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760617",
+    "name": "Nguyễn Đức Minh Hải",
+    "dateOfBirth": "27/08/2009",
+    "gender": "Nam",
+    "class": "10A9",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760499",
+    "name": "Lương Gia Hân",
+    "dateOfBirth": "13/10/2009",
+    "gender": "Nữ",
+    "class": "10A3",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760573",
+    "name": "Đinh Thị Hạnh",
+    "dateOfBirth": "09/04/2009",
+    "gender": "Nữ",
+    "class": "10A8",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760574",
+    "name": "Đỗ Vũ Mạnh Hiển",
+    "dateOfBirth": "12/06/2009",
+    "gender": "Nam",
+    "class": "10A8",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760501",
+    "name": "Đỗ Chí Hiếu",
+    "dateOfBirth": "30/10/2009",
+    "gender": "Nam",
+    "class": "10A3",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760618",
+    "name": "Đỗ Đức Hiếu",
+    "dateOfBirth": "08/02/2009",
+    "gender": "Nam",
+    "class": "10A9",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760502",
+    "name": "Lê Minh Hiếu",
+    "dateOfBirth": "31/10/2009",
+    "gender": "Nam",
+    "class": "10A3",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760575",
+    "name": "Nguyễn Minh Hiếu",
+    "dateOfBirth": "16/07/2009",
+    "gender": "Nam",
+    "class": "10A8",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760619",
+    "name": "Lê Trung Hiếu",
+    "dateOfBirth": "22/09/2009",
+    "gender": "Nam",
+    "class": "10A9",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760576",
+    "name": "Nguyễn Minh Hoàng",
+    "dateOfBirth": "03/07/2009",
+    "gender": "Nam",
+    "class": "10A8",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760503",
+    "name": "Nguyễn Thái Hoàng",
+    "dateOfBirth": "20/01/2009",
+    "gender": "Nam",
+    "class": "10A3",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760424",
+    "name": "Nguyễn Thái Hùng",
+    "dateOfBirth": "19/11/2009",
+    "gender": "Nam",
+    "class": "10A1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760425",
+    "name": "Bùi Khánh Hưng",
+    "dateOfBirth": "05/02/2009",
+    "gender": "Nam",
+    "class": "10A1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760465",
+    "name": "Đinh Ngọc Hưng",
+    "dateOfBirth": "21/05/2009",
+    "gender": "Nam",
+    "class": "10A2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760621",
+    "name": "Trần Quang Hưng",
+    "dateOfBirth": "25/04/2009",
+    "gender": "Nam",
+    "class": "10A9",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760577",
+    "name": "Đào Thu Hương",
+    "dateOfBirth": "03/10/2009",
+    "gender": "Nữ",
+    "class": "10A8",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760426",
+    "name": "Lê Minh Huy",
+    "dateOfBirth": "09/12/2009",
+    "gender": "Nam",
+    "class": "10A1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760427",
+    "name": "Nguyễn Nhật Huy",
+    "dateOfBirth": "30/04/2009",
+    "gender": "Nam",
+    "class": "10A1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760428",
+    "name": "Phạm Nhật Huy",
+    "dateOfBirth": "04/07/2009",
+    "gender": "Nam",
+    "class": "10A1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760622",
+    "name": "Phạm Quang Huy",
+    "dateOfBirth": "16/04/2009",
+    "gender": "Nam",
+    "class": "10A9",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760429",
+    "name": "Trần Quang Huy",
+    "dateOfBirth": "22/07/2009",
+    "gender": "Nam",
+    "class": "10A1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760430",
+    "name": "Đặng Thế Huy",
+    "dateOfBirth": "10/07/2009",
+    "gender": "Nam",
+    "class": "10A1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760578",
+    "name": "Hoàng Trung Huy",
+    "dateOfBirth": "15/07/2009",
+    "gender": "Nam",
+    "class": "10A8",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760431",
+    "name": "Lưu Tuấn Huy",
+    "dateOfBirth": "02/01/2009",
+    "gender": "Nam",
+    "class": "10A1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760432",
+    "name": "Nguyễn Khánh Huyền",
+    "dateOfBirth": "23/01/2009",
+    "gender": "Nữ",
+    "class": "10A1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760535",
+    "name": "Nguyễn Thị Mai Huyền",
+    "dateOfBirth": "31/12/2009",
+    "gender": "Nữ",
+    "class": "10A4",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760433",
+    "name": "Vũ Thị Thanh Huyền",
+    "dateOfBirth": "24/04/2009",
+    "gender": "Nữ",
+    "class": "10A1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760504",
+    "name": "Trần Phúc Khang",
+    "dateOfBirth": "28/11/2009",
+    "gender": "Nam",
+    "class": "10A3",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760505",
+    "name": "Vương Duy Khanh",
+    "dateOfBirth": "01/06/2009",
+    "gender": "Nam",
+    "class": "10A3",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760579",
+    "name": "Tăng Tự Anh Khoa",
+    "dateOfBirth": "08/11/2009",
+    "gender": "Nam",
+    "class": "10A8",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760466",
+    "name": "Hà Đức Kiên",
+    "dateOfBirth": "25/06/2009",
+    "gender": "Nam",
+    "class": "10A2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403761027",
+    "name": "Vũ Đức Kiên",
+    "dateOfBirth": "26/02/2009",
+    "gender": "Nam",
+    "class": "10D2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760580",
+    "name": "Nguyễn Minh Kiên",
+    "dateOfBirth": "11/03/2009",
+    "gender": "Nam",
+    "class": "10A8",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760467",
+    "name": "Nguyễn Trung Kiên",
+    "dateOfBirth": "01/05/2009",
+    "gender": "Nam",
+    "class": "10A2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760581",
+    "name": "Nguyễn Phúc Lâm",
+    "dateOfBirth": "17/04/2009",
+    "gender": "Nam",
+    "class": "10A8",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760582",
+    "name": "Trần Quang Lâm",
+    "dateOfBirth": "18/07/2009",
+    "gender": "Nam",
+    "class": "10A8",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760623",
+    "name": "Bùi Khánh Linh",
+    "dateOfBirth": "29/06/2009",
+    "gender": "Nữ",
+    "class": "10A9",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760434",
+    "name": "Vũ Khánh Linh",
+    "dateOfBirth": "02/09/2009",
+    "gender": "Nữ",
+    "class": "10A1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760540",
+    "name": "Phạm Đức Lộc",
+    "dateOfBirth": "29/04/2009",
+    "gender": "Nam",
+    "class": "10A4",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760506",
+    "name": "Chu Minh Long",
+    "dateOfBirth": "18/07/2009",
+    "gender": "Nam",
+    "class": "10A3",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760468",
+    "name": "Hoàng Đức Nhật Long",
+    "dateOfBirth": "26/08/2009",
+    "gender": "Nam",
+    "class": "10A2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760583",
+    "name": "Cao Thanh Long",
+    "dateOfBirth": "15/01/2009",
+    "gender": "Nam",
+    "class": "10A8",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760469",
+    "name": "Nguyễn Tiến Long",
+    "dateOfBirth": "05/04/2009",
+    "gender": "Nam",
+    "class": "10A2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760542",
+    "name": "Nguyễn Hữu Vũ Long",
+    "dateOfBirth": "02/12/2009",
+    "gender": "Nam",
+    "class": "10A4",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760470",
+    "name": "Nguyễn Thanh Mai",
+    "dateOfBirth": "13/06/2009",
+    "gender": "Nữ",
+    "class": "10A2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760435",
+    "name": "Nguyễn Thị Thanh Mai",
+    "dateOfBirth": "17/01/2009",
+    "gender": "Nữ",
+    "class": "10A1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760507",
+    "name": "Nguyễn Ngọc Xuân Mai",
+    "dateOfBirth": "10/12/2009",
+    "gender": "Nữ",
+    "class": "10A3",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760624",
+    "name": "Nguyễn Duy Mạnh",
+    "dateOfBirth": "02/01/2009",
+    "gender": "Nam",
+    "class": "10A9",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760471",
+    "name": "Dương Bình Minh",
+    "dateOfBirth": "01/03/2009",
+    "gender": "Nam",
+    "class": "10A2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760584",
+    "name": "Lê Bình Minh",
+    "dateOfBirth": "26/10/2009",
+    "gender": "Nam",
+    "class": "10A8",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760436",
+    "name": "Nguyễn Công Minh",
+    "dateOfBirth": "20/06/2009",
+    "gender": "Nam",
+    "class": "10A1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760585",
+    "name": "Lê Gia Minh",
+    "dateOfBirth": "08/09/2009",
+    "gender": "Nam",
+    "class": "10A8",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760544",
+    "name": "Hoàng Hải Minh",
+    "dateOfBirth": "15/03/2009",
+    "gender": "Nam",
+    "class": "10A4",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760472",
+    "name": "Đàm Nhật Minh",
+    "dateOfBirth": "14/10/2009",
+    "gender": "Nam",
+    "class": "10A2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760473",
+    "name": "Nguyễn Quang Minh",
+    "dateOfBirth": "16/08/2009",
+    "gender": "Nam",
+    "class": "10A2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760474",
+    "name": "Nguyễn Vũ Quang Minh",
+    "dateOfBirth": "08/12/2009",
+    "gender": "Nam",
+    "class": "10A2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760545",
+    "name": "Nguyễn Tiến Minh",
+    "dateOfBirth": "13/09/2009",
+    "gender": "Nam",
+    "class": "10A4",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760586",
+    "name": "Phạm Nguyễn Trà My",
+    "dateOfBirth": "14/09/2009",
+    "gender": "Nữ",
+    "class": "10A8",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760437",
+    "name": "Vũ Đăng Nam",
+    "dateOfBirth": "25/10/2008",
+    "gender": "Nam",
+    "class": "10A1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760508",
+    "name": "Vương Đình Nam",
+    "dateOfBirth": "06/03/2009",
+    "gender": "Nam",
+    "class": "10A3",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760625",
+    "name": "Đỗ Hải Nam",
+    "dateOfBirth": "22/12/2009",
+    "gender": "Nam",
+    "class": "10A9",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760509",
+    "name": "Nguyễn Hoàng Hải Nam",
+    "dateOfBirth": "24/12/2009",
+    "gender": "Nam",
+    "class": "10A3",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760626",
+    "name": "Đinh Khánh Nam",
+    "dateOfBirth": "08/05/2009",
+    "gender": "Nam",
+    "class": "10A9",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760627",
+    "name": "Trần Phương Nam",
+    "dateOfBirth": "21/04/2009",
+    "gender": "Nam",
+    "class": "10A9",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760438",
+    "name": "Nguyễn Vũ Kim Ngân",
+    "dateOfBirth": "03/01/2009",
+    "gender": "Nữ",
+    "class": "10A1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760628",
+    "name": "Nguyễn Duy Nguyên",
+    "dateOfBirth": "04/09/2009",
+    "gender": "Nam",
+    "class": "10A9",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760629",
+    "name": "Đỗ Thảo Nguyên",
+    "dateOfBirth": "22/12/2009",
+    "gender": "Nam",
+    "class": "10A9",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760587",
+    "name": "Nguyễn Vân Nhi",
+    "dateOfBirth": "27/04/2009",
+    "gender": "Nữ",
+    "class": "10A8",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760475",
+    "name": "Phạm Văn Ninh",
+    "dateOfBirth": "19/08/2009",
+    "gender": "Nam",
+    "class": "10A2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403761031",
+    "name": "Nguyễn Đông Phong",
+    "dateOfBirth": "06/10/2009",
+    "gender": "Nam",
+    "class": "10D2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760588",
+    "name": "Bùi Huy Nam Phong",
+    "dateOfBirth": "22/01/2009",
+    "gender": "Nam",
+    "class": "10A8",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760439",
+    "name": "Nguyễn Nam Phong",
+    "dateOfBirth": "08/10/2009",
+    "gender": "Nam",
+    "class": "10A1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2406312469",
+    "name": "Lê Đắc Phúc",
+    "dateOfBirth": "10/03/2009",
+    "gender": "Nam",
+    "class": "10A1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760590",
+    "name": "Trịnh Hoàng Phúc",
+    "dateOfBirth": "22/01/2009",
+    "gender": "Nam",
+    "class": "10A8",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760510",
+    "name": "Đặng Hồng Phúc",
+    "dateOfBirth": "29/05/2009",
+    "gender": "Nam",
+    "class": "10A3",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760511",
+    "name": "Nguyễn Minh Phúc",
+    "dateOfBirth": "20/11/2009",
+    "gender": "Nam",
+    "class": "10A3",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760920",
+    "name": "Bùi Nguyên Phúc",
+    "dateOfBirth": "27/10/2009",
+    "gender": "Nam",
+    "class": "10A9",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760512",
+    "name": "Nguyễn Văn Phúc",
+    "dateOfBirth": "30/10/2009",
+    "gender": "Nam",
+    "class": "10A3",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760476",
+    "name": "Đinh Thị Hà Phương",
+    "dateOfBirth": "13/02/2009",
+    "gender": "Nữ",
+    "class": "10A2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760591",
+    "name": "Hoàng Anh Quân",
+    "dateOfBirth": "02/09/2009",
+    "gender": "Nam",
+    "class": "10A8",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760592",
+    "name": "Nguyễn Hoàng Quân",
+    "dateOfBirth": "20/10/2008",
+    "gender": "Nam",
+    "class": "10A8",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760513",
+    "name": "Nguyễn Hưng Quân",
+    "dateOfBirth": "30/10/2009",
+    "gender": "Nam",
+    "class": "10A3",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760593",
+    "name": "Nguyễn Mạnh Quân",
+    "dateOfBirth": "24/04/2009",
+    "gender": "Nam",
+    "class": "10A8",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760440",
+    "name": "Hoàng Minh Quân",
+    "dateOfBirth": "05/01/2009",
+    "gender": "Nam",
+    "class": "10A1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760441",
+    "name": "Bùi Bảo Quang",
+    "dateOfBirth": "26/05/2009",
+    "gender": "Nam",
+    "class": "10A1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760632",
+    "name": "Đinh Tiến Quang",
+    "dateOfBirth": "29/03/2009",
+    "gender": "Nam",
+    "class": "10A9",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760477",
+    "name": "Nguyễn Công Sơn",
+    "dateOfBirth": "14/09/2009",
+    "gender": "Nam",
+    "class": "10A2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760478",
+    "name": "Nguyễn Hoàng Thái Sơn",
+    "dateOfBirth": "18/01/2009",
+    "gender": "Nam",
+    "class": "10A2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403761035",
+    "name": "Bùi Hữu Thái Sơn",
+    "dateOfBirth": "16/10/2009",
+    "gender": "Nam",
+    "class": "10D2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760633",
+    "name": "Trịnh Đức Tài",
+    "dateOfBirth": "02/10/2009",
+    "gender": "Nam",
+    "class": "10A9",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760553",
+    "name": "Nguyễn Tiến Tài",
+    "dateOfBirth": "08/02/2009",
+    "gender": "Nam",
+    "class": "10A4",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760594",
+    "name": "Nghiêm Trọng Thắng",
+    "dateOfBirth": "03/10/2009",
+    "gender": "Nam",
+    "class": "10A8",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760634",
+    "name": "Đinh Vũ Trọng Thắng",
+    "dateOfBirth": "02/06/2009",
+    "gender": "Nam",
+    "class": "10A9",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760479",
+    "name": "Trần Quốc Thanh",
+    "dateOfBirth": "09/03/2009",
+    "gender": "Nam",
+    "class": "10A2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760595",
+    "name": "Nguyễn Đắc Thành",
+    "dateOfBirth": "10/09/2009",
+    "gender": "Nam",
+    "class": "10A8",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2404630394",
+    "name": "Đào Trung Thành",
+    "dateOfBirth": "01/09/2009",
+    "gender": "Nam",
+    "class": "10A9",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760442",
+    "name": "Dương Phương Thảo",
+    "dateOfBirth": "26/02/2009",
+    "gender": "Nữ",
+    "class": "10A1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760635",
+    "name": "Đinh Quỳnh Thu",
+    "dateOfBirth": "07/11/2009",
+    "gender": "Nữ",
+    "class": "10A9",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760443",
+    "name": "Nguyễn Ngọc Anh Thư",
+    "dateOfBirth": "31/08/2009",
+    "gender": "Nữ",
+    "class": "10A1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760555",
+    "name": "Phạm Quang Tiến",
+    "dateOfBirth": "10/05/2009",
+    "gender": "Nam",
+    "class": "10A4",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760515",
+    "name": "Nguyễn Thị Quỳnh Trang",
+    "dateOfBirth": "14/09/2009",
+    "gender": "Nữ",
+    "class": "10A3",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760514",
+    "name": "Phạm Thị Quỳnh Trang",
+    "dateOfBirth": "18/01/2009",
+    "gender": "Nữ",
+    "class": "10A3",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760516",
+    "name": "Lê Đăng Trí",
+    "dateOfBirth": "08/11/2009",
+    "gender": "Nam",
+    "class": "10A3",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760517",
+    "name": "Vũ Minh Trí",
+    "dateOfBirth": "15/05/2009",
+    "gender": "Nam",
+    "class": "10A3",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403761036",
+    "name": "Vũ Phạm Vân Trinh",
+    "dateOfBirth": "19/09/2009",
+    "gender": "Nữ",
+    "class": "10D2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760480",
+    "name": "Lê Đình Trường",
+    "dateOfBirth": "14/06/2009",
+    "gender": "Nam",
+    "class": "10A2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760481",
+    "name": "Ngô Anh Tú",
+    "dateOfBirth": "06/04/2009",
+    "gender": "Nam",
+    "class": "10A2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760518",
+    "name": "Trần Đức Tuấn",
+    "dateOfBirth": "27/08/2009",
+    "gender": "Nam",
+    "class": "10A3",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760482",
+    "name": "Phạm Đăng Tùng",
+    "dateOfBirth": "07/02/2009",
+    "gender": "Nam",
+    "class": "10A2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760444",
+    "name": "Trần Lê Thanh Tùng",
+    "dateOfBirth": "21/05/2009",
+    "gender": "Nam",
+    "class": "10A1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760597",
+    "name": "Hoàng Mai Uyên",
+    "dateOfBirth": "30/12/2009",
+    "gender": "Nữ",
+    "class": "10A8",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760636",
+    "name": "Nguyễn Đào Phương Uyên",
+    "dateOfBirth": "10/12/2009",
+    "gender": "Nữ",
+    "class": "10A9",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760637",
+    "name": "Hoàng Thanh Vân",
+    "dateOfBirth": "14/09/2009",
+    "gender": "Nữ",
+    "class": "10A9",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760638",
+    "name": "Đinh Vũ Tường Vi",
+    "dateOfBirth": "02/11/2009",
+    "gender": "Nữ",
+    "class": "10A9",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760520",
+    "name": "Nguyễn Danh Việt",
+    "dateOfBirth": "28/12/2009",
+    "gender": "Nam",
+    "class": "10A3",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760445",
+    "name": "Đào Quang Vinh",
+    "dateOfBirth": "22/05/2009",
+    "gender": "Nam",
+    "class": "10A1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760446",
+    "name": "Đinh Quang Vinh",
+    "dateOfBirth": "17/03/2009",
+    "gender": "Nam",
+    "class": "10A1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760639",
+    "name": "Ban Vũ Huyền Vy",
+    "dateOfBirth": "15/04/2009",
+    "gender": "Nữ",
+    "class": "10A9",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403761037",
+    "name": "Nguyễn Hà Minh Vy",
+    "dateOfBirth": "11/06/2009",
+    "gender": "Nữ",
+    "class": "10D2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760598",
+    "name": "Nguyễn Ngọc Phương Vy",
+    "dateOfBirth": "17/11/2009",
+    "gender": "Nữ",
+    "class": "10A8",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760483",
+    "name": "Lê Hải Yến",
+    "dateOfBirth": "17/12/2009",
+    "gender": "Nữ",
+    "class": "10A2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760640",
+    "name": "Đào Ngọc Yến",
+    "dateOfBirth": "18/12/2009",
+    "gender": "Nữ",
+    "class": "10A9",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760521",
+    "name": "Nguyễn Danh Đông An",
+    "dateOfBirth": "11/10/2009",
+    "gender": "Nam",
+    "class": "10A4",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760930",
+    "name": "Đoàn Hải An",
+    "dateOfBirth": "23/11/2009",
+    "gender": "Nam",
+    "class": "10C9",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760809",
+    "name": "Nguyễn Trúc An",
+    "dateOfBirth": "14/12/2009",
+    "gender": "Nữ",
+    "class": "10C2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403761005",
+    "name": "Hứa Bảo Anh",
+    "dateOfBirth": "12/08/2009",
+    "gender": "Nữ",
+    "class": "10D2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760766",
+    "name": "Đỗ Nguyễn Diệu Anh",
+    "dateOfBirth": "01/11/2009",
+    "gender": "Nữ",
+    "class": "10C12",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760677",
+    "name": "Đinh Đức Anh",
+    "dateOfBirth": "21/10/2009",
+    "gender": "Nam",
+    "class": "10C10",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760722",
+    "name": "Nguyễn Đức Anh",
+    "dateOfBirth": "18/06/2009",
+    "gender": "Nam",
+    "class": "10C11",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760641",
+    "name": "Tạ Vũ Đức Anh",
+    "dateOfBirth": "24/10/2009",
+    "gender": "Nam",
+    "class": "10C1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403761006",
+    "name": "Vũ Diệu Hà Anh",
+    "dateOfBirth": "02/06/2009",
+    "gender": "Nữ",
+    "class": "10D2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760972",
+    "name": "Đỗ Hà Anh",
+    "dateOfBirth": "18/09/2009",
+    "gender": "Nữ",
+    "class": "10D1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760678",
+    "name": "Bùi Ngọc Hà Anh",
+    "dateOfBirth": "11/06/2009",
+    "gender": "Nữ",
+    "class": "10C10",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760931",
+    "name": "Nguyễn Hà Anh",
+    "dateOfBirth": "11/09/2009",
+    "gender": "Nữ",
+    "class": "10C9",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760973",
+    "name": "Nguyễn Hà Anh",
+    "dateOfBirth": "12/02/2009",
+    "gender": "Nữ",
+    "class": "10D1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760885",
+    "name": "Nguyễn Hà Anh",
+    "dateOfBirth": "07/08/2009",
+    "gender": "Nữ",
+    "class": "10C8",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760679",
+    "name": "Phạm Hà Anh",
+    "dateOfBirth": "20/10/2009",
+    "gender": "Nữ",
+    "class": "10C10",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760767",
+    "name": "Phạm Hà Anh",
+    "dateOfBirth": "20/08/2009",
+    "gender": "Nữ",
+    "class": "10C12",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760768",
+    "name": "Lương Phúc Hà Anh",
+    "dateOfBirth": "11/07/2009",
+    "gender": "Nữ",
+    "class": "10C9",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760642",
+    "name": "Đoàn Hải Anh",
+    "dateOfBirth": "23/11/2009",
+    "gender": "Nam",
+    "class": "10C1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403761007",
+    "name": "Nguyễn Ngọc Hải Anh",
+    "dateOfBirth": "18/11/2009",
+    "gender": "Nữ",
+    "class": "10D2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760810",
+    "name": "Nguyễn Hải Anh",
+    "dateOfBirth": "17/09/2009",
+    "gender": "Nam",
+    "class": "10C2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760847",
+    "name": "Nguyễn Hải Anh",
+    "dateOfBirth": "02/08/2009",
+    "gender": "Nữ",
+    "class": "10C3",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760848",
+    "name": "Đinh Nguyễn Hải Anh",
+    "dateOfBirth": "14/12/2009",
+    "gender": "Nữ",
+    "class": "10C3",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760680",
+    "name": "Nguyễn Thị Hải Anh",
+    "dateOfBirth": "16/05/2009",
+    "gender": "Nữ",
+    "class": "10C10",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760932",
+    "name": "Lý Hoàng Anh",
+    "dateOfBirth": "18/06/2008",
+    "gender": "Nữ",
+    "class": "10C9",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760770",
+    "name": "Nguyễn Hoàng Anh",
+    "dateOfBirth": "30/07/2009",
+    "gender": "Nam",
+    "class": "10C12",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760769",
+    "name": "Nguyễn Hoàng Anh",
+    "dateOfBirth": "24/09/2009",
+    "gender": "Nam",
+    "class": "10C12",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760485",
+    "name": "Phạm Hoàng Anh",
+    "dateOfBirth": "10/08/2009",
+    "gender": "Nam",
+    "class": "10A3",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760522",
+    "name": "Phan Hồng Anh",
+    "dateOfBirth": "21/04/2009",
+    "gender": "Nam",
+    "class": "10A4",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760643",
+    "name": "Trương Kim Anh",
+    "dateOfBirth": "02/02/2009",
+    "gender": "Nữ",
+    "class": "10C1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760681",
+    "name": "Phạm Lan Anh",
+    "dateOfBirth": "19/10/2009",
+    "gender": "Nữ",
+    "class": "10C10",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760771",
+    "name": "Phạm Lan Anh",
+    "dateOfBirth": "30/11/2009",
+    "gender": "Nữ",
+    "class": "10C12",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760644",
+    "name": "Vũ Lan Anh",
+    "dateOfBirth": "07/09/2009",
+    "gender": "Nữ",
+    "class": "10C1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760723",
+    "name": "Hoàng Thị Mai Anh",
+    "dateOfBirth": "12/09/2009",
+    "gender": "Nữ",
+    "class": "10C11",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760974",
+    "name": "Trần Mai Anh",
+    "dateOfBirth": "19/11/2009",
+    "gender": "Nữ",
+    "class": "10D1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760772",
+    "name": "Hoàng Minh Anh",
+    "dateOfBirth": "01/01/2009",
+    "gender": "Nữ",
+    "class": "10C12",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760849",
+    "name": "Bùi Ngọc Minh Anh",
+    "dateOfBirth": "25/12/2009",
+    "gender": "Nữ",
+    "class": "10C3",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760933",
+    "name": "Hồ Ngọc Minh Anh",
+    "dateOfBirth": "02/11/2009",
+    "gender": "Nữ",
+    "class": "10C9",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760645",
+    "name": "Trần Ngọc Minh Anh",
+    "dateOfBirth": "27/09/2009",
+    "gender": "Nữ",
+    "class": "10C1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760811",
+    "name": "Nguyễn Minh Anh",
+    "dateOfBirth": "26/09/2009",
+    "gender": "Nữ",
+    "class": "10C2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760975",
+    "name": "Nguyễn Minh Anh",
+    "dateOfBirth": "11/04/2009",
+    "gender": "Nữ",
+    "class": "10D1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760976",
+    "name": "Nguyễn Minh Anh",
+    "dateOfBirth": "21/12/2009",
+    "gender": "Nữ",
+    "class": "10D1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403761009",
+    "name": "Nguyễn Minh Anh",
+    "dateOfBirth": "11/10/2009",
+    "gender": "Nữ",
+    "class": "10D2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760724",
+    "name": "Trương Minh Anh",
+    "dateOfBirth": "20/06/2009",
+    "gender": "Nữ",
+    "class": "10C11",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760977",
+    "name": "Võ Minh Anh",
+    "dateOfBirth": "27/06/2009",
+    "gender": "Nữ",
+    "class": "10D1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760725",
+    "name": "Võ Minh Anh",
+    "dateOfBirth": "10/04/2009",
+    "gender": "Nữ",
+    "class": "10C11",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760978",
+    "name": "Hoàng Ngọc Anh",
+    "dateOfBirth": "05/02/2009",
+    "gender": "Nữ",
+    "class": "10D1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760812",
+    "name": "Vũ Nguyên Anh",
+    "dateOfBirth": "07/06/2009",
+    "gender": "Nữ",
+    "class": "10C2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760646",
+    "name": "Phạm Phan Anh",
+    "dateOfBirth": "29/10/2009",
+    "gender": "Nam",
+    "class": "10C1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760523",
+    "name": "Đoàn Phúc Anh",
+    "dateOfBirth": "09/08/2009",
+    "gender": "Nam",
+    "class": "10A4",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760682",
+    "name": "Bùi Phương Anh",
+    "dateOfBirth": "13/01/2009",
+    "gender": "Nữ",
+    "class": "10C10",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760979",
+    "name": "Nguyễn Phương Anh",
+    "dateOfBirth": "08/03/2009",
+    "gender": "Nữ",
+    "class": "10D1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760886",
+    "name": "Nguyễn Phương Anh",
+    "dateOfBirth": "23/11/2009",
+    "gender": "Nữ",
+    "class": "10C8",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760683",
+    "name": "Trương Thị Phương Anh",
+    "dateOfBirth": "05/01/2009",
+    "gender": "Nữ",
+    "class": "10C10",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760773",
+    "name": "Lê Thị Phương Anh",
+    "dateOfBirth": "07/12/2009",
+    "gender": "Nữ",
+    "class": "10C12",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760980",
+    "name": "Nguyễn Quốc Anh",
+    "dateOfBirth": "06/09/2009",
+    "gender": "Nam",
+    "class": "10D1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760684",
+    "name": "Đào Quỳnh Anh",
+    "dateOfBirth": "22/04/2009",
+    "gender": "Nữ",
+    "class": "10C10",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760685",
+    "name": "Nguyễn Quỳnh Anh",
+    "dateOfBirth": "24/01/2009",
+    "gender": "Nữ",
+    "class": "10C10",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760686",
+    "name": "Nguyễn Quỳnh Anh",
+    "dateOfBirth": "07/09/2009",
+    "gender": "Nữ",
+    "class": "10C10",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760774",
+    "name": "Nguyễn Quỳnh Anh",
+    "dateOfBirth": "29/04/2009",
+    "gender": "Nữ",
+    "class": "10C12",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760981",
+    "name": "Phạm Quỳnh Anh",
+    "dateOfBirth": "13/11/2009",
+    "gender": "Nữ",
+    "class": "10D1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760982",
+    "name": "Phan Quỳnh Anh",
+    "dateOfBirth": "08/11/2009",
+    "gender": "Nữ",
+    "class": "10D1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760887",
+    "name": "Trần Quỳnh Anh",
+    "dateOfBirth": "03/11/2009",
+    "gender": "Nữ",
+    "class": "10C8",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760647",
+    "name": "Vũ Quỳnh Anh",
+    "dateOfBirth": "06/09/2009",
+    "gender": "Nữ",
+    "class": "10C1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760487",
+    "name": "Nguyễn Thục Anh",
+    "dateOfBirth": "26/12/2009",
+    "gender": "Nữ",
+    "class": "10A3",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760775",
+    "name": "Nguyễn Trâm Anh",
+    "dateOfBirth": "23/01/2009",
+    "gender": "Nữ",
+    "class": "10C12",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760648",
+    "name": "Nguyễn Ngọc Tuấn Anh",
+    "dateOfBirth": "13/05/2009",
+    "gender": "Nam",
+    "class": "10C1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760888",
+    "name": "Trần Tuấn Anh",
+    "dateOfBirth": "01/08/2009",
+    "gender": "Nam",
+    "class": "10C8",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760776",
+    "name": "Đinh Việt Anh",
+    "dateOfBirth": "06/04/2009",
+    "gender": "Nam",
+    "class": "10C12",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760726",
+    "name": "Đinh Việt Anh",
+    "dateOfBirth": "16/02/2009",
+    "gender": "Nam",
+    "class": "10C11",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760649",
+    "name": "Nguyễn Việt Anh",
+    "dateOfBirth": "23/09/2009",
+    "gender": "Nam",
+    "class": "10C1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760687",
+    "name": "Nguyễn Hồng Ánh",
+    "dateOfBirth": "09/04/2009",
+    "gender": "Nữ",
+    "class": "10C10",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760688",
+    "name": "Nguyễn Hà Minh Ánh",
+    "dateOfBirth": "23/02/2009",
+    "gender": "Nữ",
+    "class": "10C10",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760934",
+    "name": "Nguyễn Ngọc Ánh",
+    "dateOfBirth": "21/12/2009",
+    "gender": "Nữ",
+    "class": "10C9",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760561",
+    "name": "Nguyễn Thị Ngọc Ánh",
+    "dateOfBirth": "22/09/2009",
+    "gender": "Nữ",
+    "class": "10A8",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760689",
+    "name": "Hoàng Việt Bách",
+    "dateOfBirth": "29/08/2009",
+    "gender": "Nam",
+    "class": "10C10",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760727",
+    "name": "Phạm Khánh Băng",
+    "dateOfBirth": "04/10/2009",
+    "gender": "Nữ",
+    "class": "10C11",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760728",
+    "name": "Tống Bùi Duy Bảo",
+    "dateOfBirth": "11/09/2009",
+    "gender": "Nam",
+    "class": "10C11",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760813",
+    "name": "Dương Gia Bảo",
+    "dateOfBirth": "29/11/2009",
+    "gender": "Nam",
+    "class": "10C2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760525",
+    "name": "Phạm Nguyễn Gia Bảo",
+    "dateOfBirth": "23/08/2009",
+    "gender": "Nam",
+    "class": "10A4",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760526",
+    "name": "Phạm Gia Bảo",
+    "dateOfBirth": "07/09/2009",
+    "gender": "Nam",
+    "class": "10A4",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760729",
+    "name": "Phan Gia Bảo",
+    "dateOfBirth": "10/11/2009",
+    "gender": "Nam",
+    "class": "10C11",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760983",
+    "name": "Nguyễn Dương Ngọc Bảo",
+    "dateOfBirth": "26/11/2009",
+    "gender": "Nam",
+    "class": "10D1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760527",
+    "name": "Nguyễn Thái Bảo",
+    "dateOfBirth": "29/12/2009",
+    "gender": "Nam",
+    "class": "10A4",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760984",
+    "name": "Hà Hòa Bình",
+    "dateOfBirth": "19/02/2009",
+    "gender": "Nam",
+    "class": "10D1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760851",
+    "name": "Nghiêm Công Phú Bình",
+    "dateOfBirth": "04/03/2009",
+    "gender": "Nam",
+    "class": "10C3",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760935",
+    "name": "Phạm Quang Cao",
+    "dateOfBirth": "26/03/2009",
+    "gender": "Nam",
+    "class": "10C9",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760852",
+    "name": "Đồng Bảo Châu",
+    "dateOfBirth": "14/10/2009",
+    "gender": "Nữ",
+    "class": "10C3",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760889",
+    "name": "Trần Minh Châu",
+    "dateOfBirth": "01/12/2009",
+    "gender": "Nữ",
+    "class": "10C8",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760936",
+    "name": "Nguyễn Trần Minh Châu",
+    "dateOfBirth": "13/02/2009",
+    "gender": "Nữ",
+    "class": "10C9",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760651",
+    "name": "Vũ Minh Châu",
+    "dateOfBirth": "19/12/2009",
+    "gender": "Nữ",
+    "class": "10C1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403761013",
+    "name": "Trần Bảo Chi",
+    "dateOfBirth": "01/11/2009",
+    "gender": "Nữ",
+    "class": "10D2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760853",
+    "name": "Lê Diệp Chi",
+    "dateOfBirth": "27/07/2009",
+    "gender": "Nữ",
+    "class": "10C3",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760814",
+    "name": "Đinh Hà Chi",
+    "dateOfBirth": "04/05/2009",
+    "gender": "Nữ",
+    "class": "10C2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760730",
+    "name": "Trương Hà Chi",
+    "dateOfBirth": "03/07/2008",
+    "gender": "Nữ",
+    "class": "10C11",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760937",
+    "name": "Vũ Hà Chi",
+    "dateOfBirth": "13/12/2009",
+    "gender": "Nữ",
+    "class": "10C9",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403761014",
+    "name": "Vũ Hà Chi",
+    "dateOfBirth": "10/01/2009",
+    "gender": "Nữ",
+    "class": "10D2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760854",
+    "name": "Vũ Khánh Chi",
+    "dateOfBirth": "04/08/2009",
+    "gender": "Nữ",
+    "class": "10C3",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403761015",
+    "name": "Đào Mai Chi",
+    "dateOfBirth": "27/05/2009",
+    "gender": "Nữ",
+    "class": "10D2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760985",
+    "name": "Nguyễn Mai Chi",
+    "dateOfBirth": "14/08/2009",
+    "gender": "Nữ",
+    "class": "10D1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760986",
+    "name": "Đinh Ngọc Chi",
+    "dateOfBirth": "05/03/2009",
+    "gender": "Nữ",
+    "class": "10D1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760987",
+    "name": "Lê Phương Chi",
+    "dateOfBirth": "20/12/2009",
+    "gender": "Nữ",
+    "class": "10D1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760890",
+    "name": "Cao Ngọc Phương Chi",
+    "dateOfBirth": "15/10/2009",
+    "gender": "Nữ",
+    "class": "10C8",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760988",
+    "name": "Nguyễn Quỳnh Chi",
+    "dateOfBirth": "14/09/2009",
+    "gender": "Nữ",
+    "class": "10D1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760652",
+    "name": "Nguyễn Thảo Chi",
+    "dateOfBirth": "24/10/2009",
+    "gender": "Nữ",
+    "class": "10C1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760528",
+    "name": "Lương Thùy Chi",
+    "dateOfBirth": "08/09/2009",
+    "gender": "Nữ",
+    "class": "10A4",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760815",
+    "name": "Mạc Vũ Tùng Chi",
+    "dateOfBirth": "04/12/2009",
+    "gender": "Nữ",
+    "class": "10C2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760690",
+    "name": "Nguyễn Đức Chính",
+    "dateOfBirth": "24/04/2009",
+    "gender": "Nam",
+    "class": "10C10",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760855",
+    "name": "Đặng Chí Công",
+    "dateOfBirth": "24/12/2009",
+    "gender": "Nam",
+    "class": "10C3",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403761016",
+    "name": "Đặng Thành Công",
+    "dateOfBirth": "12/10/2009",
+    "gender": "Nam",
+    "class": "10D2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760857",
+    "name": "Lê Mạnh Cường",
+    "dateOfBirth": "04/11/2009",
+    "gender": "Nam",
+    "class": "10C3",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760989",
+    "name": "Ngô Việt Cường",
+    "dateOfBirth": "16/07/2009",
+    "gender": "Nam",
+    "class": "10D1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760938",
+    "name": "Trần Đình Hải Đăng",
+    "dateOfBirth": "02/09/2009",
+    "gender": "Nam",
+    "class": "10C9",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760816",
+    "name": "Vũ Hải Đăng",
+    "dateOfBirth": "05/01/2009",
+    "gender": "Nam",
+    "class": "10C2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760691",
+    "name": "Hoàng Minh Đăng",
+    "dateOfBirth": "12/11/2009",
+    "gender": "Nam",
+    "class": "10C10",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760565",
+    "name": "Nguyễn Thái Nhật Đăng",
+    "dateOfBirth": "22/01/2009",
+    "gender": "Nam",
+    "class": "10A8",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403761018",
+    "name": "Chử Bá Đạt",
+    "dateOfBirth": "24/02/2009",
+    "gender": "Nam",
+    "class": "10D2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760891",
+    "name": "Hoàng Mạnh Đạt",
+    "dateOfBirth": "08/10/2009",
+    "gender": "Nam",
+    "class": "10C8",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760892",
+    "name": "Vũ Mạnh Đạt",
+    "dateOfBirth": "26/09/2009",
+    "gender": "Nam",
+    "class": "10C8",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760939",
+    "name": "Nguyễn Đình Thành Đạt",
+    "dateOfBirth": "05/08/2009",
+    "gender": "Nam",
+    "class": "10C9",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760893",
+    "name": "Trần Thành Đạt",
+    "dateOfBirth": "30/06/2009",
+    "gender": "Nam",
+    "class": "10C8",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760817",
+    "name": "Phạm Tiến Đạt",
+    "dateOfBirth": "19/07/2009",
+    "gender": "Nam",
+    "class": "10C2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760653",
+    "name": "Đoàn Nguyễn Ngọc Diệp",
+    "dateOfBirth": "26/10/2009",
+    "gender": "Nữ",
+    "class": "10C1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760692",
+    "name": "Phạm Hùng Điệp",
+    "dateOfBirth": "18/04/2009",
+    "gender": "Nam",
+    "class": "10C10",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760567",
+    "name": "Trần Thế Dinh",
+    "dateOfBirth": "07/11/2009",
+    "gender": "Nam",
+    "class": "10A8",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760858",
+    "name": "Nguyễn Anh Đức",
+    "dateOfBirth": "07/07/2009",
+    "gender": "Nam",
+    "class": "10C3",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760990",
+    "name": "Trần Anh Đức",
+    "dateOfBirth": "11/06/2009",
+    "gender": "Nam",
+    "class": "10D1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760693",
+    "name": "Nguyễn Đình Đức",
+    "dateOfBirth": "27/03/2009",
+    "gender": "Nam",
+    "class": "10C10",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760654",
+    "name": "Đỗ Minh Đức",
+    "dateOfBirth": "29/01/2009",
+    "gender": "Nam",
+    "class": "10C1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760569",
+    "name": "Hoàng Minh Đức",
+    "dateOfBirth": "28/07/2009",
+    "gender": "Nam",
+    "class": "10C12",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760894",
+    "name": "Đàm Trung Đức",
+    "dateOfBirth": "07/12/2009",
+    "gender": "Nam",
+    "class": "10C8",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403761020",
+    "name": "Nguyễn Thị Thùy Dung",
+    "dateOfBirth": "08/05/2009",
+    "gender": "Nữ",
+    "class": "10D2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760895",
+    "name": "Vũ Đức Dũng",
+    "dateOfBirth": "07/05/2009",
+    "gender": "Nam",
+    "class": "10C8",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760818",
+    "name": "Lê Ngọc Dũng",
+    "dateOfBirth": "25/08/2009",
+    "gender": "Nam",
+    "class": "10C2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760991",
+    "name": "Ngô Tấn Dũng",
+    "dateOfBirth": "02/01/2009",
+    "gender": "Nam",
+    "class": "10D1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403761021",
+    "name": "Hà Trung Dũng",
+    "dateOfBirth": "19/12/2009",
+    "gender": "Nam",
+    "class": "10D2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760731",
+    "name": "Nguyễn Ánh Dương",
+    "dateOfBirth": "21/09/2009",
+    "gender": "Nữ",
+    "class": "10C11",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760896",
+    "name": "Phan Đăng Dương",
+    "dateOfBirth": "29/04/2009",
+    "gender": "Nam",
+    "class": "10C8",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760732",
+    "name": "Phạm Thị Hà Dương",
+    "dateOfBirth": "21/06/2009",
+    "gender": "Nữ",
+    "class": "10C11",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760941",
+    "name": "Nguyễn Thùy Dương",
+    "dateOfBirth": "14/02/2009",
+    "gender": "Nữ",
+    "class": "10C9",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760897",
+    "name": "Nguyễn Thùy Dương",
+    "dateOfBirth": "05/05/2009",
+    "gender": "Nữ",
+    "class": "10C8",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760819",
+    "name": "Nguyễn Thị Thùy Dương",
+    "dateOfBirth": "14/02/2009",
+    "gender": "Nữ",
+    "class": "10C2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760898",
+    "name": "Nguyễn Thị Thùy Dương",
+    "dateOfBirth": "13/05/2009",
+    "gender": "Nữ",
+    "class": "10C8",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760777",
+    "name": "Bùi Khắc Tùng Dương",
+    "dateOfBirth": "02/11/2009",
+    "gender": "Nam",
+    "class": "10C12",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760733",
+    "name": "Nguyễn Tùng Dương",
+    "dateOfBirth": "20/07/2009",
+    "gender": "Nam",
+    "class": "10C11",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760859",
+    "name": "Trần Nguyễn Công Duy",
+    "dateOfBirth": "14/08/2009",
+    "gender": "Nam",
+    "class": "10C3",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760655",
+    "name": "Nguyễn Khánh Duy",
+    "dateOfBirth": "06/03/2009",
+    "gender": "Nam",
+    "class": "10C1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760778",
+    "name": "Nguyễn Minh Duy",
+    "dateOfBirth": "09/03/2009",
+    "gender": "Nam",
+    "class": "10C12",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760860",
+    "name": "Đỗ Hương Giang",
+    "dateOfBirth": "19/01/2009",
+    "gender": "Nữ",
+    "class": "10C3",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760820",
+    "name": "Nguyễn Hương Giang",
+    "dateOfBirth": "10/07/2009",
+    "gender": "Nữ",
+    "class": "10C2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760992",
+    "name": "Nguyễn Hương Giang",
+    "dateOfBirth": "11/12/2009",
+    "gender": "Nữ",
+    "class": "10D1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760821",
+    "name": "Nguyễn Thị Hương Giang",
+    "dateOfBirth": "21/09/2009",
+    "gender": "Nữ",
+    "class": "10C2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760656",
+    "name": "Nguyễn Ngọc Bảo Hà",
+    "dateOfBirth": "02/11/2008",
+    "gender": "Nữ",
+    "class": "10C1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760694",
+    "name": "Nguyễn Khánh Hà",
+    "dateOfBirth": "23/12/2009",
+    "gender": "Nữ",
+    "class": "10C10",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760861",
+    "name": "Vũ Nguyễn Ngọc Hà",
+    "dateOfBirth": "21/08/2009",
+    "gender": "Nữ",
+    "class": "10C3",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760862",
+    "name": "Vũ Ngọc Hà",
+    "dateOfBirth": "18/02/2009",
+    "gender": "Nữ",
+    "class": "10C3",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760695",
+    "name": "Nguyễn Thu Hà",
+    "dateOfBirth": "28/07/2009",
+    "gender": "Nữ",
+    "class": "10C10",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760899",
+    "name": "Vũ Thị Thu Hà",
+    "dateOfBirth": "17/01/2009",
+    "gender": "Nữ",
+    "class": "10C8",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760780",
+    "name": "Phan Thị Thu Hà",
+    "dateOfBirth": "27/12/2009",
+    "gender": "Nữ",
+    "class": "10C11",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760781",
+    "name": "Nguyễn Phú Hải",
+    "dateOfBirth": "15/04/2009",
+    "gender": "Nam",
+    "class": "10C12",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760734",
+    "name": "Bùi Thanh Hải",
+    "dateOfBirth": "27/04/2009",
+    "gender": "Nam",
+    "class": "10C11",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760572",
+    "name": "Phạm Trần Gia Hân",
+    "dateOfBirth": "21/06/2009",
+    "gender": "Nữ",
+    "class": "10A8",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760993",
+    "name": "Lê Nguyễn Hana",
+    "dateOfBirth": "11/05/2009",
+    "gender": "Nữ",
+    "class": "10D1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760500",
+    "name": "Nguyễn Minh Hằng",
+    "dateOfBirth": "03/06/2009",
+    "gender": "Nữ",
+    "class": "10A3",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760900",
+    "name": "Đinh Thị Minh Hằng",
+    "dateOfBirth": "04/03/2009",
+    "gender": "Nữ",
+    "class": "10C8",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760864",
+    "name": "Nguyễn Thị Thúy Hằng",
+    "dateOfBirth": "21/02/2009",
+    "gender": "Nữ",
+    "class": "10C3",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2405453316",
+    "name": "Kiều Thị Minh Hạnh",
+    "dateOfBirth": "23/09/2009",
+    "gender": "Nữ",
+    "class": "10C3",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760532",
+    "name": "Nguyễn Thảo Hiền",
+    "dateOfBirth": "22/10/2009",
+    "gender": "Nữ",
+    "class": "10A4",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760735",
+    "name": "Nguyễn Đức Hiển",
+    "dateOfBirth": "11/01/2009",
+    "gender": "Nam",
+    "class": "10C11",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760865",
+    "name": "Chử Bá Hiếu",
+    "dateOfBirth": "10/11/2009",
+    "gender": "Nam",
+    "class": "10C3",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760942",
+    "name": "Nguyễn Hữu Trung Hiếu",
+    "dateOfBirth": "24/01/2009",
+    "gender": "Nam",
+    "class": "10C9",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760943",
+    "name": "Nguyễn Trung Hiếu",
+    "dateOfBirth": "27/10/2009",
+    "gender": "Nam",
+    "class": "10C9",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760533",
+    "name": "Lưu Văn Hiếu",
+    "dateOfBirth": "19/04/2009",
+    "gender": "Nam",
+    "class": "10A4",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760901",
+    "name": "Bùi Thị Linh Hoa",
+    "dateOfBirth": "26/09/2009",
+    "gender": "Nữ",
+    "class": "10C8",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760696",
+    "name": "Đoàn Huy Hoàng",
+    "dateOfBirth": "06/05/2009",
+    "gender": "Nam",
+    "class": "10C10",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760782",
+    "name": "Vũ Minh Hoàng",
+    "dateOfBirth": "29/03/2009",
+    "gender": "Nam",
+    "class": "10C12",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760902",
+    "name": "Dương Việt Hoàng",
+    "dateOfBirth": "17/11/2009",
+    "gender": "Nam",
+    "class": "10C8",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760822",
+    "name": "Đỗ Thiên Hồng",
+    "dateOfBirth": "22/02/2009",
+    "gender": "Nữ",
+    "class": "10C2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760620",
+    "name": "Đặng Thu Hồng",
+    "dateOfBirth": "15/04/2009",
+    "gender": "Nữ",
+    "class": "10A9",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760944",
+    "name": "Phạm Thị Thu Hồng",
+    "dateOfBirth": "18/12/2009",
+    "gender": "Nữ",
+    "class": "10C9",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760783",
+    "name": "Vũ Phan Gia Hưng",
+    "dateOfBirth": "01/12/2009",
+    "gender": "Nam",
+    "class": "10C12",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760697",
+    "name": "Vương Quang Hưng",
+    "dateOfBirth": "06/02/2009",
+    "gender": "Nam",
+    "class": "10C10",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760945",
+    "name": "Đỗ Mai Hương",
+    "dateOfBirth": "15/02/2009",
+    "gender": "Nữ",
+    "class": "10C9",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760946",
+    "name": "Nguyễn Thu Hương",
+    "dateOfBirth": "21/10/2009",
+    "gender": "Nữ",
+    "class": "10C9",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760823",
+    "name": "Nguyễn Công Huy",
+    "dateOfBirth": "21/08/2009",
+    "gender": "Nam",
+    "class": "10C2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760736",
+    "name": "Nguyễn Ngọc Gia Huy",
+    "dateOfBirth": "18/04/2009",
+    "gender": "Nam",
+    "class": "10C11",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2405132857",
+    "name": "Lê Phan Gia Huy",
+    "dateOfBirth": "03/01/2009",
+    "gender": "Nam",
+    "class": "10C11",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760698",
+    "name": "Phạm Giang Huy",
+    "dateOfBirth": "26/07/2009",
+    "gender": "Nam",
+    "class": "10C10",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403761025",
+    "name": "Bùi Quang Huy",
+    "dateOfBirth": "19/05/2009",
+    "gender": "Nam",
+    "class": "10D2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760947",
+    "name": "Nguyễn Quang Huy",
+    "dateOfBirth": "05/10/2009",
+    "gender": "Nam",
+    "class": "10C9",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760534",
+    "name": "Nguyễn Quang Huy",
+    "dateOfBirth": "20/11/2009",
+    "gender": "Nam",
+    "class": "10A4",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760699",
+    "name": "Mai Khánh Huyền",
+    "dateOfBirth": "08/08/2009",
+    "gender": "Nữ",
+    "class": "10C10",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760903",
+    "name": "Lương Thị Ngọc Huyền",
+    "dateOfBirth": "04/11/2009",
+    "gender": "Nữ",
+    "class": "10C8",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760948",
+    "name": "Nguyễn Quang Khải",
+    "dateOfBirth": "27/03/2009",
+    "gender": "Nam",
+    "class": "10C9",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403761026",
+    "name": "Vũ Đình Bảo Khánh",
+    "dateOfBirth": "07/12/2009",
+    "gender": "Nam",
+    "class": "10D2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760784",
+    "name": "Lê Duy Khánh",
+    "dateOfBirth": "04/05/2009",
+    "gender": "Nam",
+    "class": "10C12",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760994",
+    "name": "Trần Gia Khánh",
+    "dateOfBirth": "01/07/2009",
+    "gender": "Nam",
+    "class": "10D1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760737",
+    "name": "Đinh Liên Khánh",
+    "dateOfBirth": "15/04/2009",
+    "gender": "Nam",
+    "class": "10C11",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760738",
+    "name": "Nguyễn Linh Khánh",
+    "dateOfBirth": "27/11/2009",
+    "gender": "Nữ",
+    "class": "10C11",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760739",
+    "name": "Đoàn Nam Khánh",
+    "dateOfBirth": "29/04/2009",
+    "gender": "Nam",
+    "class": "10C11",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760949",
+    "name": "Đặng Ngọc Khánh",
+    "dateOfBirth": "22/10/2009",
+    "gender": "Nam",
+    "class": "10C9",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760700",
+    "name": "Đoàn Ngọc Khánh",
+    "dateOfBirth": "27/12/2009",
+    "gender": "Nữ",
+    "class": "10C10",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760740",
+    "name": "Lê Trần Đăng Khoa",
+    "dateOfBirth": "29/10/2009",
+    "gender": "Nam",
+    "class": "10C11",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760537",
+    "name": "Nguyễn Hoàng Phương Kiệt",
+    "dateOfBirth": "06/10/2009",
+    "gender": "Nam",
+    "class": "10A4",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760904",
+    "name": "Phạm Đình Tuấn Kiệt",
+    "dateOfBirth": "19/10/2009",
+    "gender": "Nam",
+    "class": "10C8",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760866",
+    "name": "Tăng Ngô Tuấn Kiệt",
+    "dateOfBirth": "16/08/2009",
+    "gender": "Nam",
+    "class": "10C3",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760867",
+    "name": "Phạm Hoàng Lâm",
+    "dateOfBirth": "18/09/2009",
+    "gender": "Nam",
+    "class": "10C3",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760950",
+    "name": "Đinh Ngọc Lâm",
+    "dateOfBirth": "14/10/2009",
+    "gender": "Nam",
+    "class": "10C9",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760701",
+    "name": "Nguyễn Tùng Lâm",
+    "dateOfBirth": "21/10/2009",
+    "gender": "Nam",
+    "class": "10C10",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760741",
+    "name": "Lê Việt Tùng Lâm",
+    "dateOfBirth": "03/10/2009",
+    "gender": "Nam",
+    "class": "10C11",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760538",
+    "name": "Vũ Tùng Lâm",
+    "dateOfBirth": "15/09/2009",
+    "gender": "Nữ",
+    "class": "10A4",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760824",
+    "name": "Hồ Thị Mai Lan",
+    "dateOfBirth": "13/03/2009",
+    "gender": "Nữ",
+    "class": "10C2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760539",
+    "name": "Nguyễn Thị Phương Lan",
+    "dateOfBirth": "06/10/2009",
+    "gender": "Nữ",
+    "class": "10C9",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760825",
+    "name": "Nguyễn Đức Lân",
+    "dateOfBirth": "08/06/2009",
+    "gender": "Nam",
+    "class": "10C2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760868",
+    "name": "Lê Bảo Linh",
+    "dateOfBirth": "14/10/2009",
+    "gender": "Nữ",
+    "class": "10C3",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760953",
+    "name": "Nguyễn Bảo Linh",
+    "dateOfBirth": "21/10/2009",
+    "gender": "Nữ",
+    "class": "10C9",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760742",
+    "name": "Hà Diệu Linh",
+    "dateOfBirth": "19/12/2009",
+    "gender": "Nữ",
+    "class": "10C11",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760954",
+    "name": "Hoàng Diệu Linh",
+    "dateOfBirth": "28/12/2009",
+    "gender": "Nữ",
+    "class": "10C9",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760905",
+    "name": "Nguyễn Diệu Linh",
+    "dateOfBirth": "12/06/2009",
+    "gender": "Nữ",
+    "class": "10C8",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760826",
+    "name": "Trần Thị Diệu Linh",
+    "dateOfBirth": "21/08/2009",
+    "gender": "Nữ",
+    "class": "10C2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760743",
+    "name": "Bùi Nguyễn Gia Linh",
+    "dateOfBirth": "21/03/2009",
+    "gender": "Nữ",
+    "class": "10C11",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760657",
+    "name": "Phạm Thị Gia Linh",
+    "dateOfBirth": "23/06/2009",
+    "gender": "Nữ",
+    "class": "10C1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760995",
+    "name": "Vũ Gia Linh",
+    "dateOfBirth": "14/03/2009",
+    "gender": "Nữ",
+    "class": "10D1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760869",
+    "name": "Nguyễn Hà Linh",
+    "dateOfBirth": "13/01/2009",
+    "gender": "Nữ",
+    "class": "10C3",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760785",
+    "name": "Nguyễn Hà Linh",
+    "dateOfBirth": "23/05/2009",
+    "gender": "Nữ",
+    "class": "10C12",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760870",
+    "name": "Phùng Hà Linh",
+    "dateOfBirth": "19/11/2009",
+    "gender": "Nữ",
+    "class": "10C3",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760658",
+    "name": "Nguyễn Hải Linh",
+    "dateOfBirth": "28/08/2009",
+    "gender": "Nữ",
+    "class": "10C1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760659",
+    "name": "Nguyễn Thị Hải Linh",
+    "dateOfBirth": "19/07/2009",
+    "gender": "Nữ",
+    "class": "10C1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760906",
+    "name": "Hoàng Khánh Linh",
+    "dateOfBirth": "07/08/2009",
+    "gender": "Nữ",
+    "class": "10C8",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760660",
+    "name": "Phạm Khánh Linh",
+    "dateOfBirth": "24/11/2009",
+    "gender": "Nữ",
+    "class": "10C1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760702",
+    "name": "Trần Phạm Khánh Linh",
+    "dateOfBirth": "09/12/2009",
+    "gender": "Nữ",
+    "class": "10C10",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760996",
+    "name": "Phùng Khánh Linh",
+    "dateOfBirth": "07/10/2009",
+    "gender": "Nữ",
+    "class": "10D1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760955",
+    "name": "Đinh Thị Khánh Linh",
+    "dateOfBirth": "14/09/2009",
+    "gender": "Nữ",
+    "class": "10C9",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760907",
+    "name": "Vũ Khánh Linh",
+    "dateOfBirth": "19/03/2009",
+    "gender": "Nữ",
+    "class": "10C8",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760871",
+    "name": "Nguyễn Mai Linh",
+    "dateOfBirth": "12/07/2009",
+    "gender": "Nữ",
+    "class": "10C3",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760661",
+    "name": "Ngô Mỹ Linh",
+    "dateOfBirth": "17/01/2009",
+    "gender": "Nữ",
+    "class": "10C1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403761028",
+    "name": "Đoàn Phương Linh",
+    "dateOfBirth": "18/03/2009",
+    "gender": "Nữ",
+    "class": "10D2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760703",
+    "name": "Nguyễn Phương Linh",
+    "dateOfBirth": "24/03/2009",
+    "gender": "Nữ",
+    "class": "10C10",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760662",
+    "name": "Nguyễn Phương Linh",
+    "dateOfBirth": "04/12/2009",
+    "gender": "Nữ",
+    "class": "10C1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760908",
+    "name": "Nguyễn Phương Linh",
+    "dateOfBirth": "18/11/2009",
+    "gender": "Nữ",
+    "class": "10C8",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760827",
+    "name": "Đỗ Nguyễn Phương Linh",
+    "dateOfBirth": "02/02/2009",
+    "gender": "Nữ",
+    "class": "10C2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760704",
+    "name": "Cao Thảo Linh",
+    "dateOfBirth": "26/02/2009",
+    "gender": "Nữ",
+    "class": "10C10",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760663",
+    "name": "Ngô Thục Linh",
+    "dateOfBirth": "17/01/2009",
+    "gender": "Nữ",
+    "class": "10C1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760705",
+    "name": "Hoàng Thùy Linh",
+    "dateOfBirth": "07/04/2009",
+    "gender": "Nữ",
+    "class": "10C10",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760664",
+    "name": "Nguyễn Thùy Linh",
+    "dateOfBirth": "13/12/2009",
+    "gender": "Nữ",
+    "class": "10C1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760786",
+    "name": "Quách Thùy Linh",
+    "dateOfBirth": "12/06/2009",
+    "gender": "Nữ",
+    "class": "10C12",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760744",
+    "name": "Đào Thị Thùy Linh",
+    "dateOfBirth": "29/03/2009",
+    "gender": "Nữ",
+    "class": "10C11",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760872",
+    "name": "Phan Trang Linh",
+    "dateOfBirth": "07/09/2009",
+    "gender": "Nữ",
+    "class": "10C3",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760909",
+    "name": "Nguyễn Hoàng Tuệ Linh",
+    "dateOfBirth": "29/10/2009",
+    "gender": "Nữ",
+    "class": "10C8",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760997",
+    "name": "Phạm Vũ Yến Linh",
+    "dateOfBirth": "24/02/2009",
+    "gender": "Nữ",
+    "class": "10D1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760787",
+    "name": "Nguyễn Đức Lộc",
+    "dateOfBirth": "19/10/2009",
+    "gender": "Nam",
+    "class": "10C12",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760706",
+    "name": "Nguyễn Thiên Lộc",
+    "dateOfBirth": "15/10/2009",
+    "gender": "Nam",
+    "class": "10C10",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760788",
+    "name": "Hoàng Phú Bảo Long",
+    "dateOfBirth": "07/01/2009",
+    "gender": "Nam",
+    "class": "10C12",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760541",
+    "name": "Nguyễn Vũ Bảo Long",
+    "dateOfBirth": "01/08/2009",
+    "gender": "Nam",
+    "class": "10A4",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760910",
+    "name": "Nguyễn Đức Long",
+    "dateOfBirth": "16/08/2009",
+    "gender": "Nam",
+    "class": "10C8",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760665",
+    "name": "Nguyễn Vũ Hải Long",
+    "dateOfBirth": "28/05/2009",
+    "gender": "Nam",
+    "class": "10C1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760956",
+    "name": "Phạm Vĩnh Long",
+    "dateOfBirth": "22/04/2009",
+    "gender": "Nam",
+    "class": "10C10",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760911",
+    "name": "Phan Đăng Lưu",
+    "dateOfBirth": "26/11/2009",
+    "gender": "Nam",
+    "class": "10C8",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760543",
+    "name": "Hoàng Khánh Ly",
+    "dateOfBirth": "23/10/2009",
+    "gender": "Nữ",
+    "class": "10A4",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760998",
+    "name": "Phạm Hoa Mai",
+    "dateOfBirth": "29/10/2009",
+    "gender": "Nữ",
+    "class": "10D1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760789",
+    "name": "Trần Ngọc Mai",
+    "dateOfBirth": "20/03/2009",
+    "gender": "Nữ",
+    "class": "10C12",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760828",
+    "name": "Cấn Đỗ Phương Mai",
+    "dateOfBirth": "24/12/2009",
+    "gender": "Nữ",
+    "class": "10C2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760957",
+    "name": "Nguyễn Quỳnh Mai",
+    "dateOfBirth": "31/01/2009",
+    "gender": "Nữ",
+    "class": "10C9",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760707",
+    "name": "Phan Quỳnh Mai",
+    "dateOfBirth": "05/02/2009",
+    "gender": "Nữ",
+    "class": "10C10",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760745",
+    "name": "Lê Tuyết Mai",
+    "dateOfBirth": "19/02/2009",
+    "gender": "Nữ",
+    "class": "10C11",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760912",
+    "name": "Đặng Vũ Bảo Minh",
+    "dateOfBirth": "17/10/2009",
+    "gender": "Nam",
+    "class": "10C8",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760829",
+    "name": "Phan Bình Minh",
+    "dateOfBirth": "08/10/2009",
+    "gender": "Nam",
+    "class": "10C2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760999",
+    "name": "Nguyễn Đức Minh",
+    "dateOfBirth": "07/10/2009",
+    "gender": "Nam",
+    "class": "10D1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760746",
+    "name": "Đỗ Duy Minh",
+    "dateOfBirth": "03/08/2009",
+    "gender": "Nam",
+    "class": "10C11",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760790",
+    "name": "Ngô Gia Minh",
+    "dateOfBirth": "31/10/2009",
+    "gender": "Nam",
+    "class": "10C12",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760830",
+    "name": "Nguyễn Hải Minh",
+    "dateOfBirth": "23/10/2009",
+    "gender": "Nam",
+    "class": "10C2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760747",
+    "name": "Phạm Khánh Minh",
+    "dateOfBirth": "17/01/2009",
+    "gender": "Nữ",
+    "class": "10C11",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760873",
+    "name": "Lê Ngọc Minh",
+    "dateOfBirth": "27/09/2009",
+    "gender": "Nữ",
+    "class": "10C3",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760831",
+    "name": "Nguyễn Quang Minh",
+    "dateOfBirth": "26/11/2009",
+    "gender": "Nam",
+    "class": "10C2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760874",
+    "name": "Wu Sao Minh",
+    "dateOfBirth": "02/02/2009",
+    "gender": "Nữ",
+    "class": "10C3",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760748",
+    "name": "Nguyễn Tuấn Minh",
+    "dateOfBirth": "24/04/2009",
+    "gender": "Nam",
+    "class": "10C11",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760832",
+    "name": "Nguyễn Hà My",
+    "dateOfBirth": "25/02/2009",
+    "gender": "Nữ",
+    "class": "10C2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760875",
+    "name": "Lê Nguyễn Hà My",
+    "dateOfBirth": "12/03/2009",
+    "gender": "Nữ",
+    "class": "10C3",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760833",
+    "name": "Phạm Trà My",
+    "dateOfBirth": "13/06/2009",
+    "gender": "Nữ",
+    "class": "10C2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760708",
+    "name": "Nguyễn Thị Trà My",
+    "dateOfBirth": "17/07/2009",
+    "gender": "Nữ",
+    "class": "10C10",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760791",
+    "name": "Trần Đình Bảo Nam",
+    "dateOfBirth": "27/06/2009",
+    "gender": "Nam",
+    "class": "10C12",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2500432789",
+    "name": "Nguyễn Bảo Nam",
+    "dateOfBirth": "05/10/2009",
+    "gender": "Nam",
+    "class": "10C12",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760913",
+    "name": "Phạm Bảo Nam",
+    "dateOfBirth": "05/12/2009",
+    "gender": "Nam",
+    "class": "10C8",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403761000",
+    "name": "Trần Đức Nam",
+    "dateOfBirth": "10/09/2009",
+    "gender": "Nam",
+    "class": "10D1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760792",
+    "name": "Nguyễn Hải Nam",
+    "dateOfBirth": "14/12/2009",
+    "gender": "Nam",
+    "class": "10C9",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760749",
+    "name": "Nguyễn Hải Nam",
+    "dateOfBirth": "10/01/2009",
+    "gender": "Nam",
+    "class": "10C11",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760750",
+    "name": "Nguyễn Hải Nam",
+    "dateOfBirth": "25/10/2009",
+    "gender": "Nam",
+    "class": "10C11",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760709",
+    "name": "Nguyễn Hoàng Nam",
+    "dateOfBirth": "09/02/2009",
+    "gender": "Nam",
+    "class": "10C10",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760958",
+    "name": "Mai Huy Nam",
+    "dateOfBirth": "01/07/2009",
+    "gender": "Nam",
+    "class": "10C9",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760959",
+    "name": "Đỗ Minh Nam",
+    "dateOfBirth": "17/10/2009",
+    "gender": "Nam",
+    "class": "10C9",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760546",
+    "name": "Vũ Diệu Ngân",
+    "dateOfBirth": "17/05/2009",
+    "gender": "Nữ",
+    "class": "10A4",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403761001",
+    "name": "Tăng Hà Ngân",
+    "dateOfBirth": "09/09/2009",
+    "gender": "Nữ",
+    "class": "10D1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760547",
+    "name": "Hà Kim Ngân",
+    "dateOfBirth": "24/01/2009",
+    "gender": "Nữ",
+    "class": "10A4",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760793",
+    "name": "Đinh Thị Kim Ngân",
+    "dateOfBirth": "21/10/2009",
+    "gender": "Nữ",
+    "class": "10C12",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760876",
+    "name": "Nguyễn Thùy Ngân",
+    "dateOfBirth": "30/11/2009",
+    "gender": "Nữ",
+    "class": "10C3",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760914",
+    "name": "Trần Trung Nghĩa",
+    "dateOfBirth": "08/04/2009",
+    "gender": "Nam",
+    "class": "10C8",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760751",
+    "name": "Trần Trung Nghĩa",
+    "dateOfBirth": "21/10/2009",
+    "gender": "Nam",
+    "class": "10C11",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760960",
+    "name": "Đặng Bảo Ngọc",
+    "dateOfBirth": "31/01/2009",
+    "gender": "Nữ",
+    "class": "10C9",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760915",
+    "name": "Trần Bảo Ngọc",
+    "dateOfBirth": "21/01/2009",
+    "gender": "Nữ",
+    "class": "10C8",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760961",
+    "name": "Vũ Trần Bích Ngọc",
+    "dateOfBirth": "04/10/2009",
+    "gender": "Nữ",
+    "class": "10C9",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760962",
+    "name": "Nguyễn Linh Ngọc",
+    "dateOfBirth": "27/01/2009",
+    "gender": "Nữ",
+    "class": "10C9",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403761029",
+    "name": "Phạm Bùi Minh Ngọc",
+    "dateOfBirth": "07/01/2009",
+    "gender": "Nữ",
+    "class": "10D2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760710",
+    "name": "Hoàng Minh Ngọc",
+    "dateOfBirth": "12/01/2009",
+    "gender": "Nữ",
+    "class": "10C10",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760548",
+    "name": "Nguyễn Minh Ngọc",
+    "dateOfBirth": "30/07/2009",
+    "gender": "Nữ",
+    "class": "10A4",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403761002",
+    "name": "Nguyễn Như Ngọc",
+    "dateOfBirth": "10/02/2009",
+    "gender": "Nữ",
+    "class": "10D1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760549",
+    "name": "Trần Lâm Cát Nguyên",
+    "dateOfBirth": "14/12/2009",
+    "gender": "Nữ",
+    "class": "10A4",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760963",
+    "name": "Đoàn Hoàng Nguyên",
+    "dateOfBirth": "28/04/2009",
+    "gender": "Nam",
+    "class": "10C9",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760964",
+    "name": "Nguyễn Thảo Nguyên",
+    "dateOfBirth": "23/08/2009",
+    "gender": "Nữ",
+    "class": "10C9",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760630",
+    "name": "Nguyễn Thị Thảo Nguyên",
+    "dateOfBirth": "21/01/2009",
+    "gender": "Nữ",
+    "class": "10A9",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760916",
+    "name": "Thẩm Vũ Thảo Nguyên",
+    "dateOfBirth": "17/08/2009",
+    "gender": "Nữ",
+    "class": "10C8",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760965",
+    "name": "Vũ Xuân Nguyên",
+    "dateOfBirth": "10/01/2008",
+    "gender": "Nam",
+    "class": "10C9",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760550",
+    "name": "Nguyễn Tô Minh Nguyệt",
+    "dateOfBirth": "24/11/2009",
+    "gender": "Nữ",
+    "class": "10A4",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760966",
+    "name": "Trương Thị Thanh Nhàn",
+    "dateOfBirth": "31/03/2009",
+    "gender": "Nữ",
+    "class": "10C9",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760752",
+    "name": "Lê Thị Thiện Nhân",
+    "dateOfBirth": "05/03/2009",
+    "gender": "Nữ",
+    "class": "10C11",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760666",
+    "name": "Trần Tuệ Nhân",
+    "dateOfBirth": "20/10/2009",
+    "gender": "Nữ",
+    "class": "10C1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760834",
+    "name": "Nguyễn Tuyết Diệp Nhi",
+    "dateOfBirth": "23/03/2009",
+    "gender": "Nữ",
+    "class": "10C2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760794",
+    "name": "Trần Thị Linh Nhi",
+    "dateOfBirth": "08/11/2009",
+    "gender": "Nữ",
+    "class": "10C12",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760551",
+    "name": "Lý Tuệ Nhi",
+    "dateOfBirth": "02/01/2009",
+    "gender": "Nữ",
+    "class": "10A4",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403761030",
+    "name": "Nguyễn Hoàng Yến Nhi",
+    "dateOfBirth": "04/11/2009",
+    "gender": "Nữ",
+    "class": "10D2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760795",
+    "name": "Nguyễn Ngọc Yến Nhi",
+    "dateOfBirth": "18/06/2009",
+    "gender": "Nữ",
+    "class": "10C12",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760711",
+    "name": "Phạm Thị Yến Nhi",
+    "dateOfBirth": "30/06/2009",
+    "gender": "Nữ",
+    "class": "10C10",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760917",
+    "name": "Lê Thị Yến Nhi",
+    "dateOfBirth": "05/11/2009",
+    "gender": "Nữ",
+    "class": "10C8",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760667",
+    "name": "Vũ Gia Như",
+    "dateOfBirth": "09/02/2009",
+    "gender": "Nữ",
+    "class": "10C1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760796",
+    "name": "Trần Thị Quỳnh Như",
+    "dateOfBirth": "10/01/2009",
+    "gender": "Nữ",
+    "class": "10C12",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760918",
+    "name": "Nguyễn Lâm Oanh",
+    "dateOfBirth": "29/04/2009",
+    "gender": "Nữ",
+    "class": "10C8",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760967",
+    "name": "Nguyễn Thị Ngọc Oanh",
+    "dateOfBirth": "02/01/2009",
+    "gender": "Nữ",
+    "class": "10C9",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760919",
+    "name": "Phạm Thị Vân Phi",
+    "dateOfBirth": "14/05/2009",
+    "gender": "Nữ",
+    "class": "10C8",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760797",
+    "name": "Phạm Vũ Gia Phong",
+    "dateOfBirth": "11/04/2009",
+    "gender": "Nam",
+    "class": "10C12",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760753",
+    "name": "Nguyễn Tuấn Phong",
+    "dateOfBirth": "21/09/2009",
+    "gender": "Nam",
+    "class": "10C11",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760835",
+    "name": "Đinh Vũ Phong",
+    "dateOfBirth": "16/05/2009",
+    "gender": "Nam",
+    "class": "10C2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760836",
+    "name": "Vũ Đức Hoàng Phúc",
+    "dateOfBirth": "10/05/2009",
+    "gender": "Nam",
+    "class": "10C2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403761032",
+    "name": "Nguyễn Đức Hồng Phúc",
+    "dateOfBirth": "10/08/2009",
+    "gender": "Nam",
+    "class": "10D2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403761033",
+    "name": "Nguyễn Minh Phúc",
+    "dateOfBirth": "24/01/2009",
+    "gender": "Nam",
+    "class": "10D2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760712",
+    "name": "Vũ Hà Phương",
+    "dateOfBirth": "31/07/2009",
+    "gender": "Nữ",
+    "class": "10C10",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760713",
+    "name": "Nguyễn Vũ Hoài Phương",
+    "dateOfBirth": "15/05/2009",
+    "gender": "Nữ",
+    "class": "10C10",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760668",
+    "name": "Đoàn Nguyễn Khánh Phương",
+    "dateOfBirth": "26/06/2009",
+    "gender": "Nữ",
+    "class": "10C1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760921",
+    "name": "Nguyễn Thị Minh Phương",
+    "dateOfBirth": "09/06/2009",
+    "gender": "Nữ",
+    "class": "10C8",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403761034",
+    "name": "Nguyễn Nhật Phương",
+    "dateOfBirth": "21/10/2009",
+    "gender": "Nữ",
+    "class": "10D2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760669",
+    "name": "Phạm Thanh Phương",
+    "dateOfBirth": "26/03/2009",
+    "gender": "Nữ",
+    "class": "10C1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760631",
+    "name": "Hà Thảo Phương",
+    "dateOfBirth": "04/12/2009",
+    "gender": "Nữ",
+    "class": "10A9",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760798",
+    "name": "Phạm Thu Phương",
+    "dateOfBirth": "27/11/2009",
+    "gender": "Nữ",
+    "class": "10C12",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760922",
+    "name": "Trần Thu Phương",
+    "dateOfBirth": "03/10/2009",
+    "gender": "Nữ",
+    "class": "10C8",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403761003",
+    "name": "Vũ Tuệ Phương",
+    "dateOfBirth": "09/04/2009",
+    "gender": "Nữ",
+    "class": "10D1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760799",
+    "name": "Đỗ Hoàng Quân",
+    "dateOfBirth": "10/08/2009",
+    "gender": "Nam",
+    "class": "10C12",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760754",
+    "name": "Lại Nguyễn Thiên Quân",
+    "dateOfBirth": "03/01/2009",
+    "gender": "Nam",
+    "class": "10C11",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760877",
+    "name": "Nguyễn Đức Quang",
+    "dateOfBirth": "27/06/2009",
+    "gender": "Nam",
+    "class": "10C3",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760800",
+    "name": "Nguyễn Hữu Quang",
+    "dateOfBirth": "03/10/2009",
+    "gender": "Nam",
+    "class": "10C12",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760801",
+    "name": "Nguyễn Hồng Minh Quang",
+    "dateOfBirth": "17/11/2009",
+    "gender": "Nam",
+    "class": "10C12",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760878",
+    "name": "Vũ Minh Quang",
+    "dateOfBirth": "08/08/2009",
+    "gender": "Nam",
+    "class": "10C3",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760879",
+    "name": "Nguyễn Tuấn Quang",
+    "dateOfBirth": "02/07/2009",
+    "gender": "Nam",
+    "class": "10C3",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760923",
+    "name": "Trần Văn Quảng",
+    "dateOfBirth": "15/09/2009",
+    "gender": "Nam",
+    "class": "10C8",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760968",
+    "name": "Vũ Danh Quốc",
+    "dateOfBirth": "22/12/2009",
+    "gender": "Nam",
+    "class": "10C9",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760670",
+    "name": "Hoàng Minh Quỳnh",
+    "dateOfBirth": "15/07/2009",
+    "gender": "Nữ",
+    "class": "10C1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760837",
+    "name": "Nguyễn Như Quỳnh",
+    "dateOfBirth": "25/08/2009",
+    "gender": "Nữ",
+    "class": "10C2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2404456699",
+    "name": "Nguyễn Thị Như Quỳnh",
+    "dateOfBirth": "07/04/2009",
+    "gender": "Nữ",
+    "class": "10D1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760924",
+    "name": "Lê Tú Quỳnh",
+    "dateOfBirth": "20/09/2009",
+    "gender": "Nữ",
+    "class": "10C8",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760552",
+    "name": "Bùi Thái Sơn",
+    "dateOfBirth": "11/02/2009",
+    "gender": "Nam",
+    "class": "10A4",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760925",
+    "name": "Trần Thái Sơn",
+    "dateOfBirth": "21/01/2009",
+    "gender": "Nam",
+    "class": "10C8",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760802",
+    "name": "Nguyễn Đức Tâm",
+    "dateOfBirth": "29/11/2009",
+    "gender": "Nam",
+    "class": "10C12",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760755",
+    "name": "Vũ Hoài Tâm",
+    "dateOfBirth": "15/08/2009",
+    "gender": "Nữ",
+    "class": "10C11",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760714",
+    "name": "Nguyễn Tất Thành",
+    "dateOfBirth": "10/12/2009",
+    "gender": "Nam",
+    "class": "10C10",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760554",
+    "name": "Đinh Phương Thảo",
+    "dateOfBirth": "14/06/2009",
+    "gender": "Nữ",
+    "class": "10A4",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760838",
+    "name": "Đỗ Phương Thảo",
+    "dateOfBirth": "04/02/2009",
+    "gender": "Nữ",
+    "class": "10C2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2412231489",
+    "name": "Nguyễn Phương Thảo",
+    "dateOfBirth": "15/11/2009",
+    "gender": "Nữ",
+    "class": "10C12",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760671",
+    "name": "Phạm Phương Thảo",
+    "dateOfBirth": "23/07/2009",
+    "gender": "Nữ",
+    "class": "10C1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760926",
+    "name": "Nguyễn Thị Phương Thảo",
+    "dateOfBirth": "12/02/2009",
+    "gender": "Nữ",
+    "class": "10C8",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760672",
+    "name": "Vũ Lê Thanh Thảo",
+    "dateOfBirth": "17/02/2009",
+    "gender": "Nữ",
+    "class": "10C1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760839",
+    "name": "Phạm Thị Thanh Thảo",
+    "dateOfBirth": "25/09/2009",
+    "gender": "Nữ",
+    "class": "10C2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760880",
+    "name": "Vũ Thị An Thi",
+    "dateOfBirth": "25/12/2009",
+    "gender": "Nữ",
+    "class": "10C3",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760969",
+    "name": "Vũ Trần Bảo Thiên",
+    "dateOfBirth": "31/08/2009",
+    "gender": "Nam",
+    "class": "10C9",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760927",
+    "name": "Nguyễn Đức Thịnh",
+    "dateOfBirth": "10/07/2009",
+    "gender": "Nam",
+    "class": "10C8",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760756",
+    "name": "Vũ Trường Thịnh",
+    "dateOfBirth": "29/04/2009",
+    "gender": "Nam",
+    "class": "10C11",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760881",
+    "name": "Nguyễn Thị Ngọc Thơm",
+    "dateOfBirth": "10/10/2009",
+    "gender": "Nữ",
+    "class": "10C3",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760840",
+    "name": "Trần Ngọc Thảo Thu",
+    "dateOfBirth": "11/05/2009",
+    "gender": "Nữ",
+    "class": "10C2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760673",
+    "name": "Vũ Đoàn Anh Thư",
+    "dateOfBirth": "22/09/2009",
+    "gender": "Nữ",
+    "class": "10C1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760841",
+    "name": "Hoàng Anh Thư",
+    "dateOfBirth": "09/04/2009",
+    "gender": "Nữ",
+    "class": "10C2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760842",
+    "name": "Nguyễn Vũ Anh Thư",
+    "dateOfBirth": "23/08/2009",
+    "gender": "Nữ",
+    "class": "10C2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760970",
+    "name": "Đặng Minh Thư",
+    "dateOfBirth": "03/11/2009",
+    "gender": "Nữ",
+    "class": "10C9",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760757",
+    "name": "Lý Ngọc Minh Thư",
+    "dateOfBirth": "30/04/2008",
+    "gender": "Nữ",
+    "class": "10C11",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760596",
+    "name": "Trần Minh Thư",
+    "dateOfBirth": "18/06/2009",
+    "gender": "Nữ",
+    "class": "10A8",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760843",
+    "name": "Nguyễn Thanh Thủy",
+    "dateOfBirth": "02/01/2009",
+    "gender": "Nữ",
+    "class": "10C2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760803",
+    "name": "Nguyễn Mạnh Tiến",
+    "dateOfBirth": "23/09/2009",
+    "gender": "Nam",
+    "class": "10C12",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760715",
+    "name": "Trần Hương Trà",
+    "dateOfBirth": "24/09/2009",
+    "gender": "Nữ",
+    "class": "10C10",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760758",
+    "name": "Ngô Nguyễn Phương Trà",
+    "dateOfBirth": "27/11/2009",
+    "gender": "Nữ",
+    "class": "10C11",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760844",
+    "name": "Phạm Ninh Bảo Trâm",
+    "dateOfBirth": "14/12/2009",
+    "gender": "Nữ",
+    "class": "10C2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760928",
+    "name": "Trần Huyền Trang",
+    "dateOfBirth": "14/11/2009",
+    "gender": "Nữ",
+    "class": "10C8",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760674",
+    "name": "Vũ Hà Khánh Trang",
+    "dateOfBirth": "01/01/2009",
+    "gender": "Nữ",
+    "class": "10C1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760882",
+    "name": "Đinh Kiều Trang",
+    "dateOfBirth": "01/03/2009",
+    "gender": "Nữ",
+    "class": "10C3",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760759",
+    "name": "Đào Minh Trang",
+    "dateOfBirth": "04/12/2009",
+    "gender": "Nữ",
+    "class": "10C11",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760675",
+    "name": "Đinh Quỳnh Trang",
+    "dateOfBirth": "14/10/2009",
+    "gender": "Nữ",
+    "class": "10C1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760760",
+    "name": "Phạm Thu Trang",
+    "dateOfBirth": "17/09/2009",
+    "gender": "Nữ",
+    "class": "10C11",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760716",
+    "name": "Đinh Thị Thu Trang",
+    "dateOfBirth": "12/07/2009",
+    "gender": "Nữ",
+    "class": "10C10",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760845",
+    "name": "Bùi Thị Thùy Trang",
+    "dateOfBirth": "29/11/2009",
+    "gender": "Nữ",
+    "class": "10C2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760761",
+    "name": "Đào Phú Trọng",
+    "dateOfBirth": "19/07/2009",
+    "gender": "Nam",
+    "class": "10C11",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760883",
+    "name": "Vũ Cẩm Tú",
+    "dateOfBirth": "01/07/2009",
+    "gender": "Nữ",
+    "class": "10C3",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760804",
+    "name": "Phạm Huy Tú",
+    "dateOfBirth": "11/01/2009",
+    "gender": "Nam",
+    "class": "10C12",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760762",
+    "name": "Lê Anh Tuấn",
+    "dateOfBirth": "02/08/2009",
+    "gender": "Nam",
+    "class": "10C11",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760805",
+    "name": "Trần Anh Tùng",
+    "dateOfBirth": "11/07/2009",
+    "gender": "Nam",
+    "class": "10C12",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760717",
+    "name": "Phạm Quang Tùng",
+    "dateOfBirth": "17/10/2009",
+    "gender": "Nam",
+    "class": "10C10",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760718",
+    "name": "Nguyễn Thu Uyên",
+    "dateOfBirth": "15/07/2009",
+    "gender": "Nữ",
+    "class": "10C10",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2404442455",
+    "name": "Nguyễn Kim Hà Vân",
+    "dateOfBirth": "24/07/2009",
+    "gender": "Nữ",
+    "class": "10C12",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760676",
+    "name": "Vũ Đức Vinh",
+    "dateOfBirth": "14/03/2009",
+    "gender": "Nam",
+    "class": "10C1",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760884",
+    "name": "Nguyễn Quang Vinh",
+    "dateOfBirth": "08/11/2009",
+    "gender": "Nam",
+    "class": "10C3",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760806",
+    "name": "Mai Anh Vũ",
+    "dateOfBirth": "26/05/2009",
+    "gender": "Nam",
+    "class": "10C12",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760719",
+    "name": "Phan Anh Vũ",
+    "dateOfBirth": "04/03/2009",
+    "gender": "Nam",
+    "class": "10C10",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760807",
+    "name": "Nguyễn Công Đăng Vũ",
+    "dateOfBirth": "26/08/2009",
+    "gender": "Nam",
+    "class": "10C12",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760720",
+    "name": "Hoàng Phúc Hà Vy",
+    "dateOfBirth": "14/06/2009",
+    "gender": "Nữ",
+    "class": "10C10",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760763",
+    "name": "Nguyễn Quế Vy",
+    "dateOfBirth": "04/09/2009",
+    "gender": "Nữ",
+    "class": "10C11",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760808",
+    "name": "Vũ Tuyết Vy",
+    "dateOfBirth": "19/07/2009",
+    "gender": "Nữ",
+    "class": "10C12",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760929",
+    "name": "Phạm Ngọc Xuân",
+    "dateOfBirth": "17/02/2009",
+    "gender": "Nam",
+    "class": "10C8",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760971",
+    "name": "Đinh Hải Yến",
+    "dateOfBirth": "12/12/2009",
+    "gender": "Nữ",
+    "class": "10C9",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760721",
+    "name": "Nguyễn Hải Yến",
+    "dateOfBirth": "13/09/2009",
+    "gender": "Nữ",
+    "class": "10C10",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760765",
+    "name": "Nguyễn Thị Hải Yến",
+    "dateOfBirth": "14/02/2009",
+    "gender": "Nữ",
+    "class": "10C11",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760764",
+    "name": "Phạm Thị Hải Yến",
+    "dateOfBirth": "31/05/2009",
+    "gender": "Nữ",
+    "class": "10C11",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403760846",
+    "name": "Phạm Hoàng Yến",
+    "dateOfBirth": "13/03/2009",
+    "gender": "Nữ",
+    "class": "10C2",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245522",
+    "name": "Đinh Thị Ngọc An",
+    "dateOfBirth": "21/07/2008",
+    "gender": "Nữ",
+    "class": "11S",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245359",
+    "name": "Nguyễn Thị Tâm An",
+    "dateOfBirth": "21/05/2008",
+    "gender": "Nữ",
+    "class": "11H",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245481",
+    "name": "Nguyễn Thu An",
+    "dateOfBirth": "12/10/2008",
+    "gender": "Nữ",
+    "class": "11Q",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245523",
+    "name": "Đào Trường An",
+    "dateOfBirth": "27/09/2008",
+    "gender": "Nam",
+    "class": "11S",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245279",
+    "name": "Nguyễn Vinh An",
+    "dateOfBirth": "24/04/2008",
+    "gender": "Nam",
+    "class": "11Q",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2303175195",
+    "name": "Phạm Thùy Chi Anh",
+    "dateOfBirth": "13/03/2008",
+    "gender": "Nữ",
+    "class": "11Q",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2400301273",
+    "name": "Vũ Đồng Anh",
+    "dateOfBirth": "28/10/2008",
+    "gender": "Nam",
+    "class": "11A",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245315",
+    "name": "Nguyễn Thái Đức Anh",
+    "dateOfBirth": "27/04/2008",
+    "gender": "Nam",
+    "class": "11E",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245400",
+    "name": "Đào Duy Anh",
+    "dateOfBirth": "08/10/2008",
+    "gender": "Nam",
+    "class": "11I",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245441",
+    "name": "Khuất Duy Anh",
+    "dateOfBirth": "28/05/2008",
+    "gender": "Nam",
+    "class": "11P",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245482",
+    "name": "Hoàng Hà Anh",
+    "dateOfBirth": "16/08/2008",
+    "gender": "Nữ",
+    "class": "11Q",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245442",
+    "name": "Nguyễn Hà Anh",
+    "dateOfBirth": "02/07/2008",
+    "gender": "Nữ",
+    "class": "11P",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245524",
+    "name": "Nguyễn Hà Anh",
+    "dateOfBirth": "28/10/2008",
+    "gender": "Nữ",
+    "class": "11S",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245316",
+    "name": "Vũ Đình Hải Anh",
+    "dateOfBirth": "08/12/2008",
+    "gender": "Nam",
+    "class": "11E",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245280",
+    "name": "Nguyễn Hải Anh",
+    "dateOfBirth": "16/11/2008",
+    "gender": "Nam",
+    "class": "11A",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245483",
+    "name": "Đinh Thị Hải Anh",
+    "dateOfBirth": "27/06/2008",
+    "gender": "Nữ",
+    "class": "11Q",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245317",
+    "name": "Bùi Quý Hoàng Anh",
+    "dateOfBirth": "10/12/2008",
+    "gender": "Nam",
+    "class": "11E",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245525",
+    "name": "Nguyễn Thị Hồng Anh",
+    "dateOfBirth": "22/02/2008",
+    "gender": "Nữ",
+    "class": "11S",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245443",
+    "name": "Đào Thị Huyền Anh",
+    "dateOfBirth": "30/07/2008",
+    "gender": "Nữ",
+    "class": "11P",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245401",
+    "name": "Tô Khánh Anh",
+    "dateOfBirth": "03/10/2008",
+    "gender": "Nữ",
+    "class": "11I",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245402",
+    "name": "Vũ Phan Kỳ Anh",
+    "dateOfBirth": "16/03/2008",
+    "gender": "Nam",
+    "class": "11I",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245318",
+    "name": "Trần Lan Anh",
+    "dateOfBirth": "10/08/2008",
+    "gender": "Nữ",
+    "class": "11E",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2303175196",
+    "name": "Nguyễn Hà Minh Anh",
+    "dateOfBirth": "14/05/2008",
+    "gender": "Nữ",
+    "class": "11P",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245360",
+    "name": "Đỗ Bùi Mỹ Anh",
+    "dateOfBirth": "20/02/2008",
+    "gender": "Nữ",
+    "class": "11H",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245444",
+    "name": "Nguyễn Lê Mỹ Anh",
+    "dateOfBirth": "02/09/2008",
+    "gender": "Nữ",
+    "class": "11P",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245361",
+    "name": "Nguyễn Ngọc Anh",
+    "dateOfBirth": "10/03/2008",
+    "gender": "Nữ",
+    "class": "11Q",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245484",
+    "name": "Đặng Thị Ngọc Anh",
+    "dateOfBirth": "09/05/2008",
+    "gender": "Nữ",
+    "class": "11Q",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245485",
+    "name": "Lê Thị Ngọc Anh",
+    "dateOfBirth": "08/04/2008",
+    "gender": "Nữ",
+    "class": "11Q",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245486",
+    "name": "Nguyễn Thị Ngọc Anh",
+    "dateOfBirth": "13/08/2008",
+    "gender": "Nữ",
+    "class": "11Q",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245487",
+    "name": "Nguyễn Nguyên Anh",
+    "dateOfBirth": "08/06/2008",
+    "gender": "Nữ",
+    "class": "11Q",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245281",
+    "name": "Đoàn Phan Anh",
+    "dateOfBirth": "17/11/2008",
+    "gender": "Nam",
+    "class": "11S",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245362",
+    "name": "Nguyễn Phương Anh",
+    "dateOfBirth": "19/03/2008",
+    "gender": "Nữ",
+    "class": "11H",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245488",
+    "name": "Đinh Quang Anh",
+    "dateOfBirth": "01/05/2008",
+    "gender": "Nam",
+    "class": "11Q",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245526",
+    "name": "Mạc Quỳnh Anh",
+    "dateOfBirth": "16/05/2008",
+    "gender": "Nữ",
+    "class": "11S",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245403",
+    "name": "Nguyễn Thị Quỳnh Anh",
+    "dateOfBirth": "03/02/2008",
+    "gender": "Nữ",
+    "class": "11I",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245527",
+    "name": "Bùi Tuấn Anh",
+    "dateOfBirth": "04/12/2008",
+    "gender": "Nam",
+    "class": "11S",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245489",
+    "name": "Nguyễn Thị Vân Anh",
+    "dateOfBirth": "01/02/2008",
+    "gender": "Nữ",
+    "class": "11Q",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245363",
+    "name": "Khuất Cao Việt Anh",
+    "dateOfBirth": "23/12/2008",
+    "gender": "Nam",
+    "class": "11H",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245490",
+    "name": "Nguyễn Việt Anh",
+    "dateOfBirth": "10/12/2008",
+    "gender": "Nam",
+    "class": "11Q",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302508776",
+    "name": "Nguyễn Sỹ Việt Anh",
+    "dateOfBirth": "22/09/2008",
+    "gender": "Nam",
+    "class": "11Q",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245282",
+    "name": "Vũ Việt Anh",
+    "dateOfBirth": "10/10/2008",
+    "gender": "Nam",
+    "class": "11A",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245283",
+    "name": "Lê Hoàng Bách",
+    "dateOfBirth": "03/06/2008",
+    "gender": "Nam",
+    "class": "11A",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245446",
+    "name": "Phạm Phú Gia Bảo",
+    "dateOfBirth": "16/12/2008",
+    "gender": "Nam",
+    "class": "11P",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245364",
+    "name": "Phạm Thái Bảo",
+    "dateOfBirth": "19/10/2008",
+    "gender": "Nam",
+    "class": "11H",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245447",
+    "name": "Hoàng Ngọc Bích",
+    "dateOfBirth": "21/10/2008",
+    "gender": "Nữ",
+    "class": "11S",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245491",
+    "name": "Phùng Khánh Chi",
+    "dateOfBirth": "25/08/2008",
+    "gender": "Nữ",
+    "class": "11Q",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245528",
+    "name": "Nguyễn Lê Phương Chi",
+    "dateOfBirth": "10/08/2008",
+    "gender": "Nữ",
+    "class": "11S",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245492",
+    "name": "Phạm Quỳnh Chi",
+    "dateOfBirth": "15/08/2008",
+    "gender": "Nữ",
+    "class": "11Q",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245493",
+    "name": "Vũ Quỳnh Chi",
+    "dateOfBirth": "07/08/2008",
+    "gender": "Nữ",
+    "class": "11Q",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245404",
+    "name": "Nguyễn Ngọc Thùy Chi",
+    "dateOfBirth": "23/10/2008",
+    "gender": "Nữ",
+    "class": "11I",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245319",
+    "name": "Phạm Hoàng Yến Chi",
+    "dateOfBirth": "29/04/2008",
+    "gender": "Nữ",
+    "class": "11E",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245284",
+    "name": "Nguyễn Thành Công",
+    "dateOfBirth": "26/03/2008",
+    "gender": "Nam",
+    "class": "11A",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245529",
+    "name": "Ngô Vũ Tuấn Cường",
+    "dateOfBirth": "21/08/2008",
+    "gender": "Nam",
+    "class": "11S",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245320",
+    "name": "Ngô Minh Đăng",
+    "dateOfBirth": "28/10/2008",
+    "gender": "Nam",
+    "class": "11P",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245365",
+    "name": "Phạm Sỹ Đạt",
+    "dateOfBirth": "11/03/2008",
+    "gender": "Nam",
+    "class": "11H",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245366",
+    "name": "Nguyễn Tiến Đạt",
+    "dateOfBirth": "09/07/2008",
+    "gender": "Nam",
+    "class": "11H",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245321",
+    "name": "Nguyễn Phạm Tiến Đạt",
+    "dateOfBirth": "26/11/2008",
+    "gender": "Nam",
+    "class": "11E",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245448",
+    "name": "Hoàng Ngọc Diệp",
+    "dateOfBirth": "18/05/2008",
+    "gender": "Nữ",
+    "class": "11P",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245405",
+    "name": "Đinh Văn Du",
+    "dateOfBirth": "22/08/2008",
+    "gender": "Nam",
+    "class": "11I",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245322",
+    "name": "Đinh Hữu Đức",
+    "dateOfBirth": "11/10/2008",
+    "gender": "Nam",
+    "class": "11E",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245406",
+    "name": "Phạm Khánh Đức",
+    "dateOfBirth": "20/10/2008",
+    "gender": "Nam",
+    "class": "11I",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245367",
+    "name": "Vũ Nguyễn Minh Đức",
+    "dateOfBirth": "01/08/2008",
+    "gender": "Nam",
+    "class": "11H",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245323",
+    "name": "Đặng Khánh Dung",
+    "dateOfBirth": "15/12/2008",
+    "gender": "Nữ",
+    "class": "11E",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245324",
+    "name": "Phạm Công Dũng",
+    "dateOfBirth": "16/12/2008",
+    "gender": "Nam",
+    "class": "11E",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403442825",
+    "name": "Trần Mạnh Dũng",
+    "dateOfBirth": "09/09/2007",
+    "gender": "Nam",
+    "class": "11S",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245368",
+    "name": "Trần Ngọc Dũng",
+    "dateOfBirth": "15/03/2008",
+    "gender": "Nam",
+    "class": "11H",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2303577150",
+    "name": "Nguyễn Tuấn Dũng",
+    "dateOfBirth": "18/08/2008",
+    "gender": "Nam",
+    "class": "11P",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245407",
+    "name": "Vương Đại Dương",
+    "dateOfBirth": "05/12/2008",
+    "gender": "Nam",
+    "class": "11I",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245369",
+    "name": "Vũ Đức Dương",
+    "dateOfBirth": "21/04/2008",
+    "gender": "Nam",
+    "class": "11H",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245370",
+    "name": "Nguyễn Ngọc Thanh Dương",
+    "dateOfBirth": "05/06/2008",
+    "gender": "Nam",
+    "class": "11H",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245371",
+    "name": "Lê Nghiêm Thùy Dương",
+    "dateOfBirth": "06/02/2008",
+    "gender": "Nữ",
+    "class": "11H",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245372",
+    "name": "Nguyễn Phương Thùy Dương",
+    "dateOfBirth": "28/11/2008",
+    "gender": "Nữ",
+    "class": "11H",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245408",
+    "name": "Vũ Thùy Dương",
+    "dateOfBirth": "25/07/2008",
+    "gender": "Nữ",
+    "class": "11I",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245449",
+    "name": "Nghiêm Trọng Dương",
+    "dateOfBirth": "15/09/2008",
+    "gender": "Nam",
+    "class": "11P",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245409",
+    "name": "Đặng Đình Duy",
+    "dateOfBirth": "09/04/2008",
+    "gender": "Nam",
+    "class": "11I",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245494",
+    "name": "Nguyễn Thị Hương Giang",
+    "dateOfBirth": "28/07/2008",
+    "gender": "Nữ",
+    "class": "11Q",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245450",
+    "name": "Đoàn Kim Giang",
+    "dateOfBirth": "06/12/2008",
+    "gender": "Nữ",
+    "class": "11P",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245531",
+    "name": "Nguyễn Thị Hải Hà",
+    "dateOfBirth": "14/02/2008",
+    "gender": "Nữ",
+    "class": "11S",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245451",
+    "name": "Phạm Hoàng Hà",
+    "dateOfBirth": "29/09/2008",
+    "gender": "Nữ",
+    "class": "11S",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245325",
+    "name": "Nguyễn Lê Thu Hà",
+    "dateOfBirth": "15/01/2008",
+    "gender": "Nữ",
+    "class": "11Q",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245532",
+    "name": "Nguyễn Thu Hà",
+    "dateOfBirth": "16/01/2008",
+    "gender": "Nữ",
+    "class": "11S",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245495",
+    "name": "Phạm Thị Thu Hà",
+    "dateOfBirth": "22/08/2008",
+    "gender": "Nữ",
+    "class": "11Q",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245496",
+    "name": "Trần Thúy Hà",
+    "dateOfBirth": "30/01/2008",
+    "gender": "Nữ",
+    "class": "11Q",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245497",
+    "name": "Nguyễn Đức Hải",
+    "dateOfBirth": "30/01/2008",
+    "gender": "Nam",
+    "class": "11Q",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245285",
+    "name": "Bùi Hữu Hải",
+    "dateOfBirth": "12/02/2008",
+    "gender": "Nam",
+    "class": "11A",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245286",
+    "name": "Trần Trọng Hải",
+    "dateOfBirth": "13/02/2008",
+    "gender": "Nam",
+    "class": "11A",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302493924",
+    "name": "Phạm Xuân Hải",
+    "dateOfBirth": "05/06/2008",
+    "gender": "Nam",
+    "class": "11P",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245326",
+    "name": "Trần Bảo Hân",
+    "dateOfBirth": "08/08/2008",
+    "gender": "Nữ",
+    "class": "11E",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245498",
+    "name": "Phạm Thị Yến Hằng",
+    "dateOfBirth": "17/08/2008",
+    "gender": "Nữ",
+    "class": "11E",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245373",
+    "name": "Vũ Xuân Hậu",
+    "dateOfBirth": "24/12/2008",
+    "gender": "Nam",
+    "class": "11H",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245410",
+    "name": "Dương Thúy Hiền",
+    "dateOfBirth": "29/01/2008",
+    "gender": "Nữ",
+    "class": "11I",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245287",
+    "name": "Bùi Thế Hiển",
+    "dateOfBirth": "24/03/2008",
+    "gender": "Nam",
+    "class": "11A",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245374",
+    "name": "Nguyễn Đình Hiệp",
+    "dateOfBirth": "11/11/2008",
+    "gender": "Nam",
+    "class": "11H",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245533",
+    "name": "Nguyễn Đức Hiếu",
+    "dateOfBirth": "28/12/2008",
+    "gender": "Nam",
+    "class": "11S",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245288",
+    "name": "Nguyễn Phúc Đức Hiếu",
+    "dateOfBirth": "18/12/2008",
+    "gender": "Nam",
+    "class": "11A",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245375",
+    "name": "Mạc Duy Hiếu",
+    "dateOfBirth": "06/02/2008",
+    "gender": "Nam",
+    "class": "11A",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245376",
+    "name": "Nguyễn Mạnh Hiếu",
+    "dateOfBirth": "14/06/2008",
+    "gender": "Nam",
+    "class": "11H",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245327",
+    "name": "Phạm Trọng Hiếu",
+    "dateOfBirth": "19/03/2008",
+    "gender": "Nam",
+    "class": "11E",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245534",
+    "name": "Đỗ Trung Hiếu",
+    "dateOfBirth": "05/02/2008",
+    "gender": "Nam",
+    "class": "11S",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245289",
+    "name": "Bùi Thị Khánh Hòa",
+    "dateOfBirth": "12/05/2008",
+    "gender": "Nữ",
+    "class": "11A",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245411",
+    "name": "Đặng Phú Hòa",
+    "dateOfBirth": "19/08/2008",
+    "gender": "Nam",
+    "class": "11I",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245535",
+    "name": "Nguyễn Thái Hòa",
+    "dateOfBirth": "03/11/2008",
+    "gender": "Nữ",
+    "class": "11S",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245452",
+    "name": "Nguyễn Tuấn Hùng",
+    "dateOfBirth": "24/11/2008",
+    "gender": "Nam",
+    "class": "11P",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245413",
+    "name": "Nguyễn Gia Hưng",
+    "dateOfBirth": "01/08/2008",
+    "gender": "Nam",
+    "class": "11I",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245377",
+    "name": "Trần Gia Hưng",
+    "dateOfBirth": "19/09/2008",
+    "gender": "Nam",
+    "class": "11H",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245378",
+    "name": "Bùi Quý Hưng",
+    "dateOfBirth": "16/11/2008",
+    "gender": "Nam",
+    "class": "11H",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245499",
+    "name": "Dương Tuấn Hưng",
+    "dateOfBirth": "31/10/2008",
+    "gender": "Nam",
+    "class": "11Q",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245290",
+    "name": "Nguyễn Văn Hưng",
+    "dateOfBirth": "07/09/2008",
+    "gender": "Nam",
+    "class": "11I",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245291",
+    "name": "Phạm Văn Hưng",
+    "dateOfBirth": "07/11/2008",
+    "gender": "Nam",
+    "class": "11A",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245536",
+    "name": "Trịnh Đức Huy",
+    "dateOfBirth": "30/11/2008",
+    "gender": "Nam",
+    "class": "11S",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2405594640",
+    "name": "Lê Gia Huy",
+    "dateOfBirth": "18/07/2008",
+    "gender": "Nam",
+    "class": "11S",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245328",
+    "name": "Dương Trần Gia Huy",
+    "dateOfBirth": "06/09/2008",
+    "gender": "Nam",
+    "class": "11E",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245292",
+    "name": "Lê Quang Huy",
+    "dateOfBirth": "26/09/2008",
+    "gender": "Nam",
+    "class": "11A",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245329",
+    "name": "Nguyễn Quang Huy",
+    "dateOfBirth": "30/10/2008",
+    "gender": "Nam",
+    "class": "11E",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245537",
+    "name": "Phan Trung Huy",
+    "dateOfBirth": "11/05/2008",
+    "gender": "Nam",
+    "class": "11S",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245414",
+    "name": "Nguyễn Thu Huyền",
+    "dateOfBirth": "19/11/2008",
+    "gender": "Nữ",
+    "class": "11I",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245453",
+    "name": "Phạm Thu Huyền",
+    "dateOfBirth": "21/06/2008",
+    "gender": "Nữ",
+    "class": "11P",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245538",
+    "name": "Nguyễn Minh Khang",
+    "dateOfBirth": "10/12/2008",
+    "gender": "Nam",
+    "class": "11S",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245293",
+    "name": "Nguyễn Ngọc Khang",
+    "dateOfBirth": "27/10/2008",
+    "gender": "Nam",
+    "class": "11A",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245330",
+    "name": "Phan Quang Tuấn Khang",
+    "dateOfBirth": "15/11/2008",
+    "gender": "Nam",
+    "class": "11E",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245500",
+    "name": "Lê Thị Diên Khánh",
+    "dateOfBirth": "21/01/2008",
+    "gender": "Nữ",
+    "class": "11P",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245379",
+    "name": "Tống Gia Khánh",
+    "dateOfBirth": "29/09/2008",
+    "gender": "Nam",
+    "class": "11H",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245454",
+    "name": "Cao Ngọc Khánh",
+    "dateOfBirth": "16/10/2008",
+    "gender": "Nữ",
+    "class": "11P",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245415",
+    "name": "Nguyễn Trọng Khánh",
+    "dateOfBirth": "15/09/2008",
+    "gender": "Nam",
+    "class": "11I",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245455",
+    "name": "Nguyễn Vân Khánh",
+    "dateOfBirth": "20/06/2008",
+    "gender": "Nữ",
+    "class": "11E",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245331",
+    "name": "Đoàn Chí Kiên",
+    "dateOfBirth": "12/10/2008",
+    "gender": "Nam",
+    "class": "11E",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245416",
+    "name": "Trần Trung Kiên",
+    "dateOfBirth": "03/03/2008",
+    "gender": "Nam",
+    "class": "11I",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245417",
+    "name": "Vũ Trung Kiên",
+    "dateOfBirth": "09/10/2008",
+    "gender": "Nam",
+    "class": "11A",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2303778117",
+    "name": "Lê Anh Kiệt",
+    "dateOfBirth": "10/04/2008",
+    "gender": "Nam",
+    "class": "11I",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245332",
+    "name": "Trần Nguyễn Huy Kông",
+    "dateOfBirth": "30/08/2008",
+    "gender": "Nam",
+    "class": "11E",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245380",
+    "name": "Nguyễn Phương Kỳ",
+    "dateOfBirth": "19/08/2008",
+    "gender": "Nam",
+    "class": "11H",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245333",
+    "name": "Nguyễn Tùng Lâm",
+    "dateOfBirth": "21/09/2008",
+    "gender": "Nam",
+    "class": "11E",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245539",
+    "name": "Bùi Đỗ Duy Linh",
+    "dateOfBirth": "08/06/2008",
+    "gender": "Nam",
+    "class": "11S",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245456",
+    "name": "Dư Hà Linh",
+    "dateOfBirth": "23/09/2008",
+    "gender": "Nữ",
+    "class": "11P",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245334",
+    "name": "Đinh Thị Hà Linh",
+    "dateOfBirth": "28/09/2008",
+    "gender": "Nữ",
+    "class": "11E",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245501",
+    "name": "Trần Hà Linh",
+    "dateOfBirth": "07/06/2008",
+    "gender": "Nữ",
+    "class": "11Q",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245502",
+    "name": "Trần Hà Linh",
+    "dateOfBirth": "07/11/2008",
+    "gender": "Nữ",
+    "class": "11Q",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245540",
+    "name": "Đặng Khánh Linh",
+    "dateOfBirth": "04/10/2008",
+    "gender": "Nữ",
+    "class": "11S",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245541",
+    "name": "Phạm Lê Khánh Linh",
+    "dateOfBirth": "10/09/2008",
+    "gender": "Nữ",
+    "class": "11S",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245504",
+    "name": "Nguyễn Khánh Linh",
+    "dateOfBirth": "21/06/2008",
+    "gender": "Nữ",
+    "class": "11Q",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245503",
+    "name": "Nguyễn Khánh Linh",
+    "dateOfBirth": "15/11/2008",
+    "gender": "Nữ",
+    "class": "11Q",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245294",
+    "name": "Phạm Khánh Linh",
+    "dateOfBirth": "09/04/2008",
+    "gender": "Nữ",
+    "class": "11A",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245457",
+    "name": "Nguyễn Phạm Khánh Linh",
+    "dateOfBirth": "22/07/2008",
+    "gender": "Nữ",
+    "class": "11P",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245458",
+    "name": "Phạm Khánh Linh",
+    "dateOfBirth": "09/08/2008",
+    "gender": "Nữ",
+    "class": "11P",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245418",
+    "name": "Lê Kim Linh",
+    "dateOfBirth": "30/07/2008",
+    "gender": "Nữ",
+    "class": "11I",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2303777924",
+    "name": "Đỗ Mai Linh",
+    "dateOfBirth": "28/12/2008",
+    "gender": "Nữ",
+    "class": "11E",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245295",
+    "name": "Phạm Mai Linh",
+    "dateOfBirth": "09/04/2008",
+    "gender": "Nữ",
+    "class": "11A",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245543",
+    "name": "Phạm Thị Ngọc Linh",
+    "dateOfBirth": "26/06/2008",
+    "gender": "Nữ",
+    "class": "11S",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245505",
+    "name": "Nguyễn Phương Linh",
+    "dateOfBirth": "14/12/2008",
+    "gender": "Nữ",
+    "class": "11Q",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245459",
+    "name": "Tạ Thị Phương Linh",
+    "dateOfBirth": "14/10/2008",
+    "gender": "Nữ",
+    "class": "11P",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245460",
+    "name": "Nguyễn Thùy Linh",
+    "dateOfBirth": "30/04/2008",
+    "gender": "Nữ",
+    "class": "11P",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245461",
+    "name": "Nguyễn Thùy Linh",
+    "dateOfBirth": "12/07/2008",
+    "gender": "Nữ",
+    "class": "11P",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245544",
+    "name": "Phạm Thùy Linh",
+    "dateOfBirth": "14/07/2008",
+    "gender": "Nữ",
+    "class": "11S",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245506",
+    "name": "Nghiêm Ngọc Yến Linh",
+    "dateOfBirth": "12/05/2008",
+    "gender": "Nữ",
+    "class": "11Q",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245507",
+    "name": "Chử Hữu Lộc",
+    "dateOfBirth": "19/10/2008",
+    "gender": "Nam",
+    "class": "11Q",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245420",
+    "name": "Nguyễn Đình Long",
+    "dateOfBirth": "03/03/2008",
+    "gender": "Nam",
+    "class": "11I",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245419",
+    "name": "Nguyễn Đình Long",
+    "dateOfBirth": "26/07/2008",
+    "gender": "Nam",
+    "class": "11I",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245381",
+    "name": "Đinh Gia Long",
+    "dateOfBirth": "07/07/2008",
+    "gender": "Nam",
+    "class": "11H",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245421",
+    "name": "Nguyễn Hải Long",
+    "dateOfBirth": "12/02/2008",
+    "gender": "Nam",
+    "class": "11I",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245382",
+    "name": "Nguyễn Bá Hùng Long",
+    "dateOfBirth": "20/11/2008",
+    "gender": "Nam",
+    "class": "11H",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245383",
+    "name": "Mạc Nguyễn Hùng Long",
+    "dateOfBirth": "19/12/2008",
+    "gender": "Nam",
+    "class": "11I",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245296",
+    "name": "Nguyễn Thành Long",
+    "dateOfBirth": "25/10/2008",
+    "gender": "Nam",
+    "class": "11A",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245462",
+    "name": "Vũ Thanh Trúc Ly",
+    "dateOfBirth": "17/10/2008",
+    "gender": "Nữ",
+    "class": "11P",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245422",
+    "name": "Bùi Ngọc Mai",
+    "dateOfBirth": "31/03/2008",
+    "gender": "Nữ",
+    "class": "11I",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245384",
+    "name": "Đoàn Thị Ngọc Mai",
+    "dateOfBirth": "21/09/2008",
+    "gender": "Nữ",
+    "class": "11H",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245336",
+    "name": "Nguyễn Phương Mai",
+    "dateOfBirth": "02/03/2008",
+    "gender": "Nữ",
+    "class": "11E",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245545",
+    "name": "Nguyễn Thanh Mai",
+    "dateOfBirth": "20/01/2008",
+    "gender": "Nữ",
+    "class": "11S",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245385",
+    "name": "Vũ Ngọc Tuyết Mai",
+    "dateOfBirth": "01/10/2008",
+    "gender": "Nữ",
+    "class": "11H",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245297",
+    "name": "Dương Đức Mạnh",
+    "dateOfBirth": "16/09/2008",
+    "gender": "Nam",
+    "class": "11A",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245298",
+    "name": "Lê Tiến Mạnh",
+    "dateOfBirth": "26/10/2008",
+    "gender": "Nam",
+    "class": "11A",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245463",
+    "name": "Lê Thị Bá Minh",
+    "dateOfBirth": "10/06/2008",
+    "gender": "Nữ",
+    "class": "11P",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245423",
+    "name": "Nguyễn Phi Bảo Minh",
+    "dateOfBirth": "29/11/2008",
+    "gender": "Nam",
+    "class": "11I",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245508",
+    "name": "Đinh Đỗ Đức Minh",
+    "dateOfBirth": "16/07/2008",
+    "gender": "Nam",
+    "class": "11Q",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245299",
+    "name": "Nguyễn Đức Minh",
+    "dateOfBirth": "16/02/2008",
+    "gender": "Nam",
+    "class": "11A",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245424",
+    "name": "Trần Đức Minh",
+    "dateOfBirth": "17/08/2008",
+    "gender": "Nam",
+    "class": "11I",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245337",
+    "name": "Đào Hữu Gia Minh",
+    "dateOfBirth": "30/06/2008",
+    "gender": "Nam",
+    "class": "11E",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245425",
+    "name": "Nguyễn Quang Minh",
+    "dateOfBirth": "03/10/2008",
+    "gender": "Nam",
+    "class": "11I",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245300",
+    "name": "Đoàn Thế Minh",
+    "dateOfBirth": "16/08/2008",
+    "gender": "Nam",
+    "class": "11A",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245509",
+    "name": "Kiều Diễm My",
+    "dateOfBirth": "18/11/2008",
+    "gender": "Nữ",
+    "class": "11Q",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245301",
+    "name": "Hoàng Hà My",
+    "dateOfBirth": "17/08/2008",
+    "gender": "Nữ",
+    "class": "11A",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245338",
+    "name": "Vũ Trà My",
+    "dateOfBirth": "13/07/2008",
+    "gender": "Nữ",
+    "class": "11E",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245386",
+    "name": "Vũ Bảo Nam",
+    "dateOfBirth": "02/12/2008",
+    "gender": "Nam",
+    "class": "11H",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245387",
+    "name": "Vũ Đào Hải Nam",
+    "dateOfBirth": "26/11/2008",
+    "gender": "Nam",
+    "class": "11H",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245302",
+    "name": "Hoàng Nam",
+    "dateOfBirth": "24/07/2008",
+    "gender": "Nam",
+    "class": "11A",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245339",
+    "name": "Phạm Huy Nam",
+    "dateOfBirth": "14/11/2008",
+    "gender": "Nam",
+    "class": "11E",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245546",
+    "name": "Quản Ngọc Nam",
+    "dateOfBirth": "11/09/2008",
+    "gender": "Nam",
+    "class": "11S",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2404768580",
+    "name": "Trần Phương Nam",
+    "dateOfBirth": "25/11/2008",
+    "gender": "Nam",
+    "class": "11P",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245303",
+    "name": "Phạm Quý Nam",
+    "dateOfBirth": "03/11/2008",
+    "gender": "Nam",
+    "class": "11A",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245510",
+    "name": "Vũ Thế Nam",
+    "dateOfBirth": "09/03/2008",
+    "gender": "Nam",
+    "class": "11Q",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245340",
+    "name": "Trần Vân Nga",
+    "dateOfBirth": "01/07/2008",
+    "gender": "Nữ",
+    "class": "11E",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245547",
+    "name": "Nguyễn Hoàng Ngân",
+    "dateOfBirth": "27/06/2008",
+    "gender": "Nữ",
+    "class": "11S",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245511",
+    "name": "Nguyễn Đàm Kim Ngân",
+    "dateOfBirth": "05/12/2008",
+    "gender": "Nữ",
+    "class": "11Q",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245341",
+    "name": "Đặng Kim Ngân",
+    "dateOfBirth": "25/09/2008",
+    "gender": "Nữ",
+    "class": "11E",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245464",
+    "name": "Phạm Gia Kim Ngân",
+    "dateOfBirth": "24/10/2008",
+    "gender": "Nữ",
+    "class": "11P",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245388",
+    "name": "Nguyễn Hoàng Kim Ngân",
+    "dateOfBirth": "20/10/2008",
+    "gender": "Nữ",
+    "class": "11H",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245465",
+    "name": "Nguyễn Thị Kim Ngân",
+    "dateOfBirth": "15/02/2008",
+    "gender": "Nữ",
+    "class": "11P",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245466",
+    "name": "Vũ Thị Kim Ngân",
+    "dateOfBirth": "07/11/2008",
+    "gender": "Nữ",
+    "class": "11P",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245389",
+    "name": "Phạm Phương Ngân",
+    "dateOfBirth": "07/12/2008",
+    "gender": "Nữ",
+    "class": "11S",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245342",
+    "name": "Vũ Thái Nghi",
+    "dateOfBirth": "24/09/2008",
+    "gender": "Nữ",
+    "class": "11E",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245343",
+    "name": "Nguyễn Phương Bảo Ngọc",
+    "dateOfBirth": "13/09/2008",
+    "gender": "Nữ",
+    "class": "11E",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245548",
+    "name": "Trần Thị Bảo Ngọc",
+    "dateOfBirth": "27/11/2008",
+    "gender": "Nữ",
+    "class": "11S",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245390",
+    "name": "Phan Khánh Ngọc",
+    "dateOfBirth": "01/03/2008",
+    "gender": "Nữ",
+    "class": "11H",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245549",
+    "name": "Phạm Thị Như Ngọc",
+    "dateOfBirth": "24/03/2008",
+    "gender": "Nữ",
+    "class": "11S",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245391",
+    "name": "Hoàng Khánh Nguyên",
+    "dateOfBirth": "04/12/2008",
+    "gender": "Nam",
+    "class": "11H",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245344",
+    "name": "Trần Khôi Nguyên",
+    "dateOfBirth": "21/12/2008",
+    "gender": "Nam",
+    "class": "11E",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245304",
+    "name": "Trần Thái Nguyên",
+    "dateOfBirth": "21/02/2008",
+    "gender": "Nam",
+    "class": "11A",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245513",
+    "name": "Nguyễn Thị Phương Nhi",
+    "dateOfBirth": "29/02/2008",
+    "gender": "Nữ",
+    "class": "11Q",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245345",
+    "name": "Phùng Trang Nhung",
+    "dateOfBirth": "02/05/2008",
+    "gender": "Nữ",
+    "class": "11E",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245550",
+    "name": "Lê Dược Phi",
+    "dateOfBirth": "15/10/2008",
+    "gender": "Nữ",
+    "class": "11I",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245346",
+    "name": "Phan Gia Phong",
+    "dateOfBirth": "22/06/2008",
+    "gender": "Nam",
+    "class": "11E",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245426",
+    "name": "Trần Hải Phong",
+    "dateOfBirth": "10/07/2008",
+    "gender": "Nam",
+    "class": "11I",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245347",
+    "name": "Trần Hữu Phong",
+    "dateOfBirth": "23/02/2008",
+    "gender": "Nam",
+    "class": "11E",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245467",
+    "name": "Đinh Tuấn Phong",
+    "dateOfBirth": "07/08/2008",
+    "gender": "Nam",
+    "class": "11P",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245314",
+    "name": "Thái Hoàng Việt Phong",
+    "dateOfBirth": "04/05/2008",
+    "gender": "Nam",
+    "class": "11A",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245514",
+    "name": "Nguyễn Minh Phúc",
+    "dateOfBirth": "19/02/2008",
+    "gender": "Nam",
+    "class": "11Q",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245305",
+    "name": "Phạm Phú Phúc",
+    "dateOfBirth": "22/11/2008",
+    "gender": "Nam",
+    "class": "11A",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245348",
+    "name": "Vũ Mai Phương",
+    "dateOfBirth": "07/02/2008",
+    "gender": "Nữ",
+    "class": "11E",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245392",
+    "name": "Lê Thị Thúy Phương",
+    "dateOfBirth": "08/09/2008",
+    "gender": "Nữ",
+    "class": "11H",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245552",
+    "name": "Huỳnh Thị Vân Phương",
+    "dateOfBirth": "07/07/2008",
+    "gender": "Nữ",
+    "class": "11S",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245515",
+    "name": "Hoàng Thị Phượng",
+    "dateOfBirth": "18/01/2008",
+    "gender": "Nữ",
+    "class": "11Q",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245306",
+    "name": "Lê Anh Quân",
+    "dateOfBirth": "09/09/2008",
+    "gender": "Nam",
+    "class": "11A",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245427",
+    "name": "Nguyễn Hồng Quân",
+    "dateOfBirth": "26/07/2008",
+    "gender": "Nam",
+    "class": "11I",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245307",
+    "name": "Đỗ Ngọc Minh Quân",
+    "dateOfBirth": "31/01/2008",
+    "gender": "Nam",
+    "class": "11A",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245516",
+    "name": "Nguyễn Trọng Quân",
+    "dateOfBirth": "19/12/2008",
+    "gender": "Nam",
+    "class": "11Q",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245468",
+    "name": "Nguyễn Danh Quang",
+    "dateOfBirth": "27/02/2008",
+    "gender": "Nam",
+    "class": "11S",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245428",
+    "name": "Lê Hồng Quang",
+    "dateOfBirth": "06/10/2008",
+    "gender": "Nam",
+    "class": "11I",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245553",
+    "name": "Đinh Thái Quang",
+    "dateOfBirth": "06/08/2008",
+    "gender": "Nam",
+    "class": "11S",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245429",
+    "name": "Nguyễn Tuấn Quang",
+    "dateOfBirth": "02/05/2008",
+    "gender": "Nam",
+    "class": "11I",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245308",
+    "name": "Phùng Văn Quang",
+    "dateOfBirth": "16/11/2008",
+    "gender": "Nam",
+    "class": "11A",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245349",
+    "name": "Vũ Đặng Trung Quốc",
+    "dateOfBirth": "09/09/2008",
+    "gender": "Nam",
+    "class": "11E",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245517",
+    "name": "Vũ Tú Quyên",
+    "dateOfBirth": "12/11/2008",
+    "gender": "Nữ",
+    "class": "11Q",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245393",
+    "name": "Đinh Văn Quyền",
+    "dateOfBirth": "11/02/2008",
+    "gender": "Nam",
+    "class": "11H",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245554",
+    "name": "Phạm Như Quỳnh",
+    "dateOfBirth": "10/05/2008",
+    "gender": "Nữ",
+    "class": "11S",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245469",
+    "name": "Nguyễn Ngọc Trúc Quỳnh",
+    "dateOfBirth": "29/01/2008",
+    "gender": "Nữ",
+    "class": "11P",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245430",
+    "name": "Nguyễn Đại Sơn",
+    "dateOfBirth": "10/08/2008",
+    "gender": "Nam",
+    "class": "11I",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245350",
+    "name": "Nguyễn Thái Sơn",
+    "dateOfBirth": "08/07/2008",
+    "gender": "Nam",
+    "class": "11E",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245431",
+    "name": "Phạm Trần Tâm",
+    "dateOfBirth": "18/08/2008",
+    "gender": "Nam",
+    "class": "11I",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245432",
+    "name": "Đoàn Duy Thắng",
+    "dateOfBirth": "04/08/2008",
+    "gender": "Nam",
+    "class": "11I",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245433",
+    "name": "Đoàn Thị Kim Thanh",
+    "dateOfBirth": "23/06/2008",
+    "gender": "Nữ",
+    "class": "11I",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245555",
+    "name": "Ngô Thị Minh Thanh",
+    "dateOfBirth": "07/10/2008",
+    "gender": "Nữ",
+    "class": "11S",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245351",
+    "name": "Quán Đại Thành",
+    "dateOfBirth": "08/09/2008",
+    "gender": "Nam",
+    "class": "11E",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245470",
+    "name": "Tạ Minh Thành",
+    "dateOfBirth": "22/08/2008",
+    "gender": "Nam",
+    "class": "11P",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245394",
+    "name": "Lương Quang Thành",
+    "dateOfBirth": "25/05/2008",
+    "gender": "Nam",
+    "class": "11H",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245556",
+    "name": "Nguyễn Tiến Thành",
+    "dateOfBirth": "20/10/2008",
+    "gender": "Nam",
+    "class": "11S",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245557",
+    "name": "Dương Phương Thảo",
+    "dateOfBirth": "27/07/2008",
+    "gender": "Nữ",
+    "class": "11I",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245434",
+    "name": "Lê Phương Thảo",
+    "dateOfBirth": "25/05/2008",
+    "gender": "Nữ",
+    "class": "11I",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245471",
+    "name": "Lê Thanh Thảo",
+    "dateOfBirth": "09/06/2008",
+    "gender": "Nữ",
+    "class": "11P",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245309",
+    "name": "Nguyễn Đức Thịnh",
+    "dateOfBirth": "21/12/2008",
+    "gender": "Nam",
+    "class": "11A",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245395",
+    "name": "Vũ Văn Thịnh",
+    "dateOfBirth": "16/12/2008",
+    "gender": "Nam",
+    "class": "11H",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245352",
+    "name": "Vũ Minh Thu",
+    "dateOfBirth": "12/03/2008",
+    "gender": "Nữ",
+    "class": "11E",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245558",
+    "name": "Cao Nguyễn Anh Thư",
+    "dateOfBirth": "30/12/2008",
+    "gender": "Nữ",
+    "class": "11S",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245559",
+    "name": "Nguyễn Anh Thư",
+    "dateOfBirth": "07/12/2008",
+    "gender": "Nữ",
+    "class": "11S",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245472",
+    "name": "Phạm Anh Thư",
+    "dateOfBirth": "25/08/2008",
+    "gender": "Nữ",
+    "class": "11P",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245518",
+    "name": "Phùng Anh Thư",
+    "dateOfBirth": "20/10/2008",
+    "gender": "Nữ",
+    "class": "11Q",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245435",
+    "name": "Trịnh Thế Toàn",
+    "dateOfBirth": "20/10/2008",
+    "gender": "Nam",
+    "class": "11I",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245436",
+    "name": "Lương Ngọc Vương Tôn",
+    "dateOfBirth": "01/06/2008",
+    "gender": "Nam",
+    "class": "11I",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245473",
+    "name": "Phạm Bảo Trâm",
+    "dateOfBirth": "28/05/2008",
+    "gender": "Nữ",
+    "class": "11P",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245353",
+    "name": "Bùi Thiên Bảo Trân",
+    "dateOfBirth": "09/02/2008",
+    "gender": "Nữ",
+    "class": "11E",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245437",
+    "name": "Nguyễn Hà Trang",
+    "dateOfBirth": "04/10/2008",
+    "gender": "Nữ",
+    "class": "11I",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245474",
+    "name": "Nguyễn Huyền Trang",
+    "dateOfBirth": "24/05/2008",
+    "gender": "Nữ",
+    "class": "11P",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245475",
+    "name": "Nguyễn Thị Huyền Trang",
+    "dateOfBirth": "25/07/2008",
+    "gender": "Nữ",
+    "class": "11P",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245476",
+    "name": "Nguyễn Thị Huyền Trang",
+    "dateOfBirth": "22/08/2008",
+    "gender": "Nữ",
+    "class": "11P",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2403520286",
+    "name": "Lê Linh Trang",
+    "dateOfBirth": "03/10/2008",
+    "gender": "Nữ",
+    "class": "11E",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245519",
+    "name": "Nguyễn Phương Trang",
+    "dateOfBirth": "24/07/2008",
+    "gender": "Nữ",
+    "class": "11Q",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245354",
+    "name": "Đỗ Thị Quỳnh Trang",
+    "dateOfBirth": "13/09/2008",
+    "gender": "Nữ",
+    "class": "11Q",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245438",
+    "name": "Vũ Quỳnh Trang",
+    "dateOfBirth": "22/09/2008",
+    "gender": "Nữ",
+    "class": "11I",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245439",
+    "name": "Nguyễn Thảo Trang",
+    "dateOfBirth": "04/11/2008",
+    "gender": "Nữ",
+    "class": "11P",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245477",
+    "name": "Nguyễn Vũ Thu Trang",
+    "dateOfBirth": "17/03/2008",
+    "gender": "Nữ",
+    "class": "11P",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245560",
+    "name": "Phạm Danh Triết",
+    "dateOfBirth": "29/08/2008",
+    "gender": "Nam",
+    "class": "11S",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2410173129",
+    "name": "Nguyễn Gia Trung",
+    "dateOfBirth": "22/09/2008",
+    "gender": "Nam",
+    "class": "11S",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245311",
+    "name": "Phạm Quang Trường",
+    "dateOfBirth": "11/09/2008",
+    "gender": "Nam",
+    "class": "11A",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245356",
+    "name": "Vũ Thiên Trường",
+    "dateOfBirth": "09/10/2008",
+    "gender": "Nam",
+    "class": "11E",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245440",
+    "name": "Trần Anh Tú",
+    "dateOfBirth": "02/03/2008",
+    "gender": "Nam",
+    "class": "11I",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245396",
+    "name": "Bùi Minh Tú",
+    "dateOfBirth": "13/05/2008",
+    "gender": "Nam",
+    "class": "11H",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245397",
+    "name": "Nguyễn Thanh Tú",
+    "dateOfBirth": "06/04/2008",
+    "gender": "Nam",
+    "class": "11H",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245520",
+    "name": "Bùi Tuấn Tú",
+    "dateOfBirth": "22/08/2008",
+    "gender": "Nam",
+    "class": "11Q",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245398",
+    "name": "Nguyễn Anh Tuấn",
+    "dateOfBirth": "24/11/2008",
+    "gender": "Nam",
+    "class": "11H",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245399",
+    "name": "Nguyễn Đình Tùng",
+    "dateOfBirth": "21/09/2008",
+    "gender": "Nam",
+    "class": "11H",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245312",
+    "name": "Đỗ Huy Tùng",
+    "dateOfBirth": "21/04/2008",
+    "gender": "Nam",
+    "class": "11A",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245313",
+    "name": "Lê Huy Tùng",
+    "dateOfBirth": "30/09/2008",
+    "gender": "Nam",
+    "class": "11A",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245478",
+    "name": "Khương Thị Hà Vi",
+    "dateOfBirth": "05/02/2008",
+    "gender": "Nữ",
+    "class": "11P",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245521",
+    "name": "Dương Hà Vy",
+    "dateOfBirth": "13/11/2008",
+    "gender": "Nữ",
+    "class": "11Q",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245479",
+    "name": "Đinh Tường Vy",
+    "dateOfBirth": "06/09/2008",
+    "gender": "Nữ",
+    "class": "11P",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  },
+  {
+    "vneduId": "2302245480",
+    "name": "Hàn Hải Yến",
+    "dateOfBirth": "17/12/2008",
+    "gender": "Nữ",
+    "class": "11P",
+    "branch": "MC1",
+    "roles": "STUDENT"
+  }
+]

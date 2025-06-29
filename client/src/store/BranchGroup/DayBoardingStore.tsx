@@ -7,7 +7,7 @@ import { DEFAULT_PAGE_TABLE_SIZE } from 'utils/constants/commons-constant'
 import { toast } from 'utils/toast'
 import RootStore from '../RootStore'
 
-class EnewLetterStoretStore {
+class DayBoardingStore {
   rootStore: RootStore
   loadingListing: boolean
   loadingSubmit: boolean
@@ -27,7 +27,7 @@ class EnewLetterStoretStore {
     data: [],
   }
 
-  selectedItem: EnewLetter
+  selectedItem: []
 
   constructor(rootStore) {
     this.rootStore = rootStore
@@ -83,14 +83,15 @@ class EnewLetterStoretStore {
     }
   }
 
-  fetchDetail = async (id) => {
+  fetchDetail = async (query) => {
     this.loadingDetail = true
     try {
       const { data } = await axiosInstant.request({
-        url: `/api/v1/newsletter/${id}`,
+        url: `/api/day-boarding/get-all-register`,
+        params: query,
       })
       runInAction(() => {
-        this.selectedItem = data
+        this.selectedItem = data.data
       })
     } catch (err) {
       // throw err
@@ -169,4 +170,4 @@ class EnewLetterStoretStore {
   }
 }
 
-export default EnewLetterStoretStore
+export default DayBoardingStore
