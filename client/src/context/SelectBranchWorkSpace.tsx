@@ -34,7 +34,7 @@ const SelectBranchWorkSpace = ({ showLogo = true, className = '' }) => {
             className="mt-2 mx-auto"
             onClick={() => {
               if (selectedBranch) {
-                localStorage.setItem('branchId', selectedBranch?._id)
+                localStorage.setItem('branchId', selectedBranch)
                 window.location.reload()
               }
             }}

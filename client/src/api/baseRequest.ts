@@ -53,23 +53,16 @@ export const setCustomHeaders = (data) => {
   customHeader = data
 }
 
-axiosInstant.interceptors.request.use(
-  function (config) {
-    // Do something before request is sent
-    config.baseURL = REACT_APP_SERVER_API
-    config.headers.set(
-      'Authorization',
-      `Bearer ${localStorage.getItem('accessToken')}`
-    )
-
-    return config
-  },
-  function (error) {
-    console.log(error)
-    // Do something with request error
-    return Promise.reject(error)
+axiosInstant.interceptors.request.use((config) => {
+  config.baseURL = REACT_APP_SERVER_API
+  const token = localStorage.getItem('accessToken')
+  const branch = localStorage.getItem('branchId')
+  if (token) {
+    config.headers.Authorization = `Bearer ${token}`
+    config.headers['x-branch-id'] = branch
   }
-)
+  return config
+})
 
 axiosInstant.interceptors.response.use(
   function (response) {

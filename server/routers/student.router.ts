@@ -4,7 +4,7 @@ import { AuthRequest } from "../middleware/authMiddleware";
 import { classRepository } from "../models/class.repository";
 import { studentRepository } from "../models/student.repository";
 import { dayBoardingService } from "../services/dayBoarding.service";
-import { MC_SERVICE, USER_POSITION } from "../utils/enum";
+import { MC_SERVICE } from "../utils/enum";
 
 const router = Router();
 router.post("/register", async (req: Request, res: Response): Promise<void> => {
@@ -49,13 +49,9 @@ router.get(
   "/get-all-class",
   async (req: AuthRequest, res: Response): Promise<void> => {
     try {
-      const data = await classRepository.findAll(
-        req.user.position === USER_POSITION.SUPER_ADMIN
-          ? null
-          : {
-              _id: req.user.class,
-            }
-      );
+      const data = await classRepository.findAll({
+        branch: req.user.branch,
+      });
       res.json({ data });
     } catch (err) {
       console.error(err);

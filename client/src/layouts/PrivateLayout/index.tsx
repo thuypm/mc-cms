@@ -26,12 +26,7 @@ const getRouteComponent = (
       <Route
         key={route.key}
         path={route.path}
-        element={
-          <>
-            <Header setCollapse={setCollapse} />
-            {route.element}
-          </>
-        }
+        element={<>{route.element}</>}
         index
       ></Route>
       <Route key={route.key} path={route.path}>
@@ -40,10 +35,7 @@ const getRouteComponent = (
             getRouteComponent(child, menuRole, setCollapse)
           )
         ) : (
-          <>
-            <Header setCollapse={setCollapse} />
-            {route.element}
-          </>
+          <>{route.element}</>
         )}
       </Route>
       <Route path="*" element={<NotFound />}></Route>
@@ -52,12 +44,7 @@ const getRouteComponent = (
     <Route
       key={route.key}
       path={route.path}
-      element={
-        <>
-          <Header setCollapse={setCollapse} />
-          {route.element}
-        </>
-      }
+      element={<>{route.element}</>}
       index
     ></Route>
   )
@@ -80,14 +67,17 @@ const PrivateLayoutContent = () => {
   const [collapse, setCollapse] = useState(false)
 
   return (
-    <div className="w-full h-full flex bg-gray-100 gap-3">
+    <div className="w-full h-full flex bg-gray-100 gap-3 overflow-auto">
       <LeftSideBar collapse={collapse} />
-      <div className="flex-1 pr-3 ">
-        <Routes>
-          {appRouters.map((route) =>
-            getRouteComponent(route, null, setCollapse)
-          )}
-        </Routes>
+      <div className="flex-1 pr-3 flex flex-column overflow-auto flex-0">
+        <Header />
+        <div className="flex-1 overflow-auto flex-grow-1">
+          <Routes>
+            {appRouters.map((route) =>
+              getRouteComponent(route, null, setCollapse)
+            )}
+          </Routes>
+        </div>
       </div>
     </div>
   )

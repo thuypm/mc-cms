@@ -1,4 +1,4 @@
-import { FilterQuery, Model, Types } from "mongoose";
+import { FilterQuery, Model, Query, Schema, Types } from "mongoose";
 
 export class BaseRepository<T extends { _id: Types.ObjectId }> {
   constructor(protected model: Model<T>) {}
@@ -64,4 +64,32 @@ export class BaseRepository<T extends { _id: Types.ObjectId }> {
       totalPages: Math.ceil(total / limit),
     };
   }
+}
+
+// unuse
+interface PluginContext {
+  branchId?: string;
+}
+export function withBranchPlugin<T extends Document>(schema: Schema<T>) {
+  // Hook cho các truy vấn find, findOne, findMany, etc.
+  schema.pre<Query<any, any>>(/^find/, function (next) {
+    const context = this.getOptions()?.context as PluginContext | undefined;
+    const branchId = context?.branchId;
+
+    if (branchId) {
+      this.where({ branchId });
+    }
+
+    next();
+  });
+
+  // Hook khi save document mới
+  schema.pre("save", function (next) {
+    const context = (this.$locals?.context as PluginContext) || {};
+    if (context.branchId) {
+      // @ts-ignore: Chấp nhận vì `this` có thể không định nghĩa sẵn branchId
+      this.branchId = context.branchId;
+    }
+    next();
+  });
 }

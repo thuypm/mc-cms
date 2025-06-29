@@ -6,6 +6,7 @@ import { JWT_SECRET } from "../utils/environment";
 
 export interface AuthRequest extends Request {
   user?: any; // Hoặc kiểu cụ thể nếu bạn muốn (vd: IUser)
+  branchId?: string;
 }
 
 export const authenticateToken: RequestHandler = (

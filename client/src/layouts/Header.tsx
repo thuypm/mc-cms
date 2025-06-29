@@ -54,7 +54,7 @@ export default function Header({ setCollapse }: any) {
   const [show, setShow] = useState(false)
 
   return (
-    <div className=" flex justify-content-between align-items-center py-2 top-0 z-5 bg-gray-100 my-2 bg-white">
+    <div className=" flex justify-content-between align-items-center py-2 top-0 z-5 bg-gray-100 my-2 bg-white flex-grow-0">
       <div className="flex  align-items-center gap-2 flex-1 overflow-hidden">
         <div
           className="cursor-pointer p-2 flex  align-items-center"

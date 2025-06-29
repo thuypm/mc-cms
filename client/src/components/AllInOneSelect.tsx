@@ -44,7 +44,7 @@ const AllInOneSelect = forwardRef((props: AllInOneSelectProps, ref: any) => {
       setData(data.data)
       // if (selectFirstItem && data.data.length) onChange(null, data.data[0])
     } catch (error) {
-      console.log(error)
+      // console.log(error)
     } finally {
       setLoading(false)
     }
