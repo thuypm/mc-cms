@@ -2,16 +2,12 @@ import BaseManagementComponent from 'components/BaseManagementComponent'
 import FilterSelect from 'components/InfiniteSelect/FilterSelect'
 import InputSearchKeyword from 'components/InputSearchKeyword'
 import { useStore } from 'context/store'
-import dayjs from 'dayjs'
 import { observer } from 'mobx-react'
 import { Button } from 'primereact/button'
-import { useTranslation } from 'react-i18next'
+import { useMemo } from 'react'
 import { Link } from 'react-router-dom'
-import { DATE_TIME_FORMAT } from 'utils/constants/datetime'
-import { checkNullDeleteItem } from 'utils/helper/common-helpers'
-
+const dayHeaders = ['T2', 'T3', 'T4', 'T5', 'T6', 'T7', 'CN']
 const DayBoarding = () => {
-  const { t } = useTranslation()
   const {
     dayBoardingStore: {
       loadingListing,
@@ -20,7 +16,12 @@ const DayBoarding = () => {
       listData: { data, meta },
     },
   } = useStore()
-
+  const columnsWeekDay = useMemo(() => {
+    return dayHeaders.map((day) => ({
+      key: day,
+      header: day, // hoặc giữ nguyên day nếu không cần dịch
+    }))
+  }, [])
   return (
     <BaseManagementComponent
       dataSource={data}
@@ -30,13 +31,13 @@ const DayBoarding = () => {
           key: 'view',
           icon: <i className="isax-eye"></i>,
           href: (item) => `/enewletter-management/${item._id}`,
-          tooltip: t('View'),
+          tooltip: 'View',
         },
         {
           key: 'clone',
           icon: <i className="isax-copy"></i>,
           href: (item) => `/enewletter-management/create?cloneId=${item._id}`,
-          tooltip: t('Clone Enewletter'),
+          tooltip: 'Clone Enewletter',
         },
         {
           key: 'delete',
@@ -45,35 +46,27 @@ const DayBoarding = () => {
           action: (data) => {
             deleteItem(data._id)
           },
-          tooltip: t('Delete'),
+          tooltip: 'Delete',
         },
       ]}
       columns={[
         {
-          key: 'title',
-          header: t('Title'),
-          width: '50%',
+          key: 'ID',
+          header: 'Mã HS',
         },
         {
-          key: 'scheduledTime',
-          header: t('Schedule Time'),
-          sortable: true,
-          body: (data) =>
-            dayjs(data.scheduledTime).format(DATE_TIME_FORMAT.FULL),
-          width: '20%',
+          key: 'name',
+          header: 'Họ và tên',
         },
         {
-          key: 'createdBy',
-          header: t('Created by'),
-
-          body: (data) =>
-            checkNullDeleteItem(data.createdBy, 'fullName', t('Admin')),
-          width: '20%',
+          key: 'class',
+          header: 'Lớp',
         },
+        ...columnsWeekDay,
         {
           key: 'status',
           dataIndex: 'status',
-          header: t('Status'),
+          header: 'Status',
 
           filter: true,
           width: '100px',
@@ -92,7 +85,7 @@ const DayBoarding = () => {
                 }}
                 showSearch={false}
                 onChange={(e) => options.filterApplyCallback(e, options.index)}
-                placeholder={t('Select One')}
+                placeholder={'Select One'}
               />
             )
           },
@@ -107,15 +100,12 @@ const DayBoarding = () => {
       handleFilterDataChange={handleFilterDataChange}
       filterComponent={
         <div className="flex justify-content-between align-items-center flex-wrap">
-          <h1 className="text-3xl font-bold">{t('E-Newsletter List')}</h1>
+          <h1 className="text-xl font-bold">Đăng ký BT hàng ngày</h1>
           <div className="flex gap-3 flex-wrap">
-            <InputSearchKeyword placeholder={t('Search for Title')} />
-
+            <InputSearchKeyword placeholder="Tìm kiếm" />
+            <Button label={'Tạo dữ liệu'}></Button>
             <Link to={'create'}>
-              <Button
-                icon="isax isax-add"
-                label={t('Add new', { item: t('E-Newsletter') })}
-              ></Button>
+              <Button icon="isax isax-add" label={'Đăng ký dịch vụ'}></Button>
             </Link>
           </div>
         </div>

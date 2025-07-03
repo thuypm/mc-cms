@@ -7,6 +7,7 @@ export interface IDayBoardingRegistration extends Document {
   service: string;
   isActive: boolean;
   canceledAt?: Date;
+  registedBy?: Types.ObjectId;
 }
 
 const DayBoardingRegistrationSchema: Schema = new Schema(

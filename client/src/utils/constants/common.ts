@@ -12,3 +12,7 @@ export const BRANCH_SELECT_OPTIONS = [
     value: BranchValue.MC2,
   },
 ]
+export enum MC_SERVICE {
+  DAY_BOARDING = 'DAY_BOARDING',
+  SHUTTLE_BUS = 'SHUTTLE_BUS',
+}

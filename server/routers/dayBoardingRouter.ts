@@ -9,34 +9,39 @@ router.post(
   "/register",
   async (req: AuthRequest, res: Response): Promise<void> => {
     try {
-      const dayBoardingYup = yup.object({
-        studentIds: yup
-          .array()
-          .of(yup.string().required())
-          .min(1, "At least one studentId is required")
-          .required("Student ids is required"),
-
-        service: yup
-          .string()
-          .oneOf([MC_SERVICE.DAY_BOARDING, MC_SERVICE.SHUTTLE_BUS]) // thay bằng các giá trị thực trong enum MC_SERVICE
-          .required("Service is required"),
-      });
-      const parsed = await dayBoardingYup.validate(req.body, {
+      const dayBoardingArraySchema = yup
+        .array()
+        .of(
+          yup.object({
+            _id: yup.string().required("_id is required"),
+            service: yup
+              .string()
+              .oneOf(
+                [MC_SERVICE.DAY_BOARDING, MC_SERVICE.SHUTTLE_BUS],
+                "Service must be a valid type"
+              )
+              .required("Service is required"),
+            isActive: yup.boolean().required("isActive is required"),
+          })
+        )
+        .min(1, "At least one registration is required")
+        .required("This field is required");
+      const parsed = await dayBoardingArraySchema.validate(req.body, {
         abortEarly: false,
         stripUnknown: true,
       });
-      const data = await dayBoardingService.createDayBoardingAndRegistration({
-        ...parsed,
-        registedBy: req.user._id,
-      });
+      const data = await dayBoardingService.createDayBoardingAndRegistration(
+        parsed,
+        req.user._id
+      );
       res.json(data);
       // res.json(user);
     } catch (err) {
-      console.error(err);
-      res.status(400).json({ message: err });
+      res.status(400).json({ message: `${err}` });
     }
   }
 );
+
 router.get(
   "/get-all-register",
   async (req: AuthRequest, res: Response): Promise<void> => {

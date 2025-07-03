@@ -1,5 +1,5 @@
 // services/student.service.ts
-import { ObjectId } from "mongodb";
+import { Types } from "mongoose";
 import {
   dayBoardingRepository,
   IDayBoarding,
@@ -13,7 +13,7 @@ class DayBoardingService extends BaseService<IDayBoarding> {
   getDayBoardingAllRegistration = async (query?: any) => {
     const students = await studentRepository.findAll({
       ...query,
-      class: new ObjectId(query.class),
+      class: new Types.ObjectId(query.class),
     });
 
     const registedData = await dayBoardingRegistrationRepository.findAll(
@@ -22,11 +22,11 @@ class DayBoardingService extends BaseService<IDayBoarding> {
       },
       ["student", "registedBy"]
     );
+
     const registrationMap = new Map<string, any>();
     registedData.forEach((r) => {
-      registrationMap.set(r.student.toString(), r); // toString để match ObjectId
+      registrationMap.set(r.student._id.toString(), r); // toString để match ObjectId
     });
-
     const studentsWithRegister = students.map((student) => {
       const register = registrationMap.get(student._id.toString());
       return {
@@ -34,25 +34,34 @@ class DayBoardingService extends BaseService<IDayBoarding> {
         register,
       };
     });
+
     return studentsWithRegister;
   };
-  createDayBoardingAndRegistration = async ({
-    studentIds,
-    service,
-    registedBy,
-  }: {
-    studentIds?: Array<string>;
-    service?: MC_SERVICE;
-    registedBy?: string;
-  }) => {
-    return await dayBoardingRegistrationRepository.createMany(
-      studentIds.map((s) => ({
-        student: new ObjectId(s),
-        isActive: true,
+  createDayBoardingAndRegistration = async (
+    data: { _id?: string; service?: MC_SERVICE; isActive?: boolean }[],
+    registedBy?: string
+  ) => {
+    for (const item of data) {
+      const { _id: studentId, service, isActive } = item;
+
+      const existing = await dayBoardingRegistrationRepository.findOne({
+        student: new Types.ObjectId(studentId),
         service,
-        registedBy: new ObjectId(registedBy),
-      }))
-    );
+      });
+
+      if (!existing) {
+        await dayBoardingRegistrationRepository.create({
+          student: new Types.ObjectId(studentId),
+          service,
+          isActive,
+          registedBy: new Types.ObjectId(registedBy),
+        });
+      } else {
+        existing.isActive = isActive;
+        existing.registedBy = new Types.ObjectId(registedBy);
+        await existing.save();
+      }
+    }
   };
 
   getDayBoardings = async (query: any) => {

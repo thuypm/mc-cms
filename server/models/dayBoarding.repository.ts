@@ -3,43 +3,32 @@ import { BaseRepository } from "./base.repository";
 
 export interface IDayBoarding extends Document {
   _id: Types.ObjectId;
-  student: {
-    type: mongoose.Schema.Types.ObjectId;
-    ref: "Student";
-  };
-  service: string;
-  isActive: boolean;
-  startDate: Date;
-  endDate: Date;
-  canceledAt?: Date;
+  student: Types.ObjectId;
+  registedBy: Types.ObjectId;
+  status: number;
+  date: Date;
 }
 
 const DayBoardingSchema: Schema = new Schema(
   {
-    user: {
+    student: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "Student",
       required: true,
     },
-    service: {
-      type: String,
+    registedBy: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "Teacher",
       required: true,
     },
-    isActive: {
-      type: Boolean,
+    status: {
+      type: Number,
       required: true,
-      default: true,
+      default: 1, // bạn có thể chỉnh default tùy ý
     },
-    startDate: {
+    date: {
       type: Date,
       required: true,
-    },
-    endDate: {
-      type: Date,
-      required: true,
-    },
-    canceledAt: {
-      type: Date,
     },
   },
   { timestamps: true }
@@ -57,13 +46,6 @@ class DayBoardingRepository extends BaseRepository<IDayBoarding> {
 
   async findActiveByUser(userId: string) {
     return this.model.findOne({ user: userId, isActive: true });
-  }
-
-  async cancelById(id: string) {
-    return this.update(id, {
-      isActive: false,
-      canceledAt: new Date(),
-    });
   }
 }
 

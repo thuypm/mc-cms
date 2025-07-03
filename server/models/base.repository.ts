@@ -14,7 +14,10 @@ export class BaseRepository<T extends { _id: Types.ObjectId }> {
   async createMany(data: Partial<T>[]) {
     return this.model.insertMany(data);
   }
-  async findOne(id: string) {
+  async findOne(condition: any) {
+    return this.model.findOne(condition);
+  }
+  async findById(id: string) {
     if (!Types.ObjectId.isValid(id)) throw new Error("Invalid ID");
     return this.model.findById(id);
   }

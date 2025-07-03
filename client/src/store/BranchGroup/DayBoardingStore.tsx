@@ -124,18 +124,18 @@ class DayBoardingStore {
     }
   }
 
-  update = async (id, payload: any) => {
+  update = async (payload: any) => {
     this.loadingSubmit = true
     try {
       const res = await axiosInstant.request({
-        url: `/api/v1/newsletter/${id}`,
-        method: 'put',
+        url: `/api/day-boarding/register`,
+        method: 'post',
         data: payload,
       })
       toast({
         severity: 'success',
-        detail: i18n.t('Updated item', { item: i18n.t('E-Newsletter') }),
-        summary: i18n.t('Success'),
+        detail: 'Đã đăng ký dịch vụ thành công',
+        summary: 'Thành công',
       })
       return res
     } catch (err) {

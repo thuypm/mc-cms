@@ -75,6 +75,10 @@ body,
   height: 100vh;
   overflow: auto;
 }
+.hover-highlight:hover {
+  background-color: #f0f9ff; /* hoặc màu bạn muốn */
+  cursor: pointer;
+}
 .field {
   margin-bottom: 1.5rem;
 }
