@@ -7,7 +7,7 @@ export const DATE_TIME_FORMAT = {
   FULL_SECOND: 'YYYY/MM/DD HH:mm:ss',
   FULL: 'YYYY/MM/DD HH:mm',
   DATE: 'yy/mm/dd',
-  DAY_ONLY: 'YYYY/MM/DD',
+  DAY_ONLY: 'DD/MM/YYYY',
   HOUR: 'HH:mm',
 }
 export const FORMAT_TIME = 'HH:mm:ss'

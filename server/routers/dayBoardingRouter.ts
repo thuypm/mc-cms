@@ -30,9 +30,11 @@ router.post(
         abortEarly: false,
         stripUnknown: true,
       });
+
       const data = await dayBoardingService.createDayBoardingAndRegistration(
         parsed,
-        req.user._id
+        req.user._id,
+        req.user.branch
       );
       res.json(data);
       // res.json(user);
@@ -59,6 +61,38 @@ router.get(
           data: data,
         });
       }
+    } catch (err) {
+      console.error(err);
+      res.status(400).json({ message: "Failed to fetch user info" });
+    }
+  }
+);
+router.post(
+  "/create-day-data",
+  async (req: AuthRequest, res: Response): Promise<void> => {
+    try {
+      const data = await dayBoardingService.createDayData(
+        req.body.dates,
+        req.user._id,
+        req.user.branch
+      );
+      res.json(data);
+      // res.json(user);
+    } catch (err) {
+      res.status(400).json({ message: `${err}` });
+    }
+  }
+);
+router.get(
+  "/get-day-data",
+  async (req: AuthRequest, res: Response): Promise<void> => {
+    try {
+      const data = await dayBoardingService.getDayData({
+        branch: req.user.branch,
+      });
+      res.json({
+        data: data,
+      });
     } catch (err) {
       console.error(err);
       res.status(400).json({ message: "Failed to fetch user info" });

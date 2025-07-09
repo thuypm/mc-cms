@@ -8,21 +8,17 @@ import { Column } from 'primereact/column'
 import { DataTable } from 'primereact/datatable'
 import { Divider } from 'primereact/divider'
 import { useCallback, useContext, useEffect, useState } from 'react'
-import { useTranslation } from 'react-i18next'
 import { useNavigate } from 'react-router-dom'
 import { MC_SERVICE } from 'utils/constants/common'
 import { USER_POSITION } from 'utils/constants/user'
 
 const CreateDayBoarding = () => {
-  const { t } = useTranslation()
-
   const {
     dayBoardingStore: {
       fetchDetail,
       selectedItem,
       loadingDetail,
       loadingSubmit,
-      setSelectedItem,
       update,
     },
   } = useStore()

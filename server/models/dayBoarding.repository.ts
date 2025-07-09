@@ -7,6 +7,7 @@ export interface IDayBoarding extends Document {
   registedBy: Types.ObjectId;
   status: number;
   date: Date;
+  branch?: string;
 }
 
 const DayBoardingSchema: Schema = new Schema(
@@ -28,6 +29,10 @@ const DayBoardingSchema: Schema = new Schema(
     },
     date: {
       type: Date,
+      required: true,
+    },
+    branch: {
+      type: String,
       required: true,
     },
   },

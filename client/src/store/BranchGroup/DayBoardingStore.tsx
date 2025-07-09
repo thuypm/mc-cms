@@ -168,6 +168,28 @@ class DayBoardingStore {
       })
     }
   }
+
+  createDayData = async (selectedDaterange) => {
+    try {
+      const res = await axiosInstant.request({
+        url: `/api/day-boarding/create-day-data`,
+        method: 'post',
+        data: selectedDaterange,
+      })
+      toast({
+        severity: 'success',
+        detail: 'Tạo thành công',
+        summary: 'Thành công',
+      })
+      return res
+    } catch (err) {
+      throw err
+    } finally {
+      runInAction(() => {
+        this.loadingSubmit = false
+      })
+    }
+  }
 }
 
 export default DayBoardingStore

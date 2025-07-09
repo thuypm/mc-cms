@@ -39,7 +39,8 @@ class DayBoardingService extends BaseService<IDayBoarding> {
   };
   createDayBoardingAndRegistration = async (
     data: { _id?: string; service?: MC_SERVICE; isActive?: boolean }[],
-    registedBy?: string
+    registedBy?: string,
+    branchId?: string
   ) => {
     for (const item of data) {
       const { _id: studentId, service, isActive } = item;
@@ -55,6 +56,7 @@ class DayBoardingService extends BaseService<IDayBoarding> {
           service,
           isActive,
           registedBy: new Types.ObjectId(registedBy),
+          branch: branchId,
         });
       } else {
         existing.isActive = isActive;
@@ -66,6 +68,57 @@ class DayBoardingService extends BaseService<IDayBoarding> {
 
   getDayBoardings = async (query: any) => {
     return await this.repository.findAll(query);
+  };
+
+  createDayData = async (
+    dates: Array<string>,
+    registedBy?: string,
+    branch?: string
+  ) => {
+    const registrations = await dayBoardingRegistrationRepository.findAll({
+      branch,
+      isActive: true,
+    });
+
+    const recordsToCreate: IDayBoarding[] = [];
+
+    for (const reg of registrations) {
+      const student = reg.student;
+      const teacher = registedBy
+        ? new Types.ObjectId(registedBy)
+        : reg.registedBy;
+      const studentBranch = reg.branch;
+
+      for (const dateStr of dates) {
+        const date = new Date(dateStr);
+
+        // Kiểm tra tồn tại (tránh gọi quá nhiều truy vấn đơn lẻ)
+        const existing = await dayBoardingRepository.findOne({
+          student,
+          date,
+        });
+
+        if (!existing) {
+          recordsToCreate.push({
+            student,
+            registedBy: teacher,
+            date,
+            branch: studentBranch,
+            status: 0,
+          } as IDayBoarding);
+        }
+      }
+    }
+
+    if (recordsToCreate.length) {
+      await dayBoardingRepository.createMany(recordsToCreate);
+    }
+  };
+
+  getDayData = async (query: any) => {
+    return await this.repository.paginate({
+      filter: query,
+    });
   };
 }
 

@@ -5,8 +5,12 @@ import { JWT_SECRET } from "../utils/environment";
 // Thay bằng secret thực tế của bạn (nên để trong .env)
 
 export interface AuthRequest extends Request {
-  user?: any; // Hoặc kiểu cụ thể nếu bạn muốn (vd: IUser)
-  branchId?: string;
+  user?: {
+    _id: string;
+    branch: string;
+    position?: string;
+    class: string;
+  }; // Hoặc kiểu cụ thể nếu bạn muốn (vd: IUser)
 }
 
 export const authenticateToken: RequestHandler = (
@@ -23,7 +27,7 @@ export const authenticateToken: RequestHandler = (
 
   try {
     const decoded = jwt.verify(token, JWT_SECRET);
-    req.user = decoded; // gán payload vào req
+    req.user = decoded as any; // gán payload vào req
     next();
   } catch (err) {
     res.status(401).json({ message: "Invalid or expired token" });

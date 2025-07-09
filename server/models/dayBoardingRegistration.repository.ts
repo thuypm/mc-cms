@@ -8,6 +8,7 @@ export interface IDayBoardingRegistration extends Document {
   isActive: boolean;
   canceledAt?: Date;
   registedBy?: Types.ObjectId;
+  branch: string;
 }
 
 const DayBoardingRegistrationSchema: Schema = new Schema(
@@ -33,6 +34,10 @@ const DayBoardingRegistrationSchema: Schema = new Schema(
     },
     canceledAt: {
       type: Date,
+    },
+    branch: {
+      type: String,
+      required: true,
     },
   },
   { timestamps: true }
