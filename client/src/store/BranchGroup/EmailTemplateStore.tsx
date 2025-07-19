@@ -1,11 +1,11 @@
 import { BaseDataListResponse } from 'Base'
 import { EmailTemplateDetail } from 'Models'
 import axiosInstant from 'api/baseRequest'
+import i18n from 'i18n'
 import { action, makeObservable, observable, runInAction } from 'mobx'
 import { DEFAULT_PAGE_TABLE_SIZE } from 'utils/constants/commons-constant'
-import RootStore from '../RootStore'
 import { toast } from 'utils/toast'
-import i18n from 'i18n'
+import RootStore from '../RootStore'
 
 class EmailTemplateStore {
   rootStore: RootStore
@@ -24,7 +24,7 @@ class EmailTemplateStore {
       total: 0,
     },
 
-    data: [],
+    items: [],
   }
 
   selectedItem: EmailTemplateDetail

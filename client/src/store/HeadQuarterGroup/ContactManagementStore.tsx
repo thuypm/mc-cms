@@ -25,7 +25,7 @@ class ContactManagementStore {
       total: 0,
     },
 
-    data: [],
+    items: [],
   }
 
   selectedItem: Thread

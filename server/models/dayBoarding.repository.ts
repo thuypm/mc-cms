@@ -52,6 +52,38 @@ class DayBoardingRepository extends BaseRepository<IDayBoarding> {
   async findActiveByUser(userId: string) {
     return this.model.findOne({ user: userId, isActive: true });
   }
+
+  async filerByDayData(
+    branch: string,
+    classId: string,
+    startDate: string,
+    endDate: string
+  ) {
+    const start = new Date(startDate);
+    const end = new Date(endDate);
+    return this.model.aggregate([
+      {
+        $match: {
+          branch,
+          date: { $gte: start, $lte: end },
+        },
+      },
+      {
+        $lookup: {
+          from: "students", // collection name in Mongo (lowercase plural)
+          localField: "student",
+          foreignField: "_id",
+          as: "studentInfo",
+        },
+      },
+      { $unwind: "$studentInfo" },
+      {
+        $match: {
+          "studentInfo.class": new Types.ObjectId(classId),
+        },
+      },
+    ]);
+  }
 }
 
 export const dayBoardingRepository = new DayBoardingRepository();

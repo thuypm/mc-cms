@@ -1,11 +1,11 @@
 import { BaseDataListResponse } from 'Base'
 import { RegistrationEventData, RegistrationHistoryData } from 'Models'
 import axiosInstant from 'api/baseRequest'
+import i18n from 'i18n'
 import { action, makeObservable, observable, runInAction } from 'mobx'
 import { DEFAULT_PAGE_TABLE_SIZE } from 'utils/constants/commons-constant'
 import { toast } from 'utils/toast'
 import RootStore from '../RootStore'
-import i18n from 'i18n'
 
 interface EventRegistraion {
   title: 'Event test 3'
@@ -40,7 +40,7 @@ class EventRegistrationStore {
       total: 0,
     },
 
-    data: [],
+    items: [],
   }
 
   registrationHistory: BaseDataListResponse<RegistrationHistoryData> = {
@@ -50,7 +50,7 @@ class EventRegistrationStore {
       total: 0,
     },
 
-    data: [],
+    items: [],
   }
 
   selectedItem: RegistrationEventData

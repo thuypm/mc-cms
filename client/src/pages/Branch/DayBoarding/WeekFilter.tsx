@@ -9,12 +9,7 @@ dayjs.extend(isoWeek)
 
 const WeekFilter = () => {
   const {
-    dayBoardingStore: {
-      loadingListing,
-      handleFilterDataChange,
-      deleteItem,
-      listData: { data, meta },
-    },
+    dayBoardingStore: { filterData },
   } = useStore()
 
   const [dateRangeObject, setDateRangeObject] = useState<{

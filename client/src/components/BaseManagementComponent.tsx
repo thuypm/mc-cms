@@ -45,6 +45,7 @@ export interface IBaseManagementComponentProps {
     total?: number
     onPageChange?(event: PaginatorPageChangeEvent): void
   }
+  triggerFirstLoad?: boolean
   showActionColumn?: boolean
   actionWidth?: any
   rowClassName?: (data) => string
@@ -67,6 +68,7 @@ const BaseManagementComponent = ({
   dataSource = [],
   actionColumns,
   handleFilterDataChange,
+  triggerFirstLoad = true,
   pagination,
   showActionColumn = true,
 }: IBaseManagementComponentProps) => {
@@ -83,9 +85,10 @@ const BaseManagementComponent = ({
   }, [searchObject])
 
   useEffect(() => {
-    if (searchObject)
+    if (searchObject && triggerFirstLoad) {
       handleFilterDataChange && handleFilterDataChange(searchObject)
-  }, [handleFilterDataChange, searchObject])
+    }
+  }, [handleFilterDataChange, searchObject, triggerFirstLoad])
 
   const filters = useMemo(() => {
     const obj: any = {}

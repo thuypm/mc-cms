@@ -61,10 +61,12 @@ export class BaseRepository<T extends { _id: Types.ObjectId }> {
 
     return {
       items,
-      total,
-      page,
-      limit,
-      totalPages: Math.ceil(total / limit),
+      meta: {
+        total,
+        page,
+        limit,
+        totalPages: Math.ceil(total / limit),
+      },
     };
   }
 }

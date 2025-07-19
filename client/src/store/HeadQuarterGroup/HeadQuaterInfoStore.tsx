@@ -25,7 +25,7 @@ class HeadQuaterInfoStore {
       total: 0,
     },
 
-    data: [],
+    items: [],
   }
 
   selectedItem: HeadquarterInfoData

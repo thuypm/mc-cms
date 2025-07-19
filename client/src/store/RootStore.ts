@@ -9,7 +9,6 @@ import AdminManagementStore from './HeadQuarterGroup/AdminManagementStore'
 import BranchManagementStore from './HeadQuarterGroup/BranchManagementStore'
 import ContactManagementStore from './HeadQuarterGroup/ContactManagementStore'
 import HeadQuaterInfoStore from './HeadQuarterGroup/HeadQuaterInfoStore'
-import MessageStore from './HeadQuarterGroup/MessageStore'
 
 class RootStore {
   history: BrowserHistory
@@ -24,7 +23,6 @@ class RootStore {
   emailTemplateStore: EmailTemplateStore
   custormerManagementStore: CustomerManagementStore
   dayBoardingStore: DayBoardingStore
-  messageStore: MessageStore
 
   constructor(history) {
     this.history = history
@@ -43,7 +41,6 @@ class RootStore {
     this.dayBoardingStore = new DayBoardingStore(this)
 
     //common
-    this.messageStore = new MessageStore(this)
   }
 }
 

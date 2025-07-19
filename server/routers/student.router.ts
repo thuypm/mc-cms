@@ -21,7 +21,7 @@ router.get(
       const data = await classRepository.findAll({
         branch: req.user.branch,
       });
-      res.json({ data });
+      res.json({ items: data });
     } catch (err) {
       console.error(err);
       res.status(400).json({ message: "Failed to fetch class" });

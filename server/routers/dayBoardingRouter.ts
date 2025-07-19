@@ -86,12 +86,23 @@ router.post(
 router.get(
   "/get-day-data",
   async (req: AuthRequest, res: Response): Promise<void> => {
+    const classId =
+      req.user.position === USER_POSITION.SUPER_ADMIN
+        ? req.query.classId
+        : req.user.class;
+    if (!classId) {
+      res.status(400).json({ message: "Class is required" });
+      return;
+    }
     try {
-      const data = await dayBoardingService.getDayData({
-        branch: req.user.branch,
-      });
+      const data = await dayBoardingService.getDayData(
+        req.user.branch,
+        classId as string,
+        req.query.startDate as string,
+        req.query.endDate as string
+      );
       res.json({
-        data: data,
+        items: data,
       });
     } catch (err) {
       console.error(err);

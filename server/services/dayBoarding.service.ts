@@ -1,4 +1,5 @@
 // services/student.service.ts
+import dayjs from "dayjs";
 import { Types } from "mongoose";
 import {
   dayBoardingRepository,
@@ -8,7 +9,6 @@ import { dayBoardingRegistrationRepository } from "../models/dayBoardingRegistra
 import { studentRepository } from "../models/student.repository";
 import { MC_SERVICE } from "../utils/enum";
 import { BaseService } from "./BaseServices";
-
 class DayBoardingService extends BaseService<IDayBoarding> {
   getDayBoardingAllRegistration = async (query?: any) => {
     const students = await studentRepository.findAll({
@@ -75,6 +75,9 @@ class DayBoardingService extends BaseService<IDayBoarding> {
     registedBy?: string,
     branch?: string
   ) => {
+    const transferDateStrings = dates.map((date) => {
+      return dayjs(date).startOf("day").toISOString();
+    });
     const registrations = await dayBoardingRegistrationRepository.findAll({
       branch,
       isActive: true,
@@ -89,7 +92,7 @@ class DayBoardingService extends BaseService<IDayBoarding> {
         : reg.registedBy;
       const studentBranch = reg.branch;
 
-      for (const dateStr of dates) {
+      for (const dateStr of transferDateStrings) {
         const date = new Date(dateStr);
 
         // Kiểm tra tồn tại (tránh gọi quá nhiều truy vấn đơn lẻ)
@@ -115,10 +118,18 @@ class DayBoardingService extends BaseService<IDayBoarding> {
     }
   };
 
-  getDayData = async (query: any) => {
-    return await this.repository.paginate({
-      filter: query,
-    });
+  getDayData = async (
+    branch: string,
+    classId: string,
+    startDate: string,
+    endDate: string
+  ) => {
+    return await dayBoardingRepository.filerByDayData(
+      branch,
+      classId,
+      startDate,
+      endDate
+    );
   };
 }
 

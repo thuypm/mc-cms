@@ -24,7 +24,7 @@ class CustomerManagementStore {
       total: 0,
     },
 
-    data: [],
+    items: [],
   }
 
   selectedItem: CustomerData

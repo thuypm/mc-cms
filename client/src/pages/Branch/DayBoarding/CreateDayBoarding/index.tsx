@@ -125,7 +125,21 @@ const CreateDayBoarding = () => {
             body={(rowData) => {
               return (
                 <div className="flex align-items-center cursor-pointer">
-                  <Checkbox checked={rowData.isActive} />{' '}
+                  <Checkbox
+                    checked={rowData.isActive}
+                    onChange={(e) =>
+                      setValues(
+                        values.map((item: any) =>
+                          item._id === rowData._id
+                            ? {
+                                ...item,
+                                isActive: !rowData.isActive,
+                              }
+                            : item
+                        )
+                      )
+                    }
+                  />{' '}
                   <span className="ml-2">Đăng ký</span>
                 </div>
               )

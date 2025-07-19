@@ -2,24 +2,16 @@ import AllInOneSelect from 'components/AllInOneSelect'
 import InputSearchKeyword from 'components/InputSearchKeyword'
 import { useStore } from 'context/store'
 import { observer } from 'mobx-react'
-import { useMemo } from 'react'
+import { useObjectSearchParams } from 'utils/hooks/useObjectSearchParams'
 import CreateDayBoardingData from './CreateDayBoardingData'
-const dayHeaders = ['T2', 'T3', 'T4', 'T5', 'T6', 'T7', 'CN']
+
 const SuperAdminDayBoarding = () => {
   const {
     dayBoardingStore: {
-      loadingListing,
-      handleFilterDataChange,
-      deleteItem,
-      listData: { data, meta },
+      listData: { items, meta },
     },
   } = useStore()
-  const columnsWeekDay = useMemo(() => {
-    return dayHeaders.map((day) => ({
-      key: day,
-      header: day, // hoặc giữ nguyên day nếu không cần dịch
-    }))
-  }, [])
+  const { searchObject, setRestSearchObject } = useObjectSearchParams()
   return (
     <div className="flex gap-3 flex-wrap mt-2">
       <InputSearchKeyword placeholder="Tìm kiếm" />
@@ -29,11 +21,13 @@ const SuperAdminDayBoarding = () => {
         url={'/api/student/get-all-class'}
         optionLabel="name"
         optionValue="_id"
+        value={searchObject?.classId}
+        selectFirstItem={!searchObject?.classId}
         onChange={function (value: any, selectedItem?: any): void {
-          throw new Error('Function not implemented.')
-        }} // selectFirstItem={true}
-        //   value={selectedClass}
-        //   onChange={onChange}
+          setRestSearchObject({
+            classId: value?._id || value,
+          })
+        }}
       />
       <CreateDayBoardingData />
     </div>

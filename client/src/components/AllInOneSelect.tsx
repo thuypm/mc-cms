@@ -2,7 +2,6 @@ import { BaseDataListResponse } from 'Base'
 import axiosInstant from 'api/baseRequest'
 import { Dropdown, DropdownProps } from 'primereact/dropdown'
 import { forwardRef, useCallback, useEffect, useMemo, useState } from 'react'
-import { useTranslation } from 'react-i18next'
 import { LIMIT_NOT_LAZY_SELECT } from 'utils/constants/commons-constant'
 import { REACT_APP_SERVER_API } from 'utils/constants/environment'
 
@@ -26,6 +25,7 @@ const AllInOneSelect = forwardRef((props: AllInOneSelectProps, ref: any) => {
     tranformData,
     onChange,
     selectFirstItem,
+    value,
     ...restProps
   } = props
 
@@ -41,7 +41,7 @@ const AllInOneSelect = forwardRef((props: AllInOneSelectProps, ref: any) => {
         params: { perPage: LIMIT_NOT_LAZY_SELECT, ...(params || {}) },
         // data: params ?? { perPage: LIMIT_NOT_LAZY_SELECT },
       })
-      setData(data.data)
+      setData(data.items)
       // if (selectFirstItem && data.data.length) onChange(null, data.data[0])
     } catch (error) {
       // console.log(error)
@@ -62,21 +62,24 @@ const AllInOneSelect = forwardRef((props: AllInOneSelectProps, ref: any) => {
       onChange(dataRendered?.[0]?.[props.optionValue], dataRendered?.[0])
   }, [dataRendered, props.optionValue, selectFirstItem])
 
-  const { t } = useTranslation()
+  const itemValue = useMemo(() => {
+    if (value) {
+      return dataRendered.find((item) => item._id === value || item === value)
+    }
+    return null
+  }, [value, dataRendered])
+
   return (
     <Dropdown
       ref={ref}
       options={dataRendered}
-      // optionLabel="value"
-      filter
+      // filter
       panelClassName="w-25rem"
       loading={loading}
-      // optionValue="label"
+      value={itemValue}
       className="w-full"
-      emptyFilterMessage={t('No results founds')}
-      emptyMessage={t('No available options')}
       onChange={(event) => {
-        onChange && onChange(event, event.value)
+        onChange && onChange(event.value, event)
       }}
       {...restProps}
     />

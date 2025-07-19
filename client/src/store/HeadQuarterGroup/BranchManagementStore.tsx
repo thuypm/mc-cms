@@ -1,11 +1,11 @@
 import { BaseDataListResponse } from 'Base'
 import { Branch } from 'Models'
 import axiosInstant from 'api/baseRequest'
+import i18n from 'i18n'
 import { action, makeObservable, observable, runInAction } from 'mobx'
 import { DEFAULT_PAGE_TABLE_SIZE } from 'utils/constants/commons-constant'
 import { toast } from 'utils/toast'
 import RootStore from '../RootStore'
-import i18n from 'i18n'
 
 class AdminManagementStore {
   rootStore: RootStore
@@ -24,7 +24,7 @@ class AdminManagementStore {
       total: 0,
     },
 
-    data: [],
+    items: [],
   }
 
   selectedItem: Branch

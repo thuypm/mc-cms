@@ -1,28 +1,40 @@
 import { useStore } from 'context/store'
+import dayjs from 'dayjs'
 import { observer } from 'mobx-react'
 import { Button } from 'primereact/button'
 import { Calendar } from 'primereact/calendar'
 import { Dialog } from 'primereact/dialog'
 import { useState } from 'react'
-const getLast7Days = () => {
-  const today = new Date()
-  const days = []
+const getCurrentWeekRange = (): [Date, Date] => {
+  const today = dayjs()
+  const startOfWeek =
+    today.day() === 0
+      ? today.subtract(6, 'day') // Nếu là Chủ nhật thì lùi về Thứ 2
+      : today.startOf('week').add(1, 'day') // Thứ 2
 
-  for (let i = 0; i < 7; i++) {
-    const d = new Date(today)
-    d.setDate(today.getDate() - i)
-    days.push(d)
+  const endOfWeek = startOfWeek.add(6, 'day') // Chủ nhật
+
+  return [startOfWeek.toDate(), endOfWeek.toDate()]
+}
+const getDateRangeArray = (start: Date, end: Date): Date[] => {
+  const result: Date[] = []
+  let current = new Date(start)
+
+  while (current <= end) {
+    result.push(new Date(current))
+    current.setDate(current.getDate() + 1)
   }
 
-  return days.reverse() // từ cũ đến mới
+  return result
 }
 const CreateDayBoardingData = () => {
-  const [showModal, setShowModal] = useState(true)
+  const [showModal, setShowModal] = useState(false)
   const [loading, setLoading] = useState(false)
   const {
     dayBoardingStore: { createDayData },
   } = useStore()
-  const [dates, setDates] = useState<Date[]>(getLast7Days())
+
+  const [dates, setDates] = useState<Date[]>(getCurrentWeekRange())
   return (
     <>
       <Button
@@ -45,8 +57,6 @@ const CreateDayBoardingData = () => {
           dateFormat="dd/mm/yy"
           onChange={(e) => setDates(e.value)}
           selectionMode="range"
-          readOnlyInput
-          hideOnRangeSelection
         />
         <div>
           <Button
@@ -54,9 +64,12 @@ const CreateDayBoardingData = () => {
             onClick={async () => {
               setLoading(true)
               try {
+                const fullDates = getDateRangeArray(dates[0], dates[1])
+
                 await createDayData({
-                  dates: dates.map((e) => e.toISOString()),
+                  dates: fullDates.map((d) => d.toISOString()),
                 })
+                setShowModal(false)
               } catch (error) {
               } finally {
                 setLoading(false)

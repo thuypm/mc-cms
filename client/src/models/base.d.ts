@@ -25,7 +25,7 @@ declare module 'Base' {
       totalPages?: number
       total?: number
     }
-    data?: Array<T>
+    items?: Array<T>
 
     relations?: any
   }

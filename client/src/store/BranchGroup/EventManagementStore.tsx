@@ -26,7 +26,7 @@ class EventManagementStore {
       total: 0,
     },
 
-    data: [],
+    items: [],
   }
 
   selectedItem: EventData

@@ -49,7 +49,7 @@ const AllInOneSelectMultiple = forwardRef(
           params: params ?? { perPage: LIMIT_NOT_LAZY_SELECT },
           // data: params ?? { perPage: LIMIT_NOT_LAZY_SELECT },
         })
-        setData(data.data)
+        setData(data.items)
       } catch (error) {
       } finally {
         setLoading(false)

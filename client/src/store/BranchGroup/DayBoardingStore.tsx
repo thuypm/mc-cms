@@ -24,7 +24,7 @@ class DayBoardingStore {
       total: 0,
     },
 
-    data: [],
+    items: [],
   }
 
   selectedItem: []
@@ -64,7 +64,7 @@ class DayBoardingStore {
     this.loadingListing = true
     try {
       const { data } = await axiosInstant.request({
-        url: '/api/v1/newsletter',
+        url: '/api/day-boarding/get-day-data',
         params: this.filterData,
       })
       runInAction(() => {
@@ -176,6 +176,7 @@ class DayBoardingStore {
         method: 'post',
         data: selectedDaterange,
       })
+      await this.fetchList()
       toast({
         severity: 'success',
         detail: 'Tạo thành công',

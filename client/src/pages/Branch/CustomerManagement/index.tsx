@@ -21,13 +21,13 @@ const CustomerManagement = () => {
       loadingListing,
       handleFilterDataChange,
       deleteItem,
-      listData: { data, meta },
+      listData: { items, meta },
     },
   } = useStore()
 
   return (
     <BaseManagementComponent
-      dataSource={data}
+      dataSource={items}
       loading={loadingListing}
       actionColumns={[
         {

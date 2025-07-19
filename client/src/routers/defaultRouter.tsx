@@ -1,8 +1,6 @@
 import CustomerManagement from 'pages/Branch/CustomerManagement'
 import CreateCustomer from 'pages/Branch/CustomerManagement/CreateCustomer'
 import CustomerDetailPage from 'pages/Branch/CustomerManagement/CustomerDetailPage'
-import EmailTemplate from 'pages/Branch/EmailTemplate'
-import EditEmaiTemplate from 'pages/Branch/EmailTemplate/EditEmaiTemplate'
 
 import DayBoarding from 'pages/Branch/DayBoarding'
 import CreateDayBoarding from 'pages/Branch/DayBoarding/CreateDayBoarding'
@@ -81,25 +79,6 @@ export const branchRouters: Array<IMenuItem> = [
             icon: 'pi-users pi',
           },
         ],
-      },
-    ],
-  },
-
-  {
-    key: 'email-template',
-    path: '/email-template',
-    element: <EmailTemplate />,
-    label: 'Email Template  Management',
-    hiddenFromMenu: false,
-    icon: 'isax-sms',
-    children: [
-      {
-        key: 'email-template-edit',
-        path: ':id/edit',
-        element: <EditEmaiTemplate />,
-        label: 'Email template edit',
-        hiddenFromMenu: false,
-        icon: 'pi-users pi',
       },
     ],
   },
