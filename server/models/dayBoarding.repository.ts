@@ -70,17 +70,30 @@ class DayBoardingRepository extends BaseRepository<IDayBoarding> {
       },
       {
         $lookup: {
-          from: "students", // collection name in Mongo (lowercase plural)
+          from: "students",
           localField: "student",
           foreignField: "_id",
           as: "studentInfo",
         },
       },
       { $unwind: "$studentInfo" },
+
       {
         $match: {
           "studentInfo.class": new Types.ObjectId(classId),
         },
+      },
+
+      {
+        $lookup: {
+          from: "classes", // tên collection class
+          localField: "studentInfo.class",
+          foreignField: "_id",
+          as: "studentInfo.classInfo", // populate vào studentInfo.classInfo
+        },
+      },
+      {
+        $unwind: "$studentInfo.classInfo",
       },
     ]);
   }

@@ -82,3 +82,14 @@ body,
 .field {
   margin-bottom: 1.5rem;
 }
+.p-tag.p-component {
+  span {
+    font-size: 10px;
+  }
+}
+.p-datatable.register-dayboarding-table .p-datatable-thead > tr > th {
+  padding: 0.5rem 0.5rem;
+}
+.p-datatable.register-dayboarding-table td {
+  padding: 0.25rem 0.5rem;
+}

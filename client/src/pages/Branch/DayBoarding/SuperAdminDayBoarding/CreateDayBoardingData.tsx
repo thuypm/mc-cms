@@ -65,7 +65,6 @@ const CreateDayBoardingData = () => {
               setLoading(true)
               try {
                 const fullDates = getDateRangeArray(dates[0], dates[1])
-
                 await createDayData({
                   dates: fullDates.map((d) => d.toISOString()),
                 })

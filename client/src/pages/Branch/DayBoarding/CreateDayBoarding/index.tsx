@@ -60,7 +60,7 @@ const CreateDayBoarding = () => {
     )
   }, [selectedItem])
   const onChange = useCallback((value: any, selectedItem?: any) => {
-    setSelectedClass(selectedItem)
+    setSelectedClass(value)
   }, [])
   return (
     <div className="card bg-white border-round-xl py-2 px-3">
