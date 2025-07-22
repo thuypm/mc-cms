@@ -118,6 +118,20 @@ class DayBoardingService extends BaseService<IDayBoarding> {
     }
   };
 
+  updateDayData = async (data: Array<any>) => {
+    await dayBoardingRepository.updateMany(data);
+  };
+  getTotalCountByWeek = async (
+    branch: string,
+    startDate: string,
+    endDate: string
+  ) => {
+    return dayBoardingRepository.getTotalCountByWeek(
+      branch,
+      startDate,
+      endDate
+    );
+  };
   getDayData = async (
     branch: string,
     classId: string,

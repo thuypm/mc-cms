@@ -77,13 +77,11 @@ class DayBoardingRepository extends BaseRepository<IDayBoarding> {
         },
       },
       { $unwind: "$studentInfo" },
-
       {
         $match: {
           "studentInfo.class": new Types.ObjectId(classId),
         },
       },
-
       {
         $lookup: {
           from: "classes", // tên collection class
@@ -97,6 +95,72 @@ class DayBoardingRepository extends BaseRepository<IDayBoarding> {
       },
     ]);
   }
+
+  getTotalCountByWeek = async (
+    branch: string,
+    startDate: string,
+    endDate: string
+  ) => {
+    const result = await this.model.aggregate([
+      {
+        $match: {
+          branch,
+          date: {
+            $gte: new Date(startDate),
+            $lte: new Date(endDate),
+          },
+        },
+      },
+      {
+        $facet: {
+          // Lấy status = 0 + populate student + class
+          empty: [
+            { $match: { status: 0 } },
+            {
+              $lookup: {
+                from: "students",
+                localField: "student",
+                foreignField: "_id",
+                as: "student",
+              },
+            },
+            { $unwind: "$student" },
+            {
+              $lookup: {
+                from: "classes",
+                localField: "student.class",
+                foreignField: "_id",
+                as: "classInfo",
+              },
+            },
+            { $unwind: "$classInfo" },
+            {
+              $group: {
+                _id: "$classInfo._id",
+                className: { $first: "$classInfo.name" },
+                totalEmpty: { $sum: 1 },
+              },
+            },
+            {
+              $project: {
+                _id: 0,
+                classId: "$_id",
+                className: 1,
+                totalEmpty: 1,
+              },
+            },
+          ],
+
+          // Đếm status = 1 (đã đăng ký)
+          registed: [{ $match: { status: 1 } }, { $count: "totalRegisted" }],
+
+          // Đếm status = -1 (đã huỷ)
+          canceled: [{ $match: { status: -1 } }, { $count: "totalCanceled" }],
+        },
+      },
+    ]);
+    return result;
+  };
 }
 
 export const dayBoardingRepository = new DayBoardingRepository();

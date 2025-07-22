@@ -1,5 +1,4 @@
 import { BaseDataListResponse } from 'Base'
-import { EnewLetter } from 'Models'
 import axiosInstant from 'api/baseRequest'
 import i18n from 'i18n'
 import { action, makeObservable, observable, runInAction } from 'mobx'
@@ -17,7 +16,7 @@ class DayBoardingStore {
     perPage: DEFAULT_PAGE_TABLE_SIZE,
     keyword: '',
   }
-  listData: BaseDataListResponse<EnewLetter> = {
+  listData: BaseDataListResponse<any> = {
     meta: {
       perPage: DEFAULT_PAGE_TABLE_SIZE,
       page: 1,
@@ -25,6 +24,11 @@ class DayBoardingStore {
     },
 
     items: [],
+  }
+  totalCount = {
+    registered: 0,
+    empty: 0,
+    cancel: 0,
   }
 
   selectedItem: []
@@ -39,6 +43,7 @@ class DayBoardingStore {
       selectedItem: observable,
       loadingDetail: observable,
       loadingSubmit: observable,
+      totalCount: observable,
 
       handleFilterDataChange: action,
       create: action,
@@ -46,9 +51,41 @@ class DayBoardingStore {
       fetchList: action,
       update: action,
       setSelectedItem: action,
+      handleUpdateDayRegister: action,
     })
   }
-
+  handleUpdateDayRegister = async (values: any) => {
+    this.loadingListing = true
+    try {
+      await axiosInstant.request({
+        url: '/api/day-boarding/update-day-data',
+        method: 'PUT',
+        data: values,
+      })
+      await this.fetchList()
+      toast({
+        severity: 'success',
+        detail: 'Cập nhật đăng ký ngày thành công',
+        summary: 'Thành công',
+      })
+    } catch (error) {
+    } finally {
+      runInAction(() => {
+        this.loadingListing = false
+      })
+    }
+  }
+  fetchTotalCount = async (startDate, endDate) => {
+    try {
+      const { data } = await axiosInstant.request({
+        url: '/api/day-boarding/get-day-total-count',
+        params: { startDate, endDate },
+      })
+      runInAction(() => {
+        this.totalCount = data
+      })
+    } catch (error) {}
+  }
   handleFilterDataChange = (filterData: any) => {
     this.filterData = {
       // ...this.filterData,

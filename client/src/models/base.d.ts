@@ -26,7 +26,6 @@ declare module 'Base' {
       total?: number
     }
     items?: Array<T>
-
     relations?: any
   }
 

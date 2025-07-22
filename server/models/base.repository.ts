@@ -14,6 +14,16 @@ export class BaseRepository<T extends { _id: Types.ObjectId }> {
   async createMany(data: Partial<T>[]) {
     return this.model.insertMany(data);
   }
+  async updateMany(data: { _id: string; [key: string]: any }[]) {
+    const operations = data.map((item) => ({
+      updateOne: {
+        filter: { _id: item._id },
+        update: { $set: { ...item } },
+      },
+    }));
+    return this.model.bulkWrite(operations);
+  }
+
   async findOne(condition: any) {
     return this.model.findOne(condition);
   }

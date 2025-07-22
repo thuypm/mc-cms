@@ -70,6 +70,8 @@ router.get(
 router.post(
   "/create-day-data",
   async (req: AuthRequest, res: Response): Promise<void> => {
+    if (req.user.position !== USER_POSITION.SUPER_ADMIN)
+      res.status(403).json({ message: `Không có quyền truy cập` });
     try {
       const data = await dayBoardingService.createDayData(
         req.body.dates,
@@ -80,6 +82,42 @@ router.post(
       // res.json(user);
     } catch (err) {
       res.status(400).json({ message: `${err}` });
+    }
+  }
+);
+router.put(
+  "/update-day-data",
+  async (req: AuthRequest, res: Response): Promise<void> => {
+    try {
+      const data = await dayBoardingService.updateDayData(req.body);
+      res.json(data);
+      // res.json(user);
+    } catch (err) {
+      res.status(400).json({ message: `${err}` });
+    }
+  }
+);
+router.get(
+  "/get-day-total-count",
+  async (req: AuthRequest, res: Response): Promise<void> => {
+    if (req.user.position !== USER_POSITION.SUPER_ADMIN)
+      res.status(403).json({ message: `Không có quyền truy cập` });
+    if (!req.query.startDate || !req.query.endDate) {
+      res.status(400).json({ message: "Time range is required" });
+      return;
+    }
+    try {
+      const data = await dayBoardingService.getTotalCountByWeek(
+        req.user.branch,
+        req.query.startDate as string,
+        req.query.endDate as string
+      );
+      res.json({
+        items: data,
+      });
+    } catch (err) {
+      console.error(err);
+      res.status(400).json({ message: "Failed to fetch user info" });
     }
   }
 );
