@@ -11,7 +11,7 @@ import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Link, useParams } from 'react-router-dom'
 import { CustomerStatusEnum } from 'utils/constants/customer'
-import { formatPhone } from 'utils/helper/common-helpers'
+// import { formatPhone } from 'utils/helper/common-helpers'
 import { getCustomerStatusTag } from 'utils/helper/table'
 
 const CustomerDetailPage = () => {
@@ -76,10 +76,10 @@ const CustomerDetailPage = () => {
             label={t('Email')}
             value={selectedItem.email}
           ></FieldDetail>
-          <FieldDetail
+          {/* <FieldDetail
             label={t('Phone number')}
             value={formatPhone(selectedItem.phoneNumber)}
-          ></FieldDetail>
+          ></FieldDetail> */}
           <FieldDetail
             label={t('Registed History')}
             hiddenWhenEmpty={false}

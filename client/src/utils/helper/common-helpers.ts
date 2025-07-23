@@ -1,4 +1,5 @@
-import i18n from 'i18n'
+import dayjs from 'dayjs'
+import utc from 'dayjs/plugin/utc'
 
 export const convertTime = (timeParams) => {
   const dateTime = new Date(timeParams).toLocaleDateString('en-GB')
@@ -52,16 +53,6 @@ export function formatNumber(x: any) {
 export const isEmail = (email: string) => {
   return emailRegex.test(email)
 }
-
-export const formatPhone = (phone: string) => {
-  if (!phone) return ''
-  const firstPhone = phone.slice(0, 3)
-  const middlePhone = phone.slice(3, phone.length - 4)
-  const endPhone = phone.slice(3, phone.length).slice(-4)
-
-  return `${firstPhone}-${middlePhone ? `${middlePhone}-` : ''}${endPhone}`
-}
-
 export const deepClone = (data: any) => {
   try {
     return JSON.parse(JSON.stringify(data))
@@ -77,67 +68,18 @@ export const parseJSON = (data: string) => {
     return null
   }
 }
-export const copyRichtTextHtml = (
-  element: HTMLElement,
-  cb?: Function,
-  fb?: Function
-) => {
-  try {
-    var doc = document,
-      text = element,
-      range,
-      selection
+dayjs.extend(utc)
 
-    if (window.getSelection) {
-      selection = window.getSelection()
-      range = doc.createRange()
-      range.selectNodeContents(text)
-      selection.removeAllRanges()
-      selection.addRange(range)
-    }
-    document.execCommand('copy')
-    window.getSelection().removeAllRanges()
-    cb && cb()
-  } catch (error) {
-    fb && fb()
-  }
-}
-export const copyToClipBoard = (
-  text: string,
-  callback?: Function,
-  fallback?: Function
-) => {
-  if (navigator && navigator.clipboard) {
-    navigator.clipboard
-      .writeText(text)
-      .then(() => {
-        if (callback) {
-          callback()
-          return
-        }
-      })
-      .catch((err) => {
-        console.log(err)
-        fallback && fallback(err)
-      })
-  }
-}
+export const getCurrentWeekRange = (): [Date, Date] => {
+  const today = dayjs().utc()
 
-export const checkNullDeleteItem = (
-  populateItem: any,
-  stringKey?: string,
-  itemName?: string
-) => {
-  if (populateItem === -1) return i18n.t('Item is deleted', { item: itemName })
-  if (!populateItem) return ''
+  const startOfWeek =
+    today.day() === 0
+      ? today.subtract(6, 'day')
+      : today.startOf('week').add(1, 'day') // Monday
 
-  const keys = stringKey.split('.')
+  const startUTC = startOfWeek.startOf('day').toDate()
+  const endUTC = startOfWeek.add(6, 'day').startOf('day').toDate()
 
-  let item = populateItem
-
-  keys.forEach((key) => {
-    item = item ? item[key] : null
-  })
-
-  return item
+  return [startUTC, endUTC]
 }

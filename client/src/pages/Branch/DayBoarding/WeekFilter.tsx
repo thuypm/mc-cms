@@ -1,4 +1,3 @@
-import { useStore } from 'context/store'
 import dayjs from 'dayjs'
 import isoWeek from 'dayjs/plugin/isoWeek'
 import { Button } from 'primereact/button'
@@ -8,9 +7,9 @@ import { useObjectSearchParams } from 'utils/hooks/useObjectSearchParams'
 dayjs.extend(isoWeek)
 
 const WeekFilter = () => {
-  const {
-    dayBoardingStore: { filterData },
-  } = useStore()
+  // const {
+  //   dayBoardingStore: { filterData },
+  // } = useStore()
 
   const { searchObject, setRestSearchObject } = useObjectSearchParams()
 

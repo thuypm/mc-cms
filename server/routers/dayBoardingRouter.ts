@@ -112,9 +112,7 @@ router.get(
         req.query.startDate as string,
         req.query.endDate as string
       );
-      res.json({
-        items: data,
-      });
+      res.json(data);
     } catch (err) {
       console.error(err);
       res.status(400).json({ message: "Failed to fetch user info" });

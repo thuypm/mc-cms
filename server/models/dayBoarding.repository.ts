@@ -112,53 +112,38 @@ class DayBoardingRepository extends BaseRepository<IDayBoarding> {
         },
       },
       {
-        $facet: {
-          // Lấy status = 0 + populate student + class
-          empty: [
-            { $match: { status: 0 } },
-            {
-              $lookup: {
-                from: "students",
-                localField: "student",
-                foreignField: "_id",
-                as: "student",
-              },
+        $project: {
+          status: 1,
+          isoDate: {
+            $dateTrunc: {
+              date: "$date",
+              unit: "day",
             },
-            { $unwind: "$student" },
-            {
-              $lookup: {
-                from: "classes",
-                localField: "student.class",
-                foreignField: "_id",
-                as: "classInfo",
-              },
+          },
+        },
+      },
+      {
+        $group: {
+          _id: {
+            status: "$status",
+            date: "$isoDate",
+          },
+          count: { $sum: 1 },
+        },
+      },
+      {
+        $group: {
+          _id: "$_id.status",
+          counts: {
+            $push: {
+              date: "$_id.date", // đây là ISO Date object (00:00:00)
+              count: "$count",
             },
-            { $unwind: "$classInfo" },
-            {
-              $group: {
-                _id: "$classInfo._id",
-                className: { $first: "$classInfo.name" },
-                totalEmpty: { $sum: 1 },
-              },
-            },
-            {
-              $project: {
-                _id: 0,
-                classId: "$_id",
-                className: 1,
-                totalEmpty: 1,
-              },
-            },
-          ],
-
-          // Đếm status = 1 (đã đăng ký)
-          registed: [{ $match: { status: 1 } }, { $count: "totalRegisted" }],
-
-          // Đếm status = -1 (đã huỷ)
-          canceled: [{ $match: { status: -1 } }, { $count: "totalCanceled" }],
+          },
         },
       },
     ]);
+
     return result;
   };
 }

@@ -10,7 +10,6 @@ import {
   CustomerRegistedByEnum,
   CustomerStatusEnum,
 } from 'utils/constants/customer'
-import { formatPhone } from 'utils/helper/common-helpers'
 import { getCustomerStatusTag } from 'utils/helper/table'
 import ModalImportData from './ModalImportData'
 
@@ -68,7 +67,7 @@ const CustomerManagement = () => {
           key: 'phoneNumber',
           dataIndex: 'phoneNumber',
           header: t('Phone Number'),
-          body: (item) => formatPhone(item.phoneNumber),
+          // body: (item) => formatPhone(item.phoneNumber),
         },
         {
           key: 'registeredBy',

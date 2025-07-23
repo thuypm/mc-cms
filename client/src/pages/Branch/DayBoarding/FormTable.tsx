@@ -45,6 +45,7 @@ const FormTable = forwardRef(({ items, loadingListing }: any, ref) => {
     values.forEach((item: any, index) => {
       const studentId = item.student
       const day = new Date(item.date).getDay()
+
       const dayKey = dayHeaders[day === 0 ? 6 : day - 1]
 
       if (!resultMap.has(studentId)) {
@@ -56,7 +57,7 @@ const FormTable = forwardRef(({ items, loadingListing }: any, ref) => {
             updatedAt: item.updatedAt,
             registedBy: item.registedBy,
             status: item.status,
-            date: new Date(item.date).toISOString(),
+            date: item.date,
           },
         })
       } else {
@@ -66,7 +67,7 @@ const FormTable = forwardRef(({ items, loadingListing }: any, ref) => {
           updatedAt: item.updatedAt,
           registedBy: item.registedBy,
           status: item.status,
-          date: new Date(item.date).toISOString(),
+          date: item.date,
         }
       }
     })
@@ -87,7 +88,7 @@ const FormTable = forwardRef(({ items, loadingListing }: any, ref) => {
   return (
     <DataTable
       value={transformData}
-      paginator
+      stripedRows
       rows={40}
       rowClassName={() => 'hover-highlight'}
       loading={loadingListing}
@@ -105,6 +106,12 @@ const FormTable = forwardRef(({ items, loadingListing }: any, ref) => {
           key={day}
           field={day}
           filter
+          headerStyle={{
+            backgroundColor:
+              getDateByIndex(startDate, dayIndex) === dayjs().format('DD/MM')
+                ? '#e6f3ff'
+                : undefined, // đỏ nhạt
+          }}
           header={
             <div>
               <div className="text-center">

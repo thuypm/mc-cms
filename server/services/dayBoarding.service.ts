@@ -1,5 +1,4 @@
 // services/student.service.ts
-import dayjs from "dayjs";
 import { Types } from "mongoose";
 import {
   dayBoardingRepository,
@@ -75,9 +74,6 @@ class DayBoardingService extends BaseService<IDayBoarding> {
     registedBy?: string,
     branch?: string
   ) => {
-    const transferDateStrings = dates.map((date) => {
-      return dayjs(date).startOf("day").toISOString();
-    });
     const registrations = await dayBoardingRegistrationRepository.findAll({
       branch,
       isActive: true,
@@ -92,7 +88,7 @@ class DayBoardingService extends BaseService<IDayBoarding> {
         : reg.registedBy;
       const studentBranch = reg.branch;
 
-      for (const dateStr of transferDateStrings) {
+      for (const dateStr of dates) {
         const date = new Date(dateStr);
 
         // Kiểm tra tồn tại (tránh gọi quá nhiều truy vấn đơn lẻ)

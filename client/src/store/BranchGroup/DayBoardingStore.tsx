@@ -11,7 +11,7 @@ class DayBoardingStore {
   loadingListing: boolean
   loadingSubmit: boolean
   loadingDetail: boolean
-  filterData = {
+  filterData: any = {
     page: 1,
     perPage: DEFAULT_PAGE_TABLE_SIZE,
     keyword: '',
@@ -25,11 +25,7 @@ class DayBoardingStore {
 
     items: [],
   }
-  totalCount = {
-    registered: 0,
-    empty: 0,
-    cancel: 0,
-  }
+  totalCount = []
 
   selectedItem: []
 
@@ -63,6 +59,10 @@ class DayBoardingStore {
         data: values,
       })
       await this.fetchList()
+      await this.fetchTotalCount(
+        this.filterData.startDate,
+        this.filterData.endDate
+      )
       toast({
         severity: 'success',
         detail: 'Cập nhật đăng ký ngày thành công',

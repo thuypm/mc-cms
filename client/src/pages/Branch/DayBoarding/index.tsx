@@ -1,14 +1,18 @@
 import { useStore } from 'context/store'
 import dayjs from 'dayjs'
+import isoWeek from 'dayjs/plugin/isoWeek'
+import utc from 'dayjs/plugin/utc'
 import { observer } from 'mobx-react'
 import { Button } from 'primereact/button'
 import { useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
+import { getCurrentWeekRange } from 'utils/helper/common-helpers'
 import { useObjectSearchParams } from 'utils/hooks/useObjectSearchParams'
 import FormTable from './FormTable'
 import SuperAdminDayBoarding from './SuperAdminDayBoarding'
 import WeekFilter from './WeekFilter'
-
+dayjs.extend(utc)
+dayjs.extend(isoWeek)
 const DayBoarding = () => {
   const {
     dayBoardingStore: {
@@ -20,12 +24,15 @@ const DayBoarding = () => {
 
   const { searchObject, setRestSearchObject } = useObjectSearchParams()
 
-  if (!searchObject.startDate || !searchObject.endDate) {
-    setRestSearchObject({
-      startDate: dayjs().startOf('isoWeek').toISOString(),
-      endDate: dayjs().startOf('isoWeek').add(6, 'day').toISOString(),
-    } as any)
-  }
+  useEffect(() => {
+    if (!searchObject.startDate || !searchObject.endDate) {
+      const weekArr = getCurrentWeekRange()
+      setRestSearchObject({
+        startDate: weekArr[0].toISOString(),
+        endDate: weekArr[1].toISOString(),
+      } as any)
+    }
+  }, [searchObject?.endDate, searchObject?.startDate, setRestSearchObject])
 
   useEffect(() => {
     if (searchObject && searchObject.startDate && searchObject.endDate) {

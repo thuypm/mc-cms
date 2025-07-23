@@ -93,3 +93,7 @@ body,
 .p-datatable.register-dayboarding-table td {
   padding: 0.25rem 0.5rem;
 }
+.p-datatable.data-table-total-count tr td,
+th {
+  padding: 6px 12px;
+}
