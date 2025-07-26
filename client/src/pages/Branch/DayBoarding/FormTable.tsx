@@ -1,20 +1,38 @@
 import { useStore } from 'context/store'
+import { WorkspaceContext } from 'context/workspace.context'
 import dayjs from 'dayjs'
 import { observer } from 'mobx-react'
 import { Column } from 'primereact/column'
 import { DataTable } from 'primereact/datatable'
 import { Tag } from 'primereact/tag'
-import { forwardRef, useEffect, useImperativeHandle, useMemo } from 'react'
+import {
+  forwardRef,
+  useContext,
+  useEffect,
+  useImperativeHandle,
+  useMemo,
+} from 'react'
 import { Controller, useForm, useWatch } from 'react-hook-form'
+import { USER_POSITION } from 'utils/constants/user'
 import { useObjectSearchParams } from 'utils/hooks/useObjectSearchParams'
 import StatusTagSelect from './StatusTagSelect'
 
 const dayHeaders = ['T2', 'T3', 'T4', 'T5', 'T6', 'T7', 'CN']
 
-const getDateByIndex = (startDate: string | Date, dayIndex: number): string => {
-  return dayjs(startDate).add(dayIndex, 'day').format('DD/MM')
+const getDateByIndex = (
+  startDate: string | Date,
+  dayIndex: number
+): dayjs.Dayjs => {
+  return dayjs(startDate).add(dayIndex, 'day')
 }
 
+const checkDisabledEdit = (date: dayjs.Dayjs) => {
+  const now = dayjs()
+  const isToday = date.isSame(now, 'day')
+  const isPastDay = date.isBefore(now, 'day')
+  const isDisabled = isPastDay || (isToday && now.hour() >= 7)
+  return isDisabled
+}
 const FormTable = forwardRef(({ items, loadingListing }: any, ref) => {
   const { control, reset, getValues, handleSubmit } = useForm({
     defaultValues: {
@@ -28,6 +46,9 @@ const FormTable = forwardRef(({ items, loadingListing }: any, ref) => {
     control,
     name: 'items',
   })
+  const {
+    user: { position },
+  } = useContext(WorkspaceContext)
 
   // ✅ expose submit to parent via ref
   useImperativeHandle(ref, () => ({
@@ -101,72 +122,86 @@ const FormTable = forwardRef(({ items, loadingListing }: any, ref) => {
       />
       <Column field="studentInfo.name" header="Họ và tên" />
       <Column field="studentInfo.classInfo.name" header="Lớp" />
-      {dayHeaders.map((day, dayIndex) => (
-        <Column
-          key={day}
-          field={day}
-          filter
-          headerStyle={{
-            backgroundColor:
-              getDateByIndex(startDate, dayIndex) === dayjs().format('DD/MM')
-                ? '#e6f3ff'
-                : undefined, // đỏ nhạt
-          }}
-          header={
-            <div>
-              <div className="text-center">
-                <strong>{day}</strong> ({getDateByIndex(startDate, dayIndex)})
+      {dayHeaders.map((day, dayIndex) => {
+        const dayByIndex = getDateByIndex(startDate, dayIndex)
+        const isDisabled =
+          !(position === USER_POSITION.SUPER_ADMIN) &&
+          checkDisabledEdit(dayByIndex)
+        return (
+          <Column
+            key={day}
+            field={day}
+            filter
+            headerStyle={{
+              backgroundColor:
+                dayByIndex.format('DD/MM') === dayjs().format('DD/MM')
+                  ? '#e6f3ff'
+                  : undefined, // đỏ nhạt
+            }}
+            header={
+              <div>
+                <div className="text-center">
+                  <strong>{day}</strong> ({dayByIndex.format('DD/MM')})
+                </div>
+                <div className="flex align-items-center gap-1">
+                  {isDisabled ? (
+                    <Tag severity="warning" value="Quá hạn" />
+                  ) : (
+                    <>
+                      {' '}
+                      <Tag
+                        className="cursor-pointer"
+                        severity="success"
+                        value="ĐK"
+                        onClick={() => {
+                          const currentValues = getValues()
+                          const newArray = currentValues.items?.map((item) => {
+                            const d = new Date(item.date).getDay()
+                            if (d === (dayIndex + 1) % 7)
+                              return { ...item, status: 1 }
+                            return item
+                          })
+                          reset({ items: newArray })
+                        }}
+                      />
+                      <Tag
+                        className="cursor-pointer"
+                        severity="danger"
+                        value="Hủy"
+                        onClick={() => {
+                          const currentValues = getValues()
+                          const newArray = currentValues.items?.map((item) => {
+                            const d = new Date(item.date).getDay()
+                            if (d === (dayIndex + 1) % 7)
+                              return { ...item, status: -1 }
+                            return item
+                          })
+                          reset({ items: newArray })
+                        }}
+                      />
+                    </>
+                  )}
+                </div>
               </div>
-              <div className="flex align-items-center gap-1">
-                <Tag
-                  className="cursor-pointer"
-                  severity="success"
-                  value="ĐK"
-                  onClick={() => {
-                    const currentValues = getValues()
-                    const newArray = currentValues.items?.map((item) => {
-                      const d = new Date(item.date).getDay()
-                      if (d === (dayIndex + 1) % 7)
-                        return { ...item, status: 1 }
-                      return item
-                    })
-                    reset({ items: newArray })
-                  }}
+            }
+            body={(rowData: any) =>
+              rowData[day] && (
+                <Controller
+                  control={control}
+                  name={`items.${rowData[day].rootIndex}.status`}
+                  render={({ field }) => (
+                    <StatusTagSelect
+                      status={field.value}
+                      disabled={isDisabled}
+                      onChange={(v) => field.onChange(v)}
+                    />
+                  )}
                 />
-                <Tag
-                  className="cursor-pointer"
-                  severity="danger"
-                  value="Hủy"
-                  onClick={() => {
-                    const currentValues = getValues()
-                    const newArray = currentValues.items?.map((item) => {
-                      const d = new Date(item.date).getDay()
-                      if (d === (dayIndex + 1) % 7)
-                        return { ...item, status: -1 }
-                      return item
-                    })
-                    reset({ items: newArray })
-                  }}
-                />
-              </div>
-            </div>
-          }
-          body={(rowData: any) =>
-            rowData[day] && (
-              <Controller
-                control={control}
-                name={`items.${rowData[day].rootIndex}.status`}
-                render={({ field }) => (
-                  <StatusTagSelect
-                    status={field.value}
-                    onChange={(v) => field.onChange(v)}
-                  />
-                )}
-              />
-            )
-          }
-        />
-      ))}
+              )
+            }
+          />
+        )
+      })}
     </DataTable>
   )
 })

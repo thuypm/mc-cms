@@ -13,10 +13,10 @@ import {
 import { getCustomerStatusTag } from 'utils/helper/table'
 import ModalImportData from './ModalImportData'
 
-const CustomerManagement = () => {
+const StudentManagement = () => {
   const { t } = useTranslation()
   const {
-    custormerManagementStore: {
+    studentManagementStore: {
       loadingListing,
       handleFilterDataChange,
       deleteItem,
@@ -36,15 +36,15 @@ const CustomerManagement = () => {
           tooltip: t('View'),
         },
 
-        {
-          key: 'delete',
-          icon: <i className="isax-trash"></i>,
-          showConfirm: {},
-          action: (data) => {
-            deleteItem(data._id)
-          },
-          tooltip: t('Delete'),
-        },
+        // {
+        //   key: 'delete',
+        //   icon: <i className="isax-trash"></i>,
+        //   showConfirm: {},
+        //   action: (data) => {
+        //     deleteItem(data._id)
+        //   },
+        //   tooltip: t('Delete'),
+        // },
       ]}
       columns={[
         {
@@ -155,4 +155,4 @@ const CustomerManagement = () => {
     />
   )
 }
-export default observer(CustomerManagement)
+export default observer(StudentManagement)

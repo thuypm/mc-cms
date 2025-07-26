@@ -64,7 +64,7 @@ class CustomerManagementStore {
     this.loadingListing = true
     try {
       const { data } = await axiosInstant.request({
-        url: '/api/v1/customer',
+        url: '/api/student',
         params: this.filterData,
       })
       runInAction(() => {

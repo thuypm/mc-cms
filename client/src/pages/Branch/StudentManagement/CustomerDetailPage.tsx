@@ -17,7 +17,7 @@ import { getCustomerStatusTag } from 'utils/helper/table'
 const CustomerDetailPage = () => {
   const { t } = useTranslation()
   const {
-    custormerManagementStore: {
+    studentManagementStore: {
       fetchDetail,
       selectedItem,
       loadingDetail,

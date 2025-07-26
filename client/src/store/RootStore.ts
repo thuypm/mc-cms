@@ -1,10 +1,10 @@
 import { BrowserHistory } from 'history'
 import AuthStore from './AuthStore'
-import CustomerManagementStore from './BranchGroup/CustomerManagementStore'
 import DayBoardingStore from './BranchGroup/DayBoardingStore'
 import EmailTemplateStore from './BranchGroup/EmailTemplateStore'
 import EventManagementStore from './BranchGroup/EventManagementStore'
 import EventRegistrationStore from './BranchGroup/EventRegistrationStore'
+import StudentManagementStore from './BranchGroup/StudentManagementStore'
 import AdminManagementStore from './HeadQuarterGroup/AdminManagementStore'
 import BranchManagementStore from './HeadQuarterGroup/BranchManagementStore'
 import ContactManagementStore from './HeadQuarterGroup/ContactManagementStore'
@@ -21,7 +21,7 @@ class RootStore {
   eventManamentStore: EventManagementStore
   eventRegistrationStore: EventRegistrationStore
   emailTemplateStore: EmailTemplateStore
-  custormerManagementStore: CustomerManagementStore
+  studentManagementStore: StudentManagementStore
   dayBoardingStore: DayBoardingStore
 
   constructor(history) {
@@ -37,7 +37,7 @@ class RootStore {
     this.eventManamentStore = new EventManagementStore(this)
     this.eventRegistrationStore = new EventRegistrationStore(this)
     this.emailTemplateStore = new EmailTemplateStore(this)
-    this.custormerManagementStore = new CustomerManagementStore(this)
+    this.studentManagementStore = new StudentManagementStore(this)
     this.dayBoardingStore = new DayBoardingStore(this)
 
     //common

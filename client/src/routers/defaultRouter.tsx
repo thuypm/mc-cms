@@ -1,6 +1,6 @@
-import CustomerManagement from 'pages/Branch/CustomerManagement'
-import CreateCustomer from 'pages/Branch/CustomerManagement/CreateCustomer'
-import CustomerDetailPage from 'pages/Branch/CustomerManagement/CustomerDetailPage'
+import StudentManagement from 'pages/Branch/StudentManagement'
+import CreateCustomer from 'pages/Branch/StudentManagement/CreateCustomer'
+import CustomerDetailPage from 'pages/Branch/StudentManagement/CustomerDetailPage'
 
 import DayBoarding from 'pages/Branch/DayBoarding'
 import CreateDayBoarding from 'pages/Branch/DayBoarding/CreateDayBoarding'
@@ -46,15 +46,15 @@ export const branchRouters: Array<IMenuItem> = [
   },
 
   {
-    key: 'customer-management',
-    path: '/customer-management',
-    element: <CustomerManagement />,
-    label: 'Customer management',
+    key: 'student-management',
+    path: '/student-management',
+    element: <StudentManagement />,
+    label: 'Danh sách học sinh',
     hiddenFromMenu: false,
-    icon: ' isax-profile-2user',
+    icon: 'pi pi-user',
     children: [
       {
-        key: 'create-customer',
+        key: 'create-student',
         path: 'create',
         element: <CreateCustomer />,
         label: 'Create Customer',

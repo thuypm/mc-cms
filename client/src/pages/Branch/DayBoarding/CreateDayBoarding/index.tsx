@@ -115,7 +115,7 @@ const CreateDayBoarding = () => {
           }
         >
           <Column header="STT" body={(rowData, { rowIndex }) => rowIndex + 1} />
-          <Column header="VNEdu Id" field="vneduId" />
+          <Column header="MCID" field="MCID" />
           <Column header="Tên" field="name" />
           <Column header="Ngày sinh" field="dateOfBirth" />
           <Column header="Giới tính" field="gender" />

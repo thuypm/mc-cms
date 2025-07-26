@@ -1,6 +1,7 @@
 import { BranchStatusEnum } from 'utils/constants/branch'
 import { CustomerStatusEnum } from 'utils/constants/customer'
 import { EventStatusEnum } from 'utils/constants/event'
+import { USER_POSITION } from 'utils/constants/user'
 
 declare module 'Models' {
   export interface UserSyncData {
@@ -13,7 +14,7 @@ declare module 'Models' {
     email: string
     subject: string
     roles: string[] // hoặc cụ thể: ('SUPER_ADMIN' | 'TEACHER')[]
-    position: string
+    position: USER_POSITION
   }
   export interface HeadquarterInfoData extends UserSyncData {
     branchInformation: {

@@ -3,13 +3,14 @@ import { BaseRepository } from "./base.repository";
 export interface IStudent extends Document {
   _id: Types.ObjectId;
   name: string;
+  MCID: string;
+  VNEDUID: string;
   positionText: string;
   class: string;
   branch: string;
   phone: string;
   email: string;
   subject: string;
-  roles: ("SUPER_ADMIN" | "TEACHER")[];
   position: string;
 }
 
@@ -19,8 +20,10 @@ const studentSchema: Schema = new Schema(
     positionText: { type: String },
     branch: { type: String },
     phone: { type: String },
-    email: { type: String, required: true, unique: true },
+    email: { type: String },
     subject: { type: String },
+    MCID: { type: String, required: true, unique: true },
+    VNEDUID: { type: String, required: true, unique: true },
 
     roles: {
       type: [String],

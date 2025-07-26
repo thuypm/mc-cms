@@ -1,17 +1,17 @@
+import { useStore } from 'context/store'
 import { observer } from 'mobx-react'
 import { Button } from 'primereact/button'
 import { Dialog } from 'primereact/dialog'
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import UploadFile from './Upload/UploadFile'
-import { useStore } from 'context/store'
 
 const ModalImportData = () => {
   const { t } = useTranslation()
 
   const [showModal, setShowModal] = useState(false)
   const {
-    custormerManagementStore: { handleFilterDataChange },
+    studentManagementStore: { handleFilterDataChange },
   } = useStore()
 
   return (

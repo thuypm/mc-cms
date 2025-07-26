@@ -30,7 +30,7 @@ const CreateCustomer = () => {
   const { t } = useTranslation()
 
   const {
-    custormerManagementStore: {
+    studentManagementStore: {
       fetchDetail,
       create,
       selectedItem,

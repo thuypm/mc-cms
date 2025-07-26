@@ -27,13 +27,13 @@ app.use(express.json());
 
 // Mount routers
 app.use("/api/auth", authRouter);
+app.use("/api/student", authenticateToken, attachBranchId, studentRouter);
 app.use(
   "/api/day-boarding",
   authenticateToken,
   attachBranchId,
   dayBoardingRouter
 );
-app.use("/api/student", authenticateToken, attachBranchId, studentRouter);
 
 // Static images folder
 const imagesPath = path.join(process.cwd(), "images");

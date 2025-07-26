@@ -57,7 +57,7 @@ export const USER_STATUSES = [
   },
 ]
 export const isHeaquarter = (user: UserSyncData) => {
-  return user.position === UserRoleEnum.Headquarter
+  return null
 }
 const matches = window.location.pathname.split('/')
 export const branchRouterId = matches?.[1]
