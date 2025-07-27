@@ -9,7 +9,7 @@ declare module 'Base' {
   export interface BaseDataList<T extends BaseItem> {
     meta: {
       page?: number
-      perPage?: number
+      limit?: number
       totalPages?: number
       total?: number
     }
@@ -21,7 +21,7 @@ declare module 'Base' {
   export interface BaseDataListResponse<T extends BaseItemResponse> {
     meta: {
       page?: number
-      perPage?: number
+      limit?: number
       totalPages?: number
       total?: number
     }

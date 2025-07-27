@@ -16,12 +16,12 @@ class EventManagementStore {
   loadingDetail: boolean
   filterData = {
     page: 1,
-    perPage: DEFAULT_PAGE_TABLE_SIZE,
+    limit: DEFAULT_PAGE_TABLE_SIZE,
     keyword: '',
   }
   listData: BaseDataListResponse<EventData> = {
     meta: {
-      perPage: DEFAULT_PAGE_TABLE_SIZE,
+      limit: DEFAULT_PAGE_TABLE_SIZE,
       page: 1,
       total: 0,
     },
@@ -77,7 +77,7 @@ class EventManagementStore {
         this.filterData = {
           ...this.filterData,
           page: data.meta.page,
-          perPage: data.meta.perPage,
+          limit: data.meta.limit,
         }
       })
     } catch (err) {

@@ -226,8 +226,8 @@ export const FilterSelectLazy = forwardRef(
           url,
           method,
           baseURL,
-          params: { perPage: LIMIT_NOT_LAZY_SELECT, ...(params || {}) },
-          // data: params ?? { perPage: LIMIT_NOT_LAZY_SELECT },
+          params: { limit: LIMIT_NOT_LAZY_SELECT, ...(params || {}) },
+          // data: params ?? { limit: LIMIT_NOT_LAZY_SELECT },
         })
         setData(data.items)
       } catch (error) {

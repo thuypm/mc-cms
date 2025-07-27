@@ -41,7 +41,7 @@ export interface IBaseManagementComponentProps {
   pagination?: {
     page?: number
     totalPages?: number
-    perPage?: number
+    limit?: number
     total?: number
     onPageChange?(event: PaginatorPageChangeEvent): void
   }
@@ -101,7 +101,7 @@ const BaseManagementComponent = ({
         }
       })
     Object.keys(searchObject).forEach((key) => {
-      if (key !== 'page' && key !== 'perPage' && key !== 'sortBy') {
+      if (key !== 'page' && key !== 'limit' && key !== 'sortBy') {
         obj[key] = {
           value: searchObject[key],
           matchMode: FilterMatchMode.CUSTOM,
@@ -273,12 +273,12 @@ const BaseManagementComponent = ({
       </DataTable>
       {pagination && pagination.total && pagination.page ? (
         <Paginator
-          first={(pagination.page - 1) * pagination.perPage}
-          rows={pagination.perPage}
+          first={(pagination.page - 1) * pagination.limit}
+          rows={pagination.limit}
           totalRecords={pagination.total}
           template={{
             layout:
-              'CurrentPageReport FirstPageLink PrevPageLink  PageLinks NextPageLink LastPageLink RowsPerPageDropdown',
+              'CurrentPageReport FirstPageLink PrevPageLink  PageLinks NextPageLink LastPageLink RowslimitDropdown',
             CurrentPageReport: (options) => {
               return (
                 <span>
@@ -293,7 +293,7 @@ const BaseManagementComponent = ({
           onPageChange={(e) =>
             setRestSearchObject({
               page: e.page + 1,
-              perPage: e.rows,
+              limit: e.rows,
             })
           }
           className="justify-content-center"

@@ -1,20 +1,13 @@
+import AllInOneSelect from 'components/AllInOneSelect'
 import BaseManagementComponent from 'components/BaseManagementComponent'
-import FilterSelect from 'components/InfiniteSelect/FilterSelect'
 import InputSearchKeyword from 'components/InputSearchKeyword'
 import { useStore } from 'context/store'
 import { observer } from 'mobx-react'
-import { Button } from 'primereact/button'
-import { useTranslation } from 'react-i18next'
-import { Link } from 'react-router-dom'
-import {
-  CustomerRegistedByEnum,
-  CustomerStatusEnum,
-} from 'utils/constants/customer'
-import { getCustomerStatusTag } from 'utils/helper/table'
+import { REACT_APP_SERVER_API } from 'utils/constants/environment'
+import { useObjectSearchParams } from 'utils/hooks/useObjectSearchParams'
 import ModalImportData from './ModalImportData'
 
 const StudentManagement = () => {
-  const { t } = useTranslation()
   const {
     studentManagementStore: {
       loadingListing,
@@ -23,6 +16,7 @@ const StudentManagement = () => {
       listData: { items, meta },
     },
   } = useStore()
+  const { searchObject, setRestSearchObject } = useObjectSearchParams()
 
   return (
     <BaseManagementComponent
@@ -31,9 +25,9 @@ const StudentManagement = () => {
       actionColumns={[
         {
           key: 'view',
-          icon: <i className="isax-eye"></i>,
+          icon: <i className="pi pi-eye"></i>,
           href: (item) => `/customer-management/${item._id}`,
-          tooltip: t('View'),
+          tooltip: 'Xem',
         },
 
         // {
@@ -48,88 +42,42 @@ const StudentManagement = () => {
       ]}
       columns={[
         {
+          key: 'avatar',
+          dataIndex: 'avatar',
+          header: 'Ảnh',
+          body: (item) => (
+            <img
+              width={80}
+              alt=""
+              src={`${REACT_APP_SERVER_API}/images/${item.avatar}`}
+            />
+          ),
+        },
+        {
           key: 'name',
           dataIndex: 'name',
-          header: t('Name'),
+          header: 'Họ và tên',
         },
         {
-          key: 'furigana',
-          dataIndex: 'furigana',
-          header: t('Furigana'),
-          sortable: true,
+          key: 'MCID',
+          dataIndex: 'MCID',
+          header: 'MCID',
         },
         {
-          key: 'email',
-          dataIndex: 'email',
-          header: t('Email'),
+          key: 'class',
+          dataIndex: 'class.name',
+          header: 'Lớp',
         },
-        {
-          key: 'phoneNumber',
-          dataIndex: 'phoneNumber',
-          header: t('Phone Number'),
-          // body: (item) => formatPhone(item.phoneNumber),
-        },
-        {
-          key: 'registeredBy',
-          dataIndex: 'registeredBy',
-          header: t('Registed By'),
-          body: (data) => t(data.registeredBy),
 
-          filter: true,
-
-          filterElement: (options) => {
-            return (
-              <FilterSelect
-                options={Object.values(CustomerRegistedByEnum).map((key) => ({
-                  label: t(key),
-                  value: key,
-                }))}
-                className="w-20rem"
-                multiple={false}
-                showSearch={false}
-                value={options.value}
-                onSelectItem={(_, value) => {
-                  options.filterCallback(value, options.index)
-                }}
-                onChange={(e) => options.filterApplyCallback(e, options.index)}
-                placeholder={t('Select One')}
-              />
-            )
-          },
-          showFilterMatchModes: false,
-          filterField: 'registeredBy',
-          filterMatchMode: 'contains',
-          width: 140,
+        {
+          key: 'dateOfBirth',
+          dataIndex: 'dateOfBirth',
+          header: 'NS',
         },
         {
-          key: 'status',
-          dataIndex: 'status',
-          header: t('Customer Status'),
-          body: (item) => getCustomerStatusTag(item.status),
-          filter: true,
-          width: 150,
-          filterElement: (options) => {
-            return (
-              <FilterSelect
-                options={Object.values(CustomerStatusEnum).map((key) => ({
-                  label: t(key),
-                  value: key,
-                }))}
-                showSearch={false}
-                className="w-20rem"
-                multiple={false}
-                value={options.value}
-                onSelectItem={(_, value) => {
-                  options.filterCallback(value, options.index)
-                }}
-                onChange={(e) => options.filterApplyCallback(e, options.index)}
-                placeholder={t('Select One')}
-              />
-            )
-          },
-          showFilterMatchModes: false,
-          filterField: 'status',
-          filterMatchMode: 'contains',
+          key: 'gender',
+          dataIndex: 'gender',
+          header: 'Giới tính',
         },
       ]}
       pagination={{
@@ -138,17 +86,29 @@ const StudentManagement = () => {
       handleFilterDataChange={handleFilterDataChange}
       filterComponent={
         <div className="flex justify-content-between align-items-center flex-wrap">
-          <h1 className="text-3xl font-bold">{t('Customer List')}</h1>
+          <h1 className="text-3xl font-bold">Danh sách học sinh</h1>
           <div className="flex gap-3 w-full">
-            <InputSearchKeyword
-              placeholder={t('Search for Name, Furigana, Email, Phone')}
+            <InputSearchKeyword placeholder={'Tìm kiếm'} />
+            <AllInOneSelect
+              placeholder="Chọn lớp"
+              className="w-15rem h-fit"
+              url={'/api/student/get-all-class'}
+              optionLabel="name"
+              optionValue="_id"
+              value={searchObject?.class}
+              firstItems={[
+                {
+                  _id: null,
+                  name: 'Tất cả lớp',
+                },
+              ]}
+              onChange={function (value: any, selectedItem?: any): void {
+                setRestSearchObject({
+                  class: value?._id,
+                })
+              }}
             />
-
             <ModalImportData />
-
-            <Link to={'create'}>
-              <Button icon="isax isax-add" label={t('顧客登録')}></Button>
-            </Link>
           </div>
         </div>
       }

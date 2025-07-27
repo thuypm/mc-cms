@@ -14,12 +14,12 @@ class CustomerManagementStore {
   loadingDetail: boolean
   filterData = {
     page: 1,
-    perPage: DEFAULT_PAGE_TABLE_SIZE,
+    limit: DEFAULT_PAGE_TABLE_SIZE,
     keyword: '',
   }
   listData: BaseDataListResponse<CustomerData> = {
     meta: {
-      perPage: DEFAULT_PAGE_TABLE_SIZE,
+      limit: DEFAULT_PAGE_TABLE_SIZE,
       page: 1,
       total: 0,
     },
@@ -65,14 +65,16 @@ class CustomerManagementStore {
     try {
       const { data } = await axiosInstant.request({
         url: '/api/student',
-        params: this.filterData,
+        params: {
+          ...this.filterData,
+        },
       })
       runInAction(() => {
         this.listData = data
         this.filterData = {
           ...this.filterData,
           page: data.meta.page,
-          perPage: data.meta.perPage,
+          limit: data.meta.limit,
         }
       })
     } catch (err) {

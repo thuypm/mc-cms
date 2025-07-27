@@ -15,12 +15,12 @@ class HeadQuaterInfoStore {
   loadingFilder: boolean
   filterData = {
     page: 1,
-    perPage: DEFAULT_PAGE_TABLE_SIZE,
+    limit: DEFAULT_PAGE_TABLE_SIZE,
     keyword: '',
   }
   listData: BaseDataListResponse<HeadquarterInfoData> = {
     meta: {
-      perPage: DEFAULT_PAGE_TABLE_SIZE,
+      limit: DEFAULT_PAGE_TABLE_SIZE,
       page: 1,
       total: 0,
     },

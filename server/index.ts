@@ -24,7 +24,8 @@ app.use(
 );
 
 app.use(express.json());
-
+const publicPath = path.join(process.cwd(), "public");
+app.use(express.static(publicPath));
 // Mount routers
 app.use("/api/auth", authRouter);
 app.use("/api/student", authenticateToken, attachBranchId, studentRouter);
@@ -42,3 +43,6 @@ console.log(process.env.APP_PORT);
 app.listen(APP_PORT, () => {
   console.log("Server chạy tại http://localhost:5000");
 });
+// studentService.createStudentCard(["108016", "108028", "108026"], {
+// branch: "MC1",
+// });

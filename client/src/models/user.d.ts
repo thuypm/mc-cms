@@ -25,7 +25,7 @@ declare module 'Models' {
         totalCustomer: 42
       }[]
       meta: {
-        perPage: 10
+        limit: 10
         page: 1
         totalPages: 1
         total: 10

@@ -4,7 +4,6 @@ import { Button } from 'primereact/button'
 import { Dialog } from 'primereact/dialog'
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import UploadFile from './Upload/UploadFile'
 
 const ModalImportData = () => {
   const { t } = useTranslation()
@@ -36,13 +35,6 @@ const ModalImportData = () => {
         <a href={'/テンプレート.csv'} title="link">
           {t('Example here')}
         </a>
-        <UploadFile
-          fetchData={() => handleFilterDataChange({})}
-          onClose={() => {
-            setShowModal(false)
-            handleFilterDataChange({})
-          }}
-        />
       </Dialog>
     </>
   )

@@ -1,5 +1,8 @@
-import mongoose, { Schema } from "mongoose";
+import mongoose, { Schema, Types } from "mongoose";
+import { BaseRepository } from "./base.repository";
 export interface ITeacher extends Document {
+  _id: Types.ObjectId;
+
   name: string;
   positionText: string;
   class: string;
@@ -30,4 +33,11 @@ const teacherSchema: Schema = new Schema(
   { timestamps: true }
 );
 
-export const Teacher = mongoose.model("Teacher", teacherSchema);
+export const Teacher = mongoose.model<ITeacher>("Teacher", teacherSchema);
+class TeacherRepository extends BaseRepository<ITeacher> {
+  constructor() {
+    super(Teacher);
+  }
+}
+
+export const teacherRepository = new TeacherRepository();

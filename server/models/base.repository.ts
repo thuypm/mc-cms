@@ -1,4 +1,5 @@
 import { FilterQuery, Model, Query, Schema, Types } from "mongoose";
+import { removeEmptyPropertyObject } from "../utils/helper";
 
 export class BaseRepository<T extends { _id: Types.ObjectId }> {
   constructor(protected model: Model<T>) {}
@@ -46,21 +47,25 @@ export class BaseRepository<T extends { _id: Types.ObjectId }> {
   }
 
   async paginate(options: {
-    filter?: FilterQuery<T>;
     page?: number;
     limit?: number;
     sort?: any;
     populate?: string | string[];
+    [key: string]: any;
   }) {
     const {
-      filter = {},
       page = 1,
       limit = 10,
       sort = { createdAt: -1 },
       populate,
+      ...otherQuery
     } = options;
 
     const skip = (page - 1) * limit;
+    const filter = removeEmptyPropertyObject(otherQuery) as FilterQuery<
+      typeof this.model
+    >;
+
     const query = this.model.find(filter).skip(skip).limit(limit).sort(sort);
     if (populate) query.populate(populate);
 

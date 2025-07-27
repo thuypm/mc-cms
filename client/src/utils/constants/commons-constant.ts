@@ -1,5 +1,5 @@
 export const LIMIT_DATALOAD_LIST = 10
-export const DEFAULT_PAGE_TABLE_SIZE = 10
+export const DEFAULT_PAGE_TABLE_SIZE = 60
 export const DEFAULT_LIMIT_SELECT = 10
 export const TIMEOUT_LOAD_MORE = 1000
 export const TIMEOUT_SEARCH = 1000

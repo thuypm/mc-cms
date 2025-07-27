@@ -15,3 +15,6 @@ export const getCurrentWeekRange = (): [Date, Date] => {
 
   return [startUTC, endUTC];
 };
+export function removeEmptyPropertyObject<T>(obj: T) {
+  return Object.fromEntries(Object.entries(obj).filter(([_, v]) => v)) as T;
+}
