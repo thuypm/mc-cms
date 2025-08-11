@@ -39,6 +39,7 @@ const DayBoarding = () => {
       handleFilterDataChange && handleFilterDataChange(searchObject)
     }
   }, [handleFilterDataChange, searchObject])
+
   const formRef = useRef(null)
   return (
     <div className="flex flex-column overflow-auto h-full">

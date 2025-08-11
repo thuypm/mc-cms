@@ -45,7 +45,8 @@
     "sass": "^1.59.3",
     "swr": "^2.2.5",
     "typescript": "^4.4.2",
-    "web-vitals": "^2.1.0"
+    "web-vitals": "^2.1.0",
+    "xlsx": "^0.18.5"
   },
   "scripts": {
     "start": "set PORT=80 && react-scripts start",

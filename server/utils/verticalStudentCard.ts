@@ -10,7 +10,7 @@ import { PDFDocument } from "pdf-lib";
 import QRCode from "qrcode";
 const CARD_WIDTH = 1015; // canvas gốc
 const CARD_HEIGHT = 638;
-const GAP = 30;
+const GAP = 60;
 
 const A4_WIDTH = 2480;
 const A4_HEIGHT = 3508;
@@ -22,6 +22,7 @@ registerFont("public/fonts/Poppins/Poppins-Bold.ttf", {
 registerFont("public/fonts/Calibri/calibri-bold.ttf", {
   family: "Calibri",
 });
+
 async function drawAvatarImage(
   ctx: CanvasRenderingContext2D,
   fileName: string,
@@ -64,8 +65,6 @@ async function drawAvatarImage(
       config.height // đổ ra canvas
     );
   } catch (error) {}
-
-  // ctx.drawImage(avatarImg, config.x, config.y, config.width, config.height);
 }
 function drawCenteredText(
   ctx: CanvasRenderingContext2D,
@@ -136,7 +135,7 @@ export const generateStudentCard = async (
       config.mcid
     );
     drawCenteredText(ctx, student.name.toUpperCase(), config.name);
-    drawAvatarImage(ctx, student.avatar, config.avatar);
+    await drawAvatarImage(ctx, student.avatar, config.avatar);
     // QR code
     const qrData = await QRCode.toDataURL(student.MCID, {
       width: config.qr.size,
@@ -172,22 +171,38 @@ export const generateStudentCard = async (
     console.warn(`⚠️ Không thể tải ảnh: ${student.avatar}`);
   }
 };
+export async function rotateCard90(cardBuffer: Buffer): Promise<Buffer> {
+  const original = await loadImage(cardBuffer);
+  const rotatedCanvas = createCanvas(CARD_HEIGHT, CARD_WIDTH); // đảo chiều
+  const ctx = rotatedCanvas.getContext("2d");
 
+  // Xoay canvas 90 độ theo tâm ảnh
+  ctx.translate(CARD_HEIGHT, 0); // dịch sang phải
+  ctx.rotate((90 * Math.PI) / 180); // xoay 90 độ
+
+  ctx.drawImage(original, 0, 0); // vẽ ảnh đã xoay
+
+  return rotatedCanvas.toBuffer("image/png");
+}
 export async function createStudentPDF(
   cards: Uint8Array[]
 ): Promise<Uint8Array> {
   const pdfDoc = await PDFDocument.create();
   let page = pdfDoc.addPage([A4_WIDTH, A4_HEIGHT]);
 
-  const cols = Math.floor((A4_WIDTH + GAP) / (CARD_WIDTH + GAP));
-  const rows = Math.floor((A4_HEIGHT + GAP) / (CARD_HEIGHT + GAP));
+  // Do ảnh đã xoay, chiều rộng là CARD_HEIGHT, chiều cao là CARD_WIDTH
+  const rotatedWidth = CARD_HEIGHT;
+  const rotatedHeight = CARD_WIDTH;
+
+  const cols = Math.floor((A4_WIDTH + GAP) / (rotatedWidth + GAP));
+  const rows = Math.floor((A4_HEIGHT + GAP) / (rotatedHeight + GAP));
 
   const positions: { x: number; y: number }[] = [];
 
   for (let row = 0; row < rows; row++) {
     for (let col = 0; col < cols; col++) {
-      const x = GAP + col * (CARD_WIDTH + GAP);
-      const y = A4_HEIGHT - (GAP + (row + 1) * (CARD_HEIGHT + GAP));
+      const x = GAP + col * (rotatedWidth + GAP);
+      const y = A4_HEIGHT - GAP - (row + 1) * (rotatedHeight + GAP);
       positions.push({ x, y });
     }
   }
@@ -199,7 +214,13 @@ export async function createStudentPDF(
 
     const png = await pdfDoc.embedPng(cards[i]);
     const { x, y } = positions[i % positions.length];
-    page.drawImage(png, { x, y, width: CARD_WIDTH, height: CARD_HEIGHT });
+
+    page.drawImage(png, {
+      x,
+      y,
+      width: rotatedWidth,
+      height: rotatedHeight,
+    });
   }
 
   return await pdfDoc.save();

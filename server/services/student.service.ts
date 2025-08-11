@@ -32,11 +32,14 @@ class StudentService extends BaseService<IStudent> {
       },
       "class"
     );
+
     const baseImage = await loadImage(
-      path.join(process.cwd(), "public/base/Root.png")
+      path.join(process.cwd(), `public/base/Root-${user.branch}.png`)
     );
     const cards = await Promise.all(
-      students.map((s: any) => generateStudentCard(s, baseImage))
+      students.map((s: any) => {
+        return generateStudentCard(s, baseImage);
+      })
     );
     const pdfBuffer = await createStudentPDF(cards);
 

@@ -43,6 +43,3 @@ console.log(process.env.APP_PORT);
 app.listen(APP_PORT, () => {
   console.log("Server chạy tại http://localhost:5000");
 });
-// studentService.createStudentCard(["108016", "108028", "108026"], {
-// branch: "MC1",
-// });
