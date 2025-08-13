@@ -13,7 +13,12 @@ const SelectBranchWorkSpace = ({ showLogo = true, className = '' }) => {
   }, [])
 
   return (
-    <div className="w-screen h-screen flex align-items-center justify-content-center">
+    <div
+      className={clsx(
+        'flex align-items-center justify-content-center w-screen h-screen',
+        className
+      )}
+    >
       <div
         className={clsx(
           'p-4  bg-white border-round-lg flex flex-column align-items-center',

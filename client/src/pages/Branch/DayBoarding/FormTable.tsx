@@ -117,8 +117,8 @@ const FormTable = forwardRef(({ items, loadingListing }: any, ref) => {
     >
       <Column
         field="studentInfo.code"
-        header="Mã HS"
-        body={(rowData: any) => rowData.studentInfo?.code}
+        header="MCID"
+        body={(rowData: any) => rowData.studentInfo?.MCID}
       />
       <Column field="studentInfo.name" header="Họ và tên" />
       <Column field="studentInfo.classInfo.name" header="Lớp" />

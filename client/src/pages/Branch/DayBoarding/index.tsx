@@ -1,12 +1,13 @@
 import { useStore } from 'context/store'
+import { WorkspaceContext } from 'context/workspace.context'
 import dayjs from 'dayjs'
 import isoWeek from 'dayjs/plugin/isoWeek'
 import utc from 'dayjs/plugin/utc'
 import { observer } from 'mobx-react'
 import { Button } from 'primereact/button'
-import { useEffect, useRef } from 'react'
+import { useContext, useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
-import { getCurrentWeekRange } from 'utils/helper/common-helpers'
+import { USER_POSITION } from 'utils/constants/user'
 import { useObjectSearchParams } from 'utils/hooks/useObjectSearchParams'
 import FormTable from './FormTable'
 import SuperAdminDayBoarding from './SuperAdminDayBoarding'
@@ -21,24 +22,19 @@ const DayBoarding = () => {
       listData: { items },
     },
   } = useStore()
-
-  const { searchObject, setRestSearchObject } = useObjectSearchParams()
-
-  useEffect(() => {
-    if (!searchObject.startDate || !searchObject.endDate) {
-      const weekArr = getCurrentWeekRange()
-      setRestSearchObject({
-        startDate: weekArr[0].toISOString(),
-        endDate: weekArr[1].toISOString(),
-      } as any)
-    }
-  }, [searchObject?.endDate, searchObject?.startDate, setRestSearchObject])
+  const { user } = useContext(WorkspaceContext)
+  const { searchObject } = useObjectSearchParams()
 
   useEffect(() => {
     if (searchObject && searchObject.startDate && searchObject.endDate) {
-      handleFilterDataChange && handleFilterDataChange(searchObject)
+      if (
+        user.position !== USER_POSITION.SUPER_ADMIN ||
+        (user.position === USER_POSITION.SUPER_ADMIN && searchObject.classId)
+      ) {
+        handleFilterDataChange && handleFilterDataChange(searchObject)
+      }
     }
-  }, [handleFilterDataChange, searchObject])
+  }, [handleFilterDataChange, searchObject, user.position])
 
   const formRef = useRef(null)
   return (

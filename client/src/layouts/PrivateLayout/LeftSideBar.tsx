@@ -4,7 +4,7 @@ import { WorkspaceContext } from 'context/workspace.context'
 import { observer } from 'mobx-react'
 import { Badge } from 'primereact/badge'
 import { Menu } from 'primereact/menu'
-import { useContext, useEffect, useMemo } from 'react'
+import { useContext, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Link, useLocation } from 'react-router-dom'
 import { getSelectedKey } from 'routers/routes'
@@ -15,9 +15,7 @@ function LeftSideBar({ collapse }) {
   const { appRouters } = useContext(WorkspaceContext)
   const location = useLocation()
   const activeRoutes = getSelectedKey(appRouters, location)
-  const logoSrc = useMemo(() => {
-    return ``
-  }, [])
+
   const { i18n } = useTranslation()
   const {
     contactStore: { hasNewMessages },
@@ -71,7 +69,7 @@ function LeftSideBar({ collapse }) {
             className="inline-flex align-items-center gap-1 px-4 py-3"
             to={'/'}
           >
-            <img src={logoSrc} alt="logo" />
+            <img width={40} src={'/logo.png'} alt="logo" />
           </Link>
         )
       },

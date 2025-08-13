@@ -1,17 +1,24 @@
 import dayjs from 'dayjs'
 import isoWeek from 'dayjs/plugin/isoWeek'
 import { Button } from 'primereact/button'
+import { useEffect } from 'react'
 import { DATE_TIME_FORMAT } from 'utils/constants/datetime'
+import { getCurrentWeekRange } from 'utils/helper/common-helpers'
 import { useObjectSearchParams } from 'utils/hooks/useObjectSearchParams'
 
 dayjs.extend(isoWeek)
 
 const WeekFilter = () => {
-  // const {
-  //   dayBoardingStore: { filterData },
-  // } = useStore()
-
   const { searchObject, setRestSearchObject } = useObjectSearchParams()
+  useEffect(() => {
+    if (!searchObject.startDate || !searchObject.endDate) {
+      const weekArr = getCurrentWeekRange()
+      setRestSearchObject({
+        startDate: weekArr[0].toISOString(),
+        endDate: weekArr[1].toISOString(),
+      } as any)
+    }
+  }, [searchObject?.endDate, searchObject?.startDate, setRestSearchObject])
 
   const handleChangeWeek = (direction: 'prev' | 'next') => {
     const offset = direction === 'prev' ? -7 : 7

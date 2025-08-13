@@ -75,30 +75,27 @@ export default function Header({ setCollapse }: any) {
           shape="circle"
         />
         <div>
-          <p
-            className="m-0 font-bold overflow-hidden text-overflow-ellipsis white-space-nowrap"
-            style={{
-              maxWidth: '15rem',
-            }}
-          ></p>
-          <p className="m-0 text-sm">{user.email}</p>
+          <p className="m-0 font-bold overflow-hidden text-overflow-ellipsis white-space-nowrap"></p>
+          <p className="m-0 text-sm">
+            {user.email} <b> ({localStorage.getItem('branchId')})</b>
+          </p>
         </div>
         <i className="isax-arrow-down-small-bold"></i>
       </div>
       <Dialog visible={show} onHide={() => setShow(false)}>
-        <SelectBranchWorkSpace className=" " showLogo={false} />
+        <SelectBranchWorkSpace className="w-fit h-fit" showLogo={false} />
       </Dialog>
       <OverlayPanel ref={op}>
         <div className="flex flex-column gap-2">
-          <Link
-            to={'/profile'}
-            className="p-menuitem-content hover:surface-50 px-3 py-2 cursor-pointer text-gray-600"
-          >
-            <div className="flex align-items-center p-menuitem-link">
+          <div className="p-menuitem-content hover:surface-50 px-3 py-2 cursor-pointer text-gray-600">
+            <div
+              className="flex align-items-center p-menuitem-link"
+              onClick={() => setShow(true)}
+            >
               <i className="isax-profile-circle"></i>
-              <span className="mx-2">{t('Profile')}</span>
+              <span className="mx-2">Chọn Cơ sở</span>
             </div>
-          </Link>
+          </div>
 
           <div
             className="p-menuitem-content hover:surface-50 px-3 py-2 cursor-pointer"
