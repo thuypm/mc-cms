@@ -5,7 +5,7 @@ import { useStore } from 'context/store'
 import { observer } from 'mobx-react'
 import { REACT_APP_SERVER_API } from 'utils/constants/environment'
 import { useObjectSearchParams } from 'utils/hooks/useObjectSearchParams'
-import ModalImportData from './ModalImportData'
+import ModalImportData from './CreateStudentCard/ModalCreateStudentInfo'
 
 const StudentManagement = () => {
   const {

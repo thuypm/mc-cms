@@ -85,6 +85,26 @@ class CustomerManagementStore {
     }
   }
 
+  fetchDetailIds = async (ids: string[]) => {
+    this.loadingDetail = true
+    try {
+      const { data } = await axiosInstant.request({
+        url: `/api/student/get-student-ids`,
+        method: 'post',
+        data: {
+          ids,
+        },
+      })
+      return data
+    } catch (err) {
+      // throw err
+    } finally {
+      runInAction(() => {
+        this.loadingDetail = false
+      })
+    }
+  }
+
   fetchDetail = async (id) => {
     this.loadingDetail = true
     try {

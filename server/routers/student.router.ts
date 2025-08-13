@@ -16,11 +16,14 @@ router.get("/", async (req: AuthRequest, res: Response): Promise<void> => {
   }
 });
 router.post(
-  "/create-student-card",
+  "/get-student-ids",
   async (req: AuthRequest, res: Response): Promise<void> => {
     try {
       const user = req.user;
-      const data = await studentService.createStudentCard(req.body.mcids, user);
+      const data = await studentService.getStudentInfoByIds(
+        req.body.ids,
+        user.branch
+      );
       res.json(data);
     } catch (err) {
       console.error(err);

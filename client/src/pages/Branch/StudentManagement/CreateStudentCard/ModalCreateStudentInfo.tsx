@@ -8,13 +8,15 @@ import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import * as XLSX from 'xlsx'
 
-const ModalImportData = () => {
+import { exportStudentCardsPdf } from './createHelper'
+
+const ModalCreateStudentInfo = () => {
   const { t } = useTranslation()
   const [showModal, setShowModal] = useState(false)
   const [mcidText, setMcidText] = useState('')
-
+  const [loading, setLoading] = useState(false)
   const {
-    studentManagementStore: { handleFilterDataChange },
+    studentManagementStore: { fetchDetailIds },
   } = useStore()
 
   const handleFileSelect = async (e: FileUploadSelectEvent) => {
@@ -39,14 +41,21 @@ const ModalImportData = () => {
     }
   }
 
-  const handleSubmit = () => {
+  const handleSubmit = async () => {
     const mcidArray = mcidText
       .split(',')
       .map((s) => s.trim())
       .filter((s) => s)
-
+    try {
+      setLoading(true)
+      const data = await fetchDetailIds(mcidArray)
+      await exportStudentCardsPdf(data)
+      setLoading(false)
+    } catch (error) {
+      setLoading(false)
+    }
     // handleFilterDataChange('mcidList', mcidArray)
-    setShowModal(false)
+    // setShowModal(false)
   }
 
   return (
@@ -87,10 +96,11 @@ const ModalImportData = () => {
           icon="pi pi-check"
           onClick={handleSubmit}
           className="mt-3"
+          loading={loading}
         />
       </Dialog>
     </>
   )
 }
 
-export default observer(ModalImportData)
+export default observer(ModalCreateStudentInfo)
