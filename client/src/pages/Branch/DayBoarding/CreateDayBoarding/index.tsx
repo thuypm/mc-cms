@@ -145,6 +145,8 @@ const CreateDayBoarding = () => {
               )
             }}
           />
+          <Column header="Phòng ăn" field="" />
+          <Column header="Phòng ngủ" field="" />
         </DataTable>
       </div>
     </div>

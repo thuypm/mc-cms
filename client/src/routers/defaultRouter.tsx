@@ -6,6 +6,7 @@ import DayBoarding from 'pages/Branch/DayBoarding'
 import CreateDayBoarding from 'pages/Branch/DayBoarding/CreateDayBoarding'
 import Profile from 'pages/Profile'
 import { Navigate } from 'react-router-dom'
+import EatingRollUp from './../pages/Branch/RollUpDayBoarding/EatingRollUp'
 import { IMenuItem } from './routes'
 
 export const branchRouters: Array<IMenuItem> = [
@@ -43,6 +44,14 @@ export const branchRouters: Array<IMenuItem> = [
         icon: '',
       },
     ],
+  },
+  {
+    key: 'rollup-boarding',
+    path: '/rollup-boarding',
+    element: <EatingRollUp />,
+    label: 'Điểm danh bán trú',
+    hiddenFromMenu: false,
+    icon: 'pi-warehouse pi',
   },
 
   {
