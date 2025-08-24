@@ -1,6 +1,5 @@
 import clsx from 'clsx'
 import dayjs from 'dayjs'
-import e from 'express'
 import { InputText } from 'primereact/inputtext'
 import { OverlayPanel } from 'primereact/overlaypanel'
 import { useEffect, useMemo, useRef, useState } from 'react'
@@ -56,7 +55,7 @@ export const TimeSelect = ({
         className
       )}
     >
-      <div className="flex-column flex items-center gap-2">
+      <div className="flex-column flex align-items-center gap-2">
         <button
           tabIndex={1}
           className="text-grey-06 justify-content-center cursor-pointer flex bg-transparent outline-none border-none 
@@ -90,7 +89,7 @@ export const TimeSelect = ({
       </div>
 
       <div>:</div>
-      <div className="flex-column flex items-center gap-2">
+      <div className="flex-column flex align-items-center gap-2">
         <button
           tabIndex={1}
           className="text-grey-06 justify-content-center cursor-pointer flex bg-transparent outline-none border-none 

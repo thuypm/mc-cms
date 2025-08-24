@@ -3,15 +3,18 @@ import { useStore } from 'context/store'
 import { WorkspaceContext } from 'context/workspace.context'
 import { observer } from 'mobx-react'
 import { Badge } from 'primereact/badge'
+import { Button } from 'primereact/button'
 import { Menu } from 'primereact/menu'
-import { useContext } from 'react'
+import { Sidebar } from 'primereact/sidebar'
+import { useContext, useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Link, useLocation } from 'react-router-dom'
 import { getSelectedKey } from 'routers/routes'
 
-function LeftSideBar() {
+function MobileSidebar() {
+  const [visible, setVisible] = useState(false)
   const { t } = useTranslation()
-
+  const { i18n } = useTranslation()
   const { appRouters } = useContext(WorkspaceContext)
   const location = useLocation()
   const activeRoutes = getSelectedKey(appRouters, location)
@@ -19,6 +22,14 @@ function LeftSideBar() {
   const {
     contactStore: { hasNewMessages },
   } = useStore()
+
+  useEffect(() => {
+    localStorage.setItem('lang', i18n.language)
+    document.documentElement.style.setProperty(
+      '--font-family',
+      i18n.language !== 'jp' ? 'Poppins' : 'Noto Sans'
+    )
+  }, [i18n.language])
 
   const itemRenderer = (item) => {
     const isActive = activeRoutes?.map((e) => e.route.key).includes(item.key)
@@ -35,7 +46,7 @@ function LeftSideBar() {
 
           <span
             className={clsx(
-              'mx-2  transition-duration-300',
+              'mx-2 transition-duration-300',
               isActive ? 'text-primary font-bold' : ''
             )}
           >
@@ -54,44 +65,46 @@ function LeftSideBar() {
       </Link>
     )
   }
-  let items = [
+
+  const items = [
     {
-      template: () => {
-        return (
-          <Link
-            className="inline-flex align-items-center gap-1 px-4 py-3"
-            to={'/'}
-          >
-            <img width={40} src={'/logo.png'} alt="logo" />
-          </Link>
-        )
-      },
+      template: () => (
+        <Link
+          className="inline-flex align-items-center gap-1 px-4 py-3"
+          to={'/'}
+        >
+          <img width={40} src={'/logo.png'} alt="logo" />
+        </Link>
+      ),
     },
     ...appRouters
       .filter((e) => !e.hiddenFromMenu)
-      .map((route) => {
-        return {
-          ...route,
-          template: itemRenderer,
-        }
-      }),
+      .map((route) => ({
+        ...route,
+        template: itemRenderer,
+      })),
   ]
+
   return (
-    <div
-      className={clsx(
-        'card flex flex-column h-full justify-content-center transition-duration-300 overflow-hidden flex-nowrap sticky top-0 '
-      )}
-      style={{
-        // flex: collapse ? '0 0 0' : '0 0 14rem',
-        minHeight: '100vh',
-      }}
-    >
-      <Menu
-        model={items}
-        className="w-full min-w-min border-0 border-noround flex-1"
+    <div className="block md:hidden">
+      {/* Hamburger button */}
+      <Button
+        icon="pi pi-bars"
+        className="p-button-text"
+        onClick={() => setVisible(true)}
       />
-      <div className="flex gap-2 align-items-center p-4 bg-white"></div>
+
+      {/* Sidebar overlay */}
+      <Sidebar
+        visible={visible}
+        onHide={() => setVisible(false)}
+        dismissable={true}
+        className="w-15rem"
+      >
+        <Menu model={items} className="w-full border-0 border-noround" />
+      </Sidebar>
     </div>
   )
 }
-export default observer(LeftSideBar)
+
+export default observer(MobileSidebar)

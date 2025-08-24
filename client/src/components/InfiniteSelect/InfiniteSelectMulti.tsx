@@ -50,7 +50,7 @@ const OptionItem = (props: any) => {
   return (
     <div
       className={clsx(
-        'p-3    hover:bg-gray-100 transition-duration-300 cursor-pointer border-t border-t-grey-200 text-fs-14 flex justify-between  items-center',
+        'p-3    hover:bg-gray-100 transition-duration-300 cursor-pointer border-t border-t-grey-200 text-fs-14 flex justify-between  align-items-center',
         active ? 'bg-primary-100 text-primary-500 ' : ''
       )}
       onClick={() => {

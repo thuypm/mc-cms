@@ -10,6 +10,7 @@ import { Fragment, useContext, useMemo, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Link, useLocation } from 'react-router-dom'
 import { getSelectedKey } from 'routers/routes'
+import MobileSideBar from './PrivateLayout/MobileSideBar'
 
 const BreadCrumb = () => {
   const { appRouters } = useContext(WorkspaceContext)
@@ -52,9 +53,10 @@ export default function Header({ setCollapse }: any) {
     authStore: { logout },
   } = useStore()
   const [show, setShow] = useState(false)
+  const isMobile = window.innerWidth < 768
 
   return (
-    <div className=" flex justify-content-between align-items-center py-2 top-0 z-5 bg-gray-100 my-2 bg-white flex-grow-0">
+    <div className=" flex justify-content-between align-items-center py-2 top-0 z-5 bg-gray-100 md:my-2 bg-white flex-grow-0">
       <div className="flex  align-items-center gap-2 flex-1 overflow-hidden">
         <div
           className="cursor-pointer p-2 flex  align-items-center"
@@ -62,7 +64,7 @@ export default function Header({ setCollapse }: any) {
         >
           <i className="isax-menu-1"></i>
         </div>
-        <BreadCrumb />
+        {isMobile ? <MobileSideBar /> : <BreadCrumb />}
       </div>
       <div
         className="flex gap-2 align-items-center cursor-pointer"
@@ -74,7 +76,7 @@ export default function Header({ setCollapse }: any) {
           // size="large"
           shape="circle"
         />
-        <div>
+        <div className="md:flex hidden">
           <p className="m-0 font-bold overflow-hidden text-overflow-ellipsis white-space-nowrap"></p>
           <p className="m-0 text-sm">
             {user.email} <b> ({localStorage.getItem('branchId')})</b>

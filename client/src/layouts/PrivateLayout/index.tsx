@@ -1,18 +1,9 @@
-import { useStore } from 'context/store'
 import { WorkspaceContext } from 'context/workspace.context'
 import Header from 'layouts/Header'
 import { observer } from 'mobx-react'
 import Login from 'pages/Auth/Login'
 import NotFound from 'pages/Error/404'
-import {
-  Dispatch,
-  Fragment,
-  SetStateAction,
-  useContext,
-  useEffect,
-  useRef,
-  useState,
-} from 'react'
+import { Dispatch, Fragment, SetStateAction, useContext } from 'react'
 import { Route, Routes } from 'react-router-dom'
 import { IMenuItem } from 'routers/routes'
 import LeftSideBar from './LeftSideBar'
@@ -52,30 +43,15 @@ const getRouteComponent = (
 
 const PrivateLayoutContent = () => {
   const { appRouters } = useContext(WorkspaceContext)
-  const {
-    contactStore: { getNewNotifMessage },
-  } = useStore()
-
-  const intervalRef = useRef(null)
-  useEffect(() => {
-    // getNewNotifMessage()
-    // intervalRef.current = setInterval(getNewNotifMessage, 30000)
-    // return () => {
-    //   clearInterval(intervalRef.current)
-    // }
-  }, [getNewNotifMessage])
-  const [collapse, setCollapse] = useState(false)
-
+  const isMobile = window.innerWidth < 768
   return (
     <div className="w-full h-full flex bg-gray-100 gap-3 overflow-auto">
-      <LeftSideBar collapse={collapse} />
-      <div className="flex-1 pr-3 flex flex-column overflow-auto flex-0">
+      {isMobile ? null : <LeftSideBar />}
+      <div className="flex-1 md:pr-3 flex flex-column overflow-auto flex-0">
         <Header />
         <div className="flex-1 overflow-auto flex-grow-1">
           <Routes>
-            {appRouters.map((route) =>
-              getRouteComponent(route, null, setCollapse)
-            )}
+            {appRouters.map((route) => getRouteComponent(route, null))}
           </Routes>
         </div>
       </div>

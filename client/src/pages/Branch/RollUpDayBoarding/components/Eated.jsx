@@ -19,8 +19,8 @@ function Eated() {
   }, [rootData, filterLocation])
 
   return (
-    <div className="overflow-auto flex flex-col">
-      <div className="flex justify-content-center items-center pb-1">
+    <div className="overflow-auto flex flex-col w-6">
+      <div className="flex justify-content-center w-full align-items-center pb-1">
         <Button className="flex-[0_0_auto]" severity="success">
           Đã ăn:<b> {list.length}</b>
         </Button>

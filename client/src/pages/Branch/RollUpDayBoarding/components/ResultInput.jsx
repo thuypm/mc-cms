@@ -27,7 +27,7 @@ function ResultInput() {
   const inputRef = useRef(null)
   return (
     <div>
-      <div className="flex items-center relative">
+      <div className="flex align-items-center relative">
         <div
           className={clsx(
             ' absolute top-8 left-4 opacity-0',
@@ -64,8 +64,8 @@ function ResultInput() {
         </div>
       </div>
 
-      <div className="flex gap-4 px-[8px] w-full">
-        <div className="flex-[1_1_auto]">
+      <div className="flex gap-4 w-full px-1">
+        <div className="flex-1">
           <InputText
             pattern="\d*"
             inputMode="numeric"
@@ -92,17 +92,19 @@ function ResultInput() {
           />
         </div>
 
-        <Button
-          severity="success"
-          type="button"
-          onClick={() => {
-            if (inputData?.trim()) tickData(Number(inputData))
-            setInputData('')
-            inputRef?.current?.focus()
-          }}
-        >
-          Điểm danh
-        </Button>
+        <div>
+          <Button
+            severity="success"
+            type="button"
+            onClick={() => {
+              if (inputData?.trim()) tickData(Number(inputData))
+              setInputData('')
+              inputRef?.current?.focus()
+            }}
+          >
+            Điểm danh
+          </Button>
+        </div>
       </div>
     </div>
   )
