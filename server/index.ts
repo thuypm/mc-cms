@@ -41,5 +41,5 @@ const imagesPath = path.join(process.cwd(), "images");
 app.use("/images", express.static(imagesPath));
 console.log(process.env.APP_PORT);
 app.listen(APP_PORT, () => {
-  console.log("Server chạy tại http://localhost:5000");
+  console.log(`Server chạy tại http://localhost:${APP_PORT}`);
 });

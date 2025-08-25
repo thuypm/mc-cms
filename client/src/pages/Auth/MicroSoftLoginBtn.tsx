@@ -8,7 +8,7 @@ export default function MicrosoftLoginButton() {
     const params = new URLSearchParams({
       client_id: REACT_APP_MS_CLIENT_ID,
       response_type: 'code',
-      redirect_uri: 'http://localhost/ms-login-oauth2',
+      redirect_uri: `${window.location.origin}/ms-login-oauth2`,
       response_mode: 'query',
       scope: 'openid profile email',
       state: 'abc123',

@@ -54,7 +54,7 @@
     "xlsx": "^0.18.5"
   },
   "scripts": {
-    "start": "set PORT=80 && react-scripts start",
+    "start": "set PORT=5173 && react-scripts start",
     "start:server": "set PORT=3000 &&  react-scripts start",
     "node:server": "node server.js",
     "build": "react-scripts build",
