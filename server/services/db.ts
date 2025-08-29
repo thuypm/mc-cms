@@ -2,6 +2,10 @@ import mongoose from "mongoose";
 
 const connectDB = async (): Promise<void> => {
   try {
+    console.log(
+      "🔗 Connecting to MongoDB...",
+      process.env.MONGO_URI || "mongodb://localhost:27017/mccms"
+    );
     await mongoose.connect(
       process.env.MONGO_URI || "mongodb://localhost:27017/mccms",
       {

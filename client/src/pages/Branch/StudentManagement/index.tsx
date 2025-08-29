@@ -45,13 +45,15 @@ const StudentManagement = () => {
           key: 'avatar',
           dataIndex: 'avatar',
           header: 'Ảnh',
-          body: (item) => (
-            <img
-              width={80}
-              alt=""
-              src={`${REACT_APP_SERVER_API}/images/${item.avatar}`}
-            />
-          ),
+          body: (item) => {
+            return (
+              <img
+                width={80}
+                alt=""
+                src={`${REACT_APP_SERVER_API}/images/${item.avatar}`}
+              />
+            )
+          },
         },
         {
           key: 'name',

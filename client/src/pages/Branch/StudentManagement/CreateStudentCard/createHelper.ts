@@ -1,63 +1,80 @@
 // utils/studentCards.ts
 import JsBarcode from 'jsbarcode'
 import { PDFDocument } from 'pdf-lib'
-import QRCode from 'qrcode'
+import QRCodeStyling from 'qr-code-styling'
 import { REACT_APP_SERVER_API } from 'utils/constants/environment'
-
-const CARD_WIDTH = 1015
-const CARD_HEIGHT = 638
-const GAP = 30
-
-const A4_WIDTH = 2480
-const A4_HEIGHT = 3508
-
 type Student = {
-  MCID: string
+  VNEDUID: string
   name: string
   dateOfBirth: string
   class: { name: string; grade: number } | string
   avatar: string
 }
+const SCALE = 2
+
+const CARD_WIDTH = 1015 * SCALE
+const CARD_HEIGHT = 638 * SCALE
+const GAP = 30 * SCALE
+
+const A4_WIDTH = 2480 * SCALE
+const A4_HEIGHT = 3508 * SCALE
 
 const cfg = {
   name: {
-    x: 666,
-    y: 286,
-    font: '900 44px Poppins, Montserrat',
+    x: 628 * SCALE,
+    y: 311 * SCALE,
+    font: `900 92px Paytone One, Poppins, Montserrat`, // font-size vẫn px, nhưng nếu muốn nét hơn bạn có thể giữ nguyên và rely vào 2x canvas
     color: '#F45c5c',
     center: true,
   },
   dob: {
-    x: 665,
-    y: 360,
-    font: '700 30px Poppins, Montserrat',
+    x: 662 * SCALE,
+    y: 377 * SCALE,
+    font: `700 ${28 * SCALE}px Poppins, Montserrat`,
     color: '#1e74bb',
-    center: true,
+    center: false,
   },
   class: {
-    x: 665,
-    y: 408,
-    font: '700 30px Poppins, Montserrat',
+    x: 662 * SCALE,
+    y: 420 * SCALE,
+    font: `700 ${28 * SCALE}px Poppins, Montserrat`,
     color: '#1e74bb',
-    center: true,
+    center: false,
   },
   grade: {
-    x: 665,
-    y: 458,
-    font: '700 30px Poppins, Montserrat',
+    x: 665 * SCALE,
+    y: 465 * SCALE,
+    font: `700 ${28 * SCALE}px Poppins, Montserrat`,
     color: '#1e74bb',
-    center: true,
+    center: false,
   },
-  mcid: {
-    x: 170,
-    y: 582,
-    font: '600 30px Calibri, system-ui, Montserrat',
-    color: '#ffffff',
-    center: true,
+  VNEDUID: {
+    x: 665 * SCALE,
+    y: 500 * SCALE,
+    font: `600 ${28 * SCALE}px Poppins, Montserrat`,
+    color: '#1e74bb',
+    center: false,
   },
-  qr: { x: 860, y: 25, size: 94 },
-  barcode: { x: 455, y: 539, width: 440, height: 71 },
-  avatar: { x: 40, y: 192, width: 240, height: 320 },
+  qr: { x: 876 * SCALE, y: 504 * SCALE, size: 112 * SCALE },
+  barcode: {
+    x: 455 * SCALE,
+    y: 539 * SCALE,
+    width: 440 * SCALE,
+    height: 71 * SCALE,
+  },
+  avatar: {
+    x: 44 * SCALE,
+    y: 182 * SCALE,
+    width: 291 * SCALE,
+    height: ((291 * 4) / 3) * SCALE,
+  },
+  seal: {
+    x: 184 * SCALE, // vị trí x (ví dụ góc dưới phải thẻ)
+    y: 360 * SCALE, // vị trí y
+    width: 300 * SCALE, // kích thước dấu
+    height: 300 * SCALE,
+    opacity: 0.9,
+  },
 }
 
 function getSchoolYearsFromGrade(gradeStr: string | number): string {
@@ -87,6 +104,32 @@ function loadImage(urlOrDataUrl: string): Promise<HTMLImageElement> {
     img.onerror = reject
     img.src = urlOrDataUrl
   })
+}
+
+async function drawSeal(
+  ctx: CanvasRenderingContext2D,
+  branch: string,
+  cfgSeal: {
+    x: number
+    y: number
+    width: number
+    height: number
+    opacity?: number
+  }
+) {
+  try {
+    const sealUrl = `${REACT_APP_SERVER_API}/base/dau ${branch}.png`
+    const sealImg = await loadImage(sealUrl)
+
+    ctx.save()
+    if (cfgSeal.opacity !== undefined) {
+      ctx.globalAlpha = cfgSeal.opacity
+    }
+    ctx.drawImage(sealImg, cfgSeal.x, cfgSeal.y, cfgSeal.width, cfgSeal.height)
+    ctx.restore()
+  } catch (e) {
+    console.warn('Không load được con dấu:', e)
+  }
 }
 
 function drawCenteredText(
@@ -129,8 +172,41 @@ async function drawAvatarCropped3x4(
   }
 }
 
-async function makeQRCodeDataUrl(text: string, size: number) {
-  return QRCode.toDataURL(text, { width: size, margin: 0 })
+// async function makeQRCodeDataUrl(text: string, size: number) {
+//   return QRCode.toDataURL(text, { width: size, margin: 0 })
+// }
+async function makeStyledQRCodeDataUrl(text: string, size: number) {
+  const qr = new QRCodeStyling({
+    width: size,
+    height: size,
+
+    type: 'canvas',
+    data: text,
+    qrOptions: {
+      errorCorrectionLevel: 'H', // vừa đủ, dễ quét
+    },
+    cornersSquareOptions: {
+      type: 'rounded',
+      color: 'black',
+    },
+    dotsOptions: {
+      type: 'rounded', // bo tròn
+      color: 'black',
+      // đen
+    },
+    backgroundOptions: {
+      color: '#ffffff', // nền trắng
+    },
+    margin: 4,
+  })
+
+  return new Promise<string>((resolve) => {
+    qr.getRawData('png').then((blob) => {
+      const reader = new FileReader()
+      reader.onload = () => resolve(reader.result as string)
+      reader.readAsDataURL(blob as Blob)
+    })
+  })
 }
 
 function makeBarcodeDataUrl(
@@ -179,33 +255,33 @@ export async function renderStudentCardCanvas(
   drawText(getSchoolYearsFromGrade(grade), cfg.grade)
   drawCenteredText(
     ctx,
-    `MCID: ${student.MCID.slice(0, 3)} ${student.MCID.slice(3)}`,
-    cfg.mcid
+    `${student.VNEDUID.slice(0, 4)} ${student.VNEDUID.slice(4, 7)} ${student.VNEDUID.slice(7, 10)}`,
+    cfg.VNEDUID
   )
   drawCenteredText(ctx, student.name.toUpperCase(), cfg.name)
 
   // Avatar (crop 3x4)
   await drawAvatarCropped3x4(ctx, student.avatar, cfg.avatar)
-
+  await drawSeal(ctx, 'MC1', cfg.seal)
   // QR
-  const qrUrl = await makeQRCodeDataUrl(student.MCID, cfg.qr.size)
+  const qrUrl = await makeStyledQRCodeDataUrl(student.VNEDUID, cfg.qr.size)
   const qrImg = await loadImage(qrUrl)
   ctx.drawImage(qrImg, cfg.qr.x, cfg.qr.y, cfg.qr.size, cfg.qr.size)
 
   // Barcode
-  const barcodeUrl = makeBarcodeDataUrl(
-    student.MCID,
-    cfg.barcode.width,
-    cfg.barcode.height
-  )
-  const barcodeImg = await loadImage(barcodeUrl)
-  ctx.drawImage(
-    barcodeImg,
-    cfg.barcode.x,
-    cfg.barcode.y,
-    cfg.barcode.width,
-    cfg.barcode.height
-  )
+  // const barcodeUrl = makeBarcodeDataUrl(
+  //   student.VNEDUID,
+  //   cfg.barcode.width,
+  //   cfg.barcode.height
+  // )
+  // const barcodeImg = await loadImage(barcodeUrl)
+  // ctx.drawImage(
+  //   barcodeImg,
+  //   cfg.barcode.x,
+  //   cfg.barcode.y,
+  //   cfg.barcode.width,
+  //   cfg.barcode.height
+  // )
 
   return canvas
 }
@@ -218,7 +294,7 @@ export async function renderStudentCardCanvas(
  */
 export async function exportStudentCardsPdf(
   students: Student[],
-  baseImageUrl: string = REACT_APP_SERVER_API + '/base/Root-MC1.png',
+  baseImageUrl: string = REACT_APP_SERVER_API + '/base/base MC1.png',
   filename = 'student-cards.pdf'
 ) {
   // Load base image 1 lần
