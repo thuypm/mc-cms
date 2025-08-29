@@ -69,10 +69,10 @@ const cfg = {
     height: ((291 * 4) / 3) * SCALE,
   },
   seal: {
-    x: 184 * SCALE, // vị trí x (ví dụ góc dưới phải thẻ)
-    y: 360 * SCALE, // vị trí y
-    width: 300 * SCALE, // kích thước dấu
-    height: 300 * SCALE,
+    x: 150 * SCALE, // vị trí x (ví dụ góc dưới phải thẻ)
+    y: 320 * SCALE, // vị trí y
+    width: 340 * SCALE, // kích thước dấu
+    height: 340 * SCALE,
     opacity: 0.9,
   },
 }
@@ -186,11 +186,11 @@ async function makeStyledQRCodeDataUrl(text: string, size: number) {
       errorCorrectionLevel: 'H', // vừa đủ, dễ quét
     },
     cornersSquareOptions: {
-      type: 'rounded',
+      type: 'extra-rounded',
       color: 'black',
     },
     dotsOptions: {
-      type: 'rounded', // bo tròn
+      type: 'extra-rounded', // bo tròn
       color: 'black',
       // đen
     },
