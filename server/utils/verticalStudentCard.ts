@@ -135,7 +135,7 @@ export const generateStudentCard = async (
       config.mcid
     );
     drawCenteredText(ctx, student.name.toUpperCase(), config.name);
-    await drawAvatarImage(ctx, student.avatar, config.avatar);
+    await drawAvatarImage(ctx, student.image, config.image);
     // QR code
     const qrData = await QRCode.toDataURL(student.MCID, {
       width: config.qr.size,
@@ -168,7 +168,7 @@ export const generateStudentCard = async (
     );
     return canvas.toBuffer("image/png");
   } catch (err) {
-    console.warn(`⚠️ Không thể tải ảnh: ${student.avatar}`);
+    console.warn(`⚠️ Không thể tải ảnh: ${student.image}`);
   }
 };
 export async function rotateCard90(cardBuffer: Buffer): Promise<Buffer> {

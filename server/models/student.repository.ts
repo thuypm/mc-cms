@@ -13,7 +13,7 @@ export interface IStudent extends Document {
   subject: string;
   position: string;
   dateOfBirth: string;
-  avatar: string;
+  image: string;
 }
 
 const studentSchema: Schema = new Schema(
@@ -24,10 +24,9 @@ const studentSchema: Schema = new Schema(
     phone: { type: String },
     email: { type: String },
     subject: { type: String },
-    MCID: { type: String, required: true, unique: true },
     VNEDUID: { type: String, required: true, unique: true },
     dateOfBirth: { type: String },
-    avatar: { type: String },
+    image: { type: String },
     roles: {
       type: [String],
       enum: ["SUPER_ADMIN", "TEACHER"],

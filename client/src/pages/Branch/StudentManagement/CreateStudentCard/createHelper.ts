@@ -8,13 +8,15 @@ type Student = {
   name: string
   dateOfBirth: string
   class: { name: string; grade: number } | string
-  avatar: string
+  image: string
+  grade: string
+  branch: string
 }
 const SCALE = 2
 
 const CARD_WIDTH = 1015 * SCALE
 const CARD_HEIGHT = 638 * SCALE
-const GAP = 30 * SCALE
+const GAP = 20 * SCALE
 
 const A4_WIDTH = 2480 * SCALE
 const A4_HEIGHT = 3508 * SCALE
@@ -42,14 +44,14 @@ const cfg = {
     center: false,
   },
   grade: {
-    x: 665 * SCALE,
+    x: 662 * SCALE,
     y: 465 * SCALE,
     font: `700 ${28 * SCALE}px Poppins, Montserrat`,
     color: '#1e74bb',
     center: false,
   },
   VNEDUID: {
-    x: 665 * SCALE,
+    x: 662 * SCALE,
     y: 500 * SCALE,
     font: `600 ${28 * SCALE}px Poppins, Montserrat`,
     color: '#1e74bb',
@@ -62,18 +64,18 @@ const cfg = {
     width: 440 * SCALE,
     height: 71 * SCALE,
   },
-  avatar: {
+  image: {
     x: 44 * SCALE,
     y: 182 * SCALE,
     width: 291 * SCALE,
     height: ((291 * 4) / 3) * SCALE,
   },
   seal: {
-    x: 150 * SCALE, // vị trí x (ví dụ góc dưới phải thẻ)
-    y: 320 * SCALE, // vị trí y
-    width: 340 * SCALE, // kích thước dấu
-    height: 340 * SCALE,
-    opacity: 0.9,
+    x: 170 * SCALE, // vị trí x (ví dụ góc dưới phải thẻ)
+    y: 354 * SCALE, // vị trí y
+    width: 320 * SCALE, // kích thước dấu
+    height: 320 * SCALE,
+    opacity: 0.8,
   },
 }
 
@@ -147,7 +149,7 @@ function drawCenteredText(
 async function drawAvatarCropped3x4(
   ctx: CanvasRenderingContext2D,
   avatarUrl: string,
-  box = cfg.avatar
+  box = cfg.image
 ) {
   try {
     const img = await loadImage(`${REACT_APP_SERVER_API}/images/${avatarUrl}`)
@@ -251,7 +253,10 @@ export async function renderStudentCardCanvas(
     typeof student.class === 'string' ? student.class : student.class.name
   const grade = typeof student.class === 'string' ? '' : student.class.grade
   drawText(student.dateOfBirth, cfg.dob)
-  drawText(className, cfg.class)
+  drawText(
+    `${className.replace(student.grade, '')} - ${Number(student.grade) > 9 ? 'THPT' : 'THCS'}`,
+    cfg.class
+  )
   drawText(getSchoolYearsFromGrade(grade), cfg.grade)
   drawCenteredText(
     ctx,
@@ -261,8 +266,8 @@ export async function renderStudentCardCanvas(
   drawCenteredText(ctx, student.name.toUpperCase(), cfg.name)
 
   // Avatar (crop 3x4)
-  await drawAvatarCropped3x4(ctx, student.avatar, cfg.avatar)
-  await drawSeal(ctx, 'MC1', cfg.seal)
+  await drawAvatarCropped3x4(ctx, student.image, cfg.image)
+  await drawSeal(ctx, `MC${student.branch}`, cfg.seal)
   // QR
   const qrUrl = await makeStyledQRCodeDataUrl(student.VNEDUID, cfg.qr.size)
   const qrImg = await loadImage(qrUrl)
@@ -298,11 +303,13 @@ export async function exportStudentCardsPdf(
   filename = 'student-cards.pdf'
 ) {
   // Load base image 1 lần
-  const baseImg = await loadImage(baseImageUrl)
 
   // Vẽ từng thẻ → lấy PNG bytes
   const cardPngs: Uint8Array[] = []
   for (const s of students) {
+    const baseImg = await loadImage(
+      `${REACT_APP_SERVER_API}/base/base MC${s.branch}.png`
+    )
     const cardCanvas = await renderStudentCardCanvas(s, baseImg)
     const blob = await new Promise<Blob>((res) =>
       cardCanvas.toBlob((b) => res(b!), 'image/png')

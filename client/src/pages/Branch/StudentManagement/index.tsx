@@ -50,7 +50,7 @@ const StudentManagement = () => {
               <img
                 width={80}
                 alt=""
-                src={`${REACT_APP_SERVER_API}/images/${item.avatar}`}
+                src={`${REACT_APP_SERVER_API}/images/${item.image}`}
               />
             )
           },
@@ -61,9 +61,9 @@ const StudentManagement = () => {
           header: 'Họ và tên',
         },
         {
-          key: 'MCID',
-          dataIndex: 'MCID',
-          header: 'MCID',
+          key: 'VNEDUID',
+          dataIndex: 'VNEDUID',
+          header: 'VNEDUID',
         },
         {
           key: 'class',

@@ -1,6 +1,6 @@
 export enum BranchValue {
-  MC1 = 'MC1',
-  MC2 = 'MC2',
+  MC1 = '1',
+  MC2 = '2',
 }
 export const BRANCH_SELECT_OPTIONS = [
   {

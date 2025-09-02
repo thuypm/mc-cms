@@ -23,7 +23,7 @@ class StudentService extends BaseService<IStudent> {
   getStudentInfoByIds = async (ids: string[], branch: any) => {
     return await this.repository.findAll(
       {
-        MCID: { $in: ids },
+        VNEDUID: { $in: ids },
         branch: branch,
       },
       "class"
