@@ -23,9 +23,9 @@ const A4_HEIGHT = 3508 * SCALE
 
 const cfg = {
   name: {
-    x: 628 * SCALE,
+    x: 635 * SCALE,
     y: 311 * SCALE,
-    font: `900 92px Paytone One, Poppins, Montserrat`, // font-size vẫn px, nhưng nếu muốn nét hơn bạn có thể giữ nguyên và rely vào 2x canvas
+    font: `900 82px Paytone One, Poppins, Montserrat`, // font-size vẫn px, nhưng nếu muốn nét hơn bạn có thể giữ nguyên và rely vào 2x canvas
     color: '#F45c5c',
     center: true,
   },
@@ -67,8 +67,8 @@ const cfg = {
   image: {
     x: 44 * SCALE,
     y: 182 * SCALE,
-    width: 291 * SCALE,
-    height: ((291 * 4) / 3) * SCALE,
+    width: 281 * SCALE,
+    height: ((281 * 4) / 3) * SCALE,
   },
   seal: {
     x: 170 * SCALE, // vị trí x (ví dụ góc dưới phải thẻ)
@@ -157,17 +157,23 @@ async function drawAvatarCropped3x4(
     const height = img.naturalHeight || img.height
     const targetRatio = 3 / 4
     const actualRatio = width / height
+
     let sx = 0,
       sy = 0,
       sw = width,
       sh = height
+
     if (actualRatio < targetRatio) {
+      // Ảnh quá cao, cắt bớt chiều cao -> cắt từ trên xuống
       sh = width / targetRatio
       sy = (height - sh) / 2
+      // sy = 0
     } else if (actualRatio > targetRatio) {
+      // Ảnh quá rộng, cắt ngang ở giữa
       sw = height * targetRatio
       sx = (width - sw) / 2
     }
+
     ctx.drawImage(img, sx, sy, sw, sh, box.x, box.y, box.width, box.height)
   } catch (e) {
     // bỏ qua nếu lỗi ảnh

@@ -43,9 +43,10 @@ const ModalCreateStudentInfo = () => {
 
   const handleSubmit = async () => {
     const mcidArray = mcidText
-      .split(',')
-      .map((s) => s.trim())
-      .filter((s) => s)
+      .split(/[\n,]+/) // tách bởi dấu xuống dòng hoặc dấu phẩy
+      .map((s) => s.trim()) // loại bỏ khoảng trắng dư
+      .filter((s) => s) // bỏ phần rỗng
+
     try {
       setLoading(true)
       const data = await fetchDetailIds(mcidArray)
