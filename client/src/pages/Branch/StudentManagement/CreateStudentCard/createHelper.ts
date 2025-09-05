@@ -82,19 +82,24 @@ const cfg = {
 function getSchoolYearsFromGrade(gradeStr: string | number): string {
   const g =
     typeof gradeStr === 'number' ? gradeStr : parseInt(String(gradeStr), 10)
-  // Tuỳ trường – ví dụ tốt nghiệp 2026
-  if ([10, 11, 12].includes(g)) {
-    const gradYear = 2026
-    const startYear = gradYear + (9 - g)
-    const endYear = gradYear
+  if (isNaN(g)) return ''
+
+  const currentYear = new Date().getFullYear()
+
+  if (g >= 10 && g <= 12) {
+    // mốc khối 10
+    const startYear = currentYear - (g - 10)
+    const endYear = startYear + 3
     return `${startYear}–${endYear}`
   }
-  if ([6, 7, 8, 9].includes(g)) {
-    const gradYear = 2026
-    const startYear = gradYear + (5 - g)
-    const endYear = gradYear
+
+  if (g >= 6 && g <= 9) {
+    // mốc khối 6
+    const startYear = currentYear - (g - 6)
+    const endYear = startYear + 4
     return `${startYear}–${endYear}`
   }
+
   return ''
 }
 
