@@ -10,10 +10,10 @@ import * as XLSX from 'xlsx'
 
 import { exportStudentCardsPdf } from './createHelper'
 
-const ModalCreateStudentInfo = () => {
+const ModalPrintStudentCard = () => {
   const { t } = useTranslation()
   const [showModal, setShowModal] = useState(false)
-  const [mcidText, setMcidText] = useState('')
+  const [studentIdText, setMcidText] = useState('')
   const [loading, setLoading] = useState(false)
   const {
     studentManagementStore: { fetchDetailIds },
@@ -28,34 +28,34 @@ const ModalCreateStudentInfo = () => {
       const sheet = workbook.Sheets[sheetName]
       const rows = XLSX.utils.sheet_to_json(sheet, { header: 1 })
 
-      const mcids = rows
+      const studentIds = rows
         .map((row) => String(row[0] || '').trim())
         .filter((val) => /^\d{6}$/.test(val))
 
       setMcidText((prev) => {
         // nối thêm với dữ liệu cũ, tránh trùng lặp
         const current = prev ? prev.split(',').map((s) => s.trim()) : []
-        const merged = Array.from(new Set([...current, ...mcids]))
+        const merged = Array.from(new Set([...current, ...studentIds]))
         return merged.join(', ')
       })
     }
   }
 
   const handleSubmit = async () => {
-    const mcidArray = mcidText
+    const studentIdArray = studentIdText
       .split(/[\n,]+/) // tách bởi dấu xuống dòng hoặc dấu phẩy
       .map((s) => s.trim()) // loại bỏ khoảng trắng dư
       .filter((s) => s) // bỏ phần rỗng
 
     try {
       setLoading(true)
-      const data = await fetchDetailIds(mcidArray)
+      const data = await fetchDetailIds(studentIdArray)
       await exportStudentCardsPdf(data)
       setLoading(false)
     } catch (error) {
       setLoading(false)
     }
-    // handleFilterDataChange('mcidList', mcidArray)
+    // handleFilterDataChange('studentIdList', studentIdArray)
     // setShowModal(false)
   }
 
@@ -75,7 +75,7 @@ const ModalCreateStudentInfo = () => {
         contentClassName="flex flex-column gap-3 overflow-auto"
       >
         <InputTextarea
-          value={mcidText}
+          value={studentIdText}
           onChange={(e) => setMcidText(e.target.value)}
           rows={5}
         />
@@ -104,4 +104,4 @@ const ModalCreateStudentInfo = () => {
   )
 }
 
-export default observer(ModalCreateStudentInfo)
+export default observer(ModalPrintStudentCard)

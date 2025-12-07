@@ -85,7 +85,7 @@ const config = {
   name: { x: 666, y: 286, font: "40px Poppins", color: "#F45c5c" },
   dob: { x: 665, y: 359, font: "28px Poppins", color: "#1e74bb" },
   class: { x: 665, y: 407, font: "bold 28px Poppins", color: "#1e74bb" },
-  mcid: { x: 170, y: 584, font: "28px Calibri", color: "#ffffff" },
+  studentId: { x: 170, y: 584, font: "28px Calibri", color: "#ffffff" },
   grade: { x: 665, y: 457, font: "bold 28px Poppins", color: "#1e74bb" },
   qr: { x: 860, y: 25, size: 94 },
   barcode: { x: 455, y: 539, width: 440, height: 71 },
@@ -132,13 +132,13 @@ export const generateStudentCard = async (
     drawText(getSchoolYearsFromGrade(student.class.grade), config.grade);
     drawCenteredText(
       ctx,
-      `MCID: ${student.MCID.slice(0, 3)} ${student.MCID.slice(3)}`,
-      config.mcid
+      `studentId: ${student.studentId.slice(0, 3)} ${student.studentId.slice(3)}`,
+      config.studentId
     );
     drawCenteredText(ctx, student.name.toUpperCase(), config.name);
     drawAvatarImage(ctx, student.image, config.image);
     // QR code
-    const qrData = await QRCode.toDataURL(student.MCID, {
+    const qrData = await QRCode.toDataURL(student.studentId, {
       width: config.qr.size,
       margin: 0,
     });
@@ -153,7 +153,7 @@ export const generateStudentCard = async (
     // Barcode
     const barcodePng = await bwipjs.toBuffer({
       bcid: "code128",
-      text: student.MCID,
+      text: student.studentId,
       scale: 3,
       height: 10,
       includetext: false,

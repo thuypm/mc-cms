@@ -13,7 +13,7 @@ import {
   useMemo,
 } from 'react'
 import { Controller, useForm, useWatch } from 'react-hook-form'
-import { USER_POSITION } from 'utils/constants/user'
+import { USER_ROLE_ENUM } from 'utils/constants/user'
 import { useObjectSearchParams } from 'utils/hooks/useObjectSearchParams'
 import StatusTagSelect from './StatusTagSelect'
 
@@ -117,15 +117,15 @@ const FormTable = forwardRef(({ items, loadingListing }: any, ref) => {
     >
       <Column
         field="studentInfo.code"
-        header="MCID"
-        body={(rowData: any) => rowData.studentInfo?.MCID}
+        header="studentId"
+        body={(rowData: any) => rowData.studentInfo?.studentId}
       />
       <Column field="studentInfo.name" header="Họ và tên" />
       <Column field="studentInfo.classInfo.name" header="Lớp" />
       {dayHeaders.map((day, dayIndex) => {
         const dayByIndex = getDateByIndex(startDate, dayIndex)
         const isDisabled =
-          !(position === USER_POSITION.SUPER_ADMIN) &&
+          !(position === USER_ROLE_ENUM.SUPER_ADMIN) &&
           checkDisabledEdit(dayByIndex)
         return (
           <Column

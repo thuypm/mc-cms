@@ -1,6 +1,6 @@
 // services/student.service.ts
 import { IStudent, studentRepository } from "../models/student.repository";
-import { USER_POSITION } from "../utils/enum";
+import { USER_ROLE_ENUM } from "../utils/enum";
 import { BaseService } from "./BaseServices";
 class StudentService extends BaseService<IStudent> {
   getAllStudents = async (
@@ -17,7 +17,7 @@ class StudentService extends BaseService<IStudent> {
       populate: "class",
       branch: user.branch,
       class:
-        user.position === USER_POSITION.SUPER_ADMIN ? query.class : user.class,
+        user.position === USER_ROLE_ENUM.SUPER_ADMIN ? query.class : user.class,
     });
   };
   getStudentInfoByIds = async (ids: string[], branch: any) => {

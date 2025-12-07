@@ -5,10 +5,8 @@ import { useStore } from 'context/store'
 import { observer } from 'mobx-react'
 import { REACT_APP_SERVER_API } from 'utils/constants/environment'
 import { useObjectSearchParams } from 'utils/hooks/useObjectSearchParams'
-import ModalPrintStudentCard from './CreateStudentCard/ModalPrintStudentCard'
-import UploadFile from './ImportStudent/UploadFile'
 
-const StudentManagement = () => {
+const HumanManagement = () => {
   const {
     studentManagementStore: {
       loadingListing,
@@ -111,11 +109,10 @@ const StudentManagement = () => {
                 })
               }}
             />
-            <ModalPrintStudentCard />
           </div>
         </div>
       }
     />
   )
 }
-export default observer(StudentManagement)
+export default observer(HumanManagement)

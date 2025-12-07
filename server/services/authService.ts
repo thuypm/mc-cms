@@ -2,9 +2,9 @@ import axios from "axios";
 import jwt from "jsonwebtoken";
 import { ObjectId } from "mongodb";
 import { Student } from "../models/student.repository";
-import { Teacher } from "../models/teacher.repository";
+import { Human } from "../models/human.repository";
 
-import { USER_POSITION } from "../utils/enum";
+import { USER_ROLE_ENUM } from "../utils/enum";
 import {
   JWT_SECRET,
   MICROSOFT_CLIENT_ID,
@@ -38,20 +38,17 @@ export const handleMicrosoftLogin = async (code: string): Promise<string> => {
 
   const { id_token } = tokenRes.data;
 
-  // 2. Decode id_token
   const payload = id_token.split(".")[1];
   const decodedStr = Buffer.from(payload, "base64").toString();
   const decoded: MicrosoftUser = JSON.parse(decodedStr);
 
   const { email } = decoded;
 
-  // 3. Tìm hoặc tạo user trong DB
-  let user = await Teacher.findOne({ email });
+  let user = await Human.findOne({ email });
   if (!user) user = await Student.findOne({ email });
 
-  // 4. Tạo JWT nội bộ
   const yourToken = jwt.sign(
-    { _id: user._id, position: user.position, class: user.class },
+    { _id: user._id, class: user.class },
     JWT_SECRET!,
     {
       expiresIn: "365d",
@@ -69,10 +66,10 @@ export const getUserFromToken = async (token: string) => {
   let profile;
 
   if (
-    decoded.position === USER_POSITION.TEACHER ||
-    decoded.position === USER_POSITION.SUPER_ADMIN
+    decoded.position === USER_ROLE_ENUM.TEACHER ||
+    decoded.position === USER_ROLE_ENUM.SUPER_ADMIN
   )
-    profile = await Teacher.findOne({
+    profile = await Human.findOne({
       _id: new ObjectId(decoded._id),
     });
   else

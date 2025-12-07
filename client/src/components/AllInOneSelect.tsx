@@ -74,6 +74,8 @@ const AllInOneSelect = forwardRef((props: AllInOneSelectProps, ref: any) => {
       ref={ref}
       options={dataRendered}
       // filter
+      filter
+      showClear 
       panelClassName="w-25rem"
       loading={loading}
       value={itemValue}

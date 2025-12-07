@@ -1,4 +1,4 @@
-export enum USER_POSITION {
+export enum USER_ROLE_ENUM {
   STUDENT = "STUDENT",
   TEACHER = "TEACHER",
   SUPER_ADMIN = "SUPER_ADMIN",

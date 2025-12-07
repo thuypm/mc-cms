@@ -7,7 +7,7 @@ import { observer } from 'mobx-react'
 import { Button } from 'primereact/button'
 import { useContext, useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
-import { USER_POSITION } from 'utils/constants/user'
+import { USER_ROLE_ENUM } from 'utils/constants/user'
 import { useObjectSearchParams } from 'utils/hooks/useObjectSearchParams'
 import FormTable from './FormTable'
 import SuperAdminDayBoarding from './SuperAdminDayBoarding'
@@ -28,8 +28,8 @@ const DayBoarding = () => {
   useEffect(() => {
     if (searchObject && searchObject.startDate && searchObject.endDate) {
       if (
-        user.position !== USER_POSITION.SUPER_ADMIN ||
-        (user.position === USER_POSITION.SUPER_ADMIN && searchObject.classId)
+        user.position !== USER_ROLE_ENUM.SUPER_ADMIN ||
+        (user.position === USER_ROLE_ENUM.SUPER_ADMIN && searchObject.classId)
       ) {
         handleFilterDataChange && handleFilterDataChange(searchObject)
       }

@@ -7,7 +7,7 @@ const NotFound = () => {
   const { t } = useTranslation()
 
   return (
-    <div className="w-screen h-screen flex align-items-center justify-content-center flex-column gap-6">
+    <div className="w-full h-full flex align-items-center justify-content-center flex-column gap-6">
       <p className="text-2xl font-bold">{t('Page not found')}</p>
 
       <Link to={'/'}>

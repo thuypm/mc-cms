@@ -4,7 +4,6 @@ import path from "path";
 import { authenticateToken } from "./middleware/authMiddleware";
 import { attachBranchId } from "./middleware/branch.middleware";
 import authRouter from "./routers/authRouter";
-import { dayBoardingRouter } from "./routers/dayBoardingRouter";
 import { studentRouter } from "./routers/student.router";
 import connectDB from "./services/db";
 import { APP_PORT } from "./utils/environment";
@@ -29,12 +28,7 @@ app.use(express.static(publicPath));
 // Mount routers
 app.use("/api/auth", authRouter);
 app.use("/api/student", authenticateToken, attachBranchId, studentRouter);
-app.use(
-  "/api/day-boarding",
-  authenticateToken,
-  attachBranchId,
-  dayBoardingRouter
-);
+
 
 // Static images folder
 const imagesPath = path.join(process.cwd(), "images");

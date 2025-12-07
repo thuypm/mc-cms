@@ -3,7 +3,7 @@ import { BaseRepository } from "./base.repository";
 export interface IStudent extends Document {
   _id: Types.ObjectId;
   name: string;
-  MCID: string;
+  studentId: string;
   VNEDUID: string;
   positionText: string;
   class: string;

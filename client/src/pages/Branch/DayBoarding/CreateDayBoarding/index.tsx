@@ -10,7 +10,7 @@ import { Divider } from 'primereact/divider'
 import { useCallback, useContext, useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { MC_SERVICE } from 'utils/constants/common'
-import { USER_POSITION } from 'utils/constants/user'
+import { USER_ROLE_ENUM } from 'utils/constants/user'
 
 const CreateDayBoarding = () => {
   const {
@@ -29,7 +29,7 @@ const CreateDayBoarding = () => {
   const [selectedClass, setSelectedClass] = useState(null)
 
   useEffect(() => {
-    if (selectedClass || user.position !== USER_POSITION.SUPER_ADMIN)
+    if (selectedClass || user.position !== USER_ROLE_ENUM.SUPER_ADMIN)
       fetchDetail({
         class: selectedClass._id,
       })
@@ -115,7 +115,7 @@ const CreateDayBoarding = () => {
           }
         >
           <Column header="STT" body={(rowData, { rowIndex }) => rowIndex + 1} />
-          <Column header="MCID" field="MCID" />
+          <Column header="studentId" field="studentId" />
           <Column header="Tên" field="name" />
           <Column header="Ngày sinh" field="dateOfBirth" />
           <Column header="Giới tính" field="gender" />

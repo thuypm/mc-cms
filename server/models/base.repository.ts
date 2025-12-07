@@ -56,7 +56,7 @@ export class BaseRepository<T extends { _id: Types.ObjectId }> {
     const {
       page = 1,
       limit = 10,
-      sort = { createdAt: -1 },
+      sort = { createdAt: -1, _id: -1 },
       populate,
       ...otherQuery
     } = options;
